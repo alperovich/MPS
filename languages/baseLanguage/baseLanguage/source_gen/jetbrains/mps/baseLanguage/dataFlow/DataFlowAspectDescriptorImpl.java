@@ -5,19 +5,285 @@ package jetbrains.mps.baseLanguage.dataFlow;
 import jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptorBase;
 import org.jetbrains.annotations.NotNull;
 import java.util.Collection;
-import jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor;
-import java.util.Arrays;
-import java.util.ArrayList;
+import jetbrains.mps.lang.dataFlow.framework.IDataFlowBuilder;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import java.util.Collections;
 
 public class DataFlowAspectDescriptorImpl extends DataFlowAspectDescriptorBase {
+
   @NotNull
-  public Collection<DataFlowConstructor> getConstructors(String analyzerId) {
-    switch (Arrays.binarySearch(stringSwitchCases_vhxjlb_a0a0a, analyzerId)) {
-      case 0:
-        return Arrays.asList(new DataFlowConstructor[]{new RuleAfterDotExpression(), new RuleAfterDotExpression(), new RuleAfterDotExpression(), new RuleAfterDotExpression(), new RuleAfterDotExpression(), new RuleAfterDotExpression(), new RuleAfterDotExpression(), new RuleAfterDotExpression(), new RuleAfterDotExpression(), new RuleAfterDotExpression()});
-      default:
-        return new ArrayList<DataFlowConstructor>();
+  @Override
+  public Collection<IDataFlowBuilder> getDataFlowBuilders(SAbstractConcept concept) {
+
+    {
+      SAbstractConcept cncpt = ((SAbstractConcept) concept);
+      boolean matchedCase = false;
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x120a4c1f269L, "jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new AbstractUnaryNumberOperation_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfb7c3070eeL, "jetbrains.mps.baseLanguage.structure.AndExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new AndExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1133e3b449aL, "jetbrains.mps.baseLanguage.structure.AnonymousClassCreator"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new AnonymousClassCreator_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11126b40c25L, "jetbrains.mps.baseLanguage.structure.ArrayAccessExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ArrayAccessExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x113e4952f12L, "jetbrains.mps.baseLanguage.structure.ArrayCreator"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ArrayCreator_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10cd01b77ddL, "jetbrains.mps.baseLanguage.structure.ArrayCreatorWithInitializer"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ArrayCreatorWithInitializer_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x114a770dc0dL, "jetbrains.mps.baseLanguage.structure.ArrayLiteral"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ArrayLiteral_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d00538bdfL, "jetbrains.mps.baseLanguage.structure.AsExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new AsExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10e50ecba3dL, "jetbrains.mps.baseLanguage.structure.AssertStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new AssertStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c77f1e96L, "jetbrains.mps.baseLanguage.structure.AssignmentExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new AssignmentExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11b0d00332cL, "jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new BaseAssignmentExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c78301acL, "jetbrains.mps.baseLanguage.structure.BaseMethodCall"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new BaseMethodCall_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, "jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new BaseMethodDeclaration_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, "jetbrains.mps.baseLanguage.structure.BinaryOperation"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new BinaryOperation_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d6d026f5fL, "jetbrains.mps.baseLanguage.structure.BitwiseNotExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new BitwiseNotExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfc092b6b77L, "jetbrains.mps.baseLanguage.structure.BlockStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new BlockStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbe39a867fL, "jetbrains.mps.baseLanguage.structure.BreakStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new BreakStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940dabe4aL, "jetbrains.mps.baseLanguage.structure.CastExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new CastExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10f39a56e2fL, "jetbrains.mps.baseLanguage.structure.CatchClause"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new CatchClause_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10c63f4f3f3L, "jetbrains.mps.baseLanguage.structure.Closure"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new Closure_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1121e2102fdL, "jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new CommentedStatementsBlock_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x108bbca0f48L, "jetbrains.mps.baseLanguage.structure.ConceptFunction"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ConceptFunction_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbf3043726L, "jetbrains.mps.baseLanguage.structure.ContinueStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ContinueStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x113e4b2dfdaL, "jetbrains.mps.baseLanguage.structure.DimensionExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new DimensionExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11232674988L, "jetbrains.mps.baseLanguage.structure.DoWhileStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new DoWhileStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x116b46a08c4L, "jetbrains.mps.baseLanguage.structure.DotExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new DotExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x118ceceb41aL, "jetbrains.mps.baseLanguage.structure.ElsifClause"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ElsifClause_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL, "jetbrains.mps.baseLanguage.structure.Expression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new Expression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b213L, "jetbrains.mps.baseLanguage.structure.ExpressionStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ExpressionStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x116b483d77aL, "jetbrains.mps.baseLanguage.structure.FieldReferenceOperation"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new FieldReferenceOperation_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10a698082feL, "jetbrains.mps.baseLanguage.structure.ForStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ForStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10a6933ce33L, "jetbrains.mps.baseLanguage.structure.ForeachStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ForeachStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10ab8473cc5L, "jetbrains.mps.baseLanguage.structure.GenericNewExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new GenericNewExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getInterfaceConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11857355952L, "jetbrains.mps.baseLanguage.structure.IMethodCall"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new IMethodCall_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b217L, "jetbrains.mps.baseLanguage.structure.IfStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new IfStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x118f0b909f7L, "jetbrains.mps.baseLanguage.structure.InstanceInitializer"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new InstanceInitializer_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x118154a6332L, "jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new InstanceMethodCallOperation_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbbff03700L, "jetbrains.mps.baseLanguage.structure.InstanceOfExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new InstanceOfExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7efL, "jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new LocalVariableDeclaration_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7f0L, "jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new LocalVariableDeclarationStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbcf6bd10dL, "jetbrains.mps.baseLanguage.structure.NotExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new NotExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfb8255689fL, "jetbrains.mps.baseLanguage.structure.OrExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new OrExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c77f1e94L, "jetbrains.mps.baseLanguage.structure.ParameterDeclaration"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ParameterDeclaration_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfb4ed32b7fL, "jetbrains.mps.baseLanguage.structure.ParenthesizedExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ParenthesizedExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11aded05fe6L, "jetbrains.mps.baseLanguage.structure.PostfixDecrementExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new PostfixDecrementExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11adecdb4f0L, "jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new PostfixIncrementExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x120a472f0e8L, "jetbrains.mps.baseLanguage.structure.PrefixDecrementExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new PrefixDecrementExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x120a46df580L, "jetbrains.mps.baseLanguage.structure.PrefixIncrementExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new PrefixIncrementExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1101757c8faL, "jetbrains.mps.baseLanguage.structure.RemarkStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new RemarkStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7feL, "jetbrains.mps.baseLanguage.structure.ReturnStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ReturnStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b200L, "jetbrains.mps.baseLanguage.structure.StatementList"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new StatementList_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11c7538039dL, "jetbrains.mps.baseLanguage.structure.StaticInitializer"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new StaticInitializer_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbbebabf09L, "jetbrains.mps.baseLanguage.structure.StaticMethodCall"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new StaticMethodCall_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x4975dc2bdcfa0c49L, "jetbrains.mps.baseLanguage.structure.StubStatementList"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new StubStatementList_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47df21f3L, "jetbrains.mps.baseLanguage.structure.SubstringExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new SubstringExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10ef02cdd1bL, "jetbrains.mps.baseLanguage.structure.SwitchCase"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new SwitchCase_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10ef02a8c6aL, "jetbrains.mps.baseLanguage.structure.SwitchStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new SwitchStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1106df1d8d8L, "jetbrains.mps.baseLanguage.structure.SynchronizedStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new SynchronizedStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10ef01239c9L, "jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new TernaryOperatorExpression_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10f3ee082d8L, "jetbrains.mps.baseLanguage.structure.ThrowStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new ThrowStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10f383e6771L, "jetbrains.mps.baseLanguage.structure.TryCatchStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new TryCatchStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10cacebf556L, "jetbrains.mps.baseLanguage.structure.TryStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new TryStatement_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37a7f6eL, "jetbrains.mps.baseLanguage.structure.VariableDeclaration"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new VariableDeclaration_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c77f1e98L, "jetbrains.mps.baseLanguage.structure.VariableReference"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new VariableReference_DataFlow());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfaa4bf0f2fL, "jetbrains.mps.baseLanguage.structure.WhileStatement"))) {
+        matchedCase = true;
+        return Collections.<IDataFlowBuilder>singletonList(new WhileStatement_DataFlow());
+      }
+      if (!(matchedCase)) {
+      }
     }
+    return Collections.<IDataFlowBuilder>emptyList();
   }
-  private static String[] stringSwitchCases_vhxjlb_a0a0a = new String[]{"jetbrains.mps.baseLanguage.dataFlow.Nullable"};
 }

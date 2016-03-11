@@ -15,6 +15,8 @@
  */
 package jetbrains.mps.lang.dataFlow.framework;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Collection;
 import java.util.Collections;
 
@@ -25,6 +27,7 @@ import java.util.Collections;
 
 @Deprecated
 public abstract class AbstractDataFlowAspectDescriptor implements DataFlowAspectDescriptor {
+  @NotNull
   @Override
   public Collection<DataFlowConstructor> getConstructors(String analyzerId) {
     return Collections.emptyList();

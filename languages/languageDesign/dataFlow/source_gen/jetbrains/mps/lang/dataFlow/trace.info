@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <root>
-    <file name="DFABuilders.java">
-      <unit at="6,0,10,0" name="jetbrains.mps.lang.dataFlow.DFABuilders" />
-    </file>
     <file name="Language.java">
       <unit at="26,0,80,0" name="jetbrains.mps.lang.dataFlow.Language" />
     </file>

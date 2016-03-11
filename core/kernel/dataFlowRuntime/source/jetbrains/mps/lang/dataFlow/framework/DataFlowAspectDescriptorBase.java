@@ -16,9 +16,10 @@
 package jetbrains.mps.lang.dataFlow.framework;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 
 /**
  * @author simon
@@ -28,6 +29,11 @@ public class DataFlowAspectDescriptorBase implements DataFlowAspectDescriptor {
   @NotNull
   @Override
   public Collection<DataFlowConstructor> getConstructors(String analyzerId) {
-    return new ArrayList<DataFlowConstructor>();
+    return Collections.emptyList();
+  }
+
+  @NotNull
+  public Collection<IDataFlowBuilder> getDataFlowBuilders(SAbstractConcept concept) {
+    return Collections.emptyList();
   }
 }

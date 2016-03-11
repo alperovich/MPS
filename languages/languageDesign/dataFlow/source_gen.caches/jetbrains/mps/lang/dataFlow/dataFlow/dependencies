@@ -3,7 +3,6 @@
   <dependency className="jetbrains.mps.lang.dataFlow.dataFlow.BaseEmitJumpStatement_DataFlow" file="BaseEmitJumpStatement_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
@@ -11,24 +10,30 @@
   <dependency className="jetbrains.mps.lang.dataFlow.dataFlow.BaseEmitVariableStatement_DataFlow" file="BaseEmitVariableStatement_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
-  <dependency className="jetbrains.mps.lang.dataFlow.dataFlow.DFABuilders" file="DFABuilders.java">
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowManager" />
+  <dependency className="jetbrains.mps.lang.dataFlow.dataFlow.DataFlowAspectDescriptorImpl" file="DataFlowAspectDescriptorImpl.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.dataFlow.BaseEmitJumpStatement_DataFlow" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.dataFlow.BaseEmitVariableStatement_DataFlow" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.dataFlow.EmitCodeForStatement_DataFlow" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.dataFlow.EmitMayBeUnreachable_DataFlow" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.dataFlow.RelativePosition_DataFlow" />
-    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilders" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.IDataFlowBuilder" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptorBase" />
   </dependency>
   <dependency className="jetbrains.mps.lang.dataFlow.dataFlow.EmitCodeForStatement_DataFlow" file="EmitCodeForStatement_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
@@ -36,7 +41,6 @@
   <dependency className="jetbrains.mps.lang.dataFlow.dataFlow.EmitMayBeUnreachable_DataFlow" file="EmitMayBeUnreachable_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
@@ -44,7 +48,6 @@
   <dependency className="jetbrains.mps.lang.dataFlow.dataFlow.RelativePosition_DataFlow" file="RelativePosition_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />

@@ -6,6 +6,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="tpee" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure)" />
@@ -218,6 +219,32 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="2546654756694997551" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTag" flags="ng" index="92FcH">
+        <child id="2546654756694997556" name="reference" index="92FcQ" />
+        <child id="3106559687488913694" name="line" index="2XjZqd" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
+        <child id="2667874559098216723" name="text" index="3HnX3l" />
+      </concept>
+      <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
+        <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
+      </concept>
+      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
+        <child id="6962838954693749192" name="tag" index="qph3F" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
         <property id="1167228628751" name="hasException" index="34fQS0" />
@@ -248,6 +275,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -1530,14 +1560,38 @@
   <node concept="312cEu" id="3HJD4JbIwf_">
     <property role="TrG5h" value="DataFlowBuilder" />
     <property role="1sVAO0" value="true" />
-    <node concept="3Tm1VV" id="3HJD4JbIwfA" role="1B3o_S" />
-    <node concept="3clFbW" id="3HJD4JbIwfB" role="jymVt">
-      <node concept="3Tm1VV" id="3HJD4JbIwfC" role="1B3o_S" />
-      <node concept="3clFbS" id="3HJD4JbIwfD" role="3clF47" />
+    <node concept="3uibUv" id="4dNj9j_76Qf" role="EKbjA">
+      <ref role="3uigEE" to="1fjm:~IDataFlowBuilder" resolve="IDataFlowBuilder" />
     </node>
+    <node concept="2tJIrI" id="4dNj9j_5KJa" role="jymVt" />
+    <node concept="3Tm1VV" id="3HJD4JbIwfA" role="1B3o_S" />
     <node concept="3clFb_" id="3HJD4JbIwfE" role="jymVt">
-      <property role="1EzhhJ" value="true" />
+      <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="build" />
+      <node concept="2AHcQZ" id="4dNj9j_5KJN" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+      <node concept="P$JXv" id="4dNj9j_5KJK" role="lGtFl">
+        <node concept="TZ5HI" id="4dNj9j_5KJL" role="3nqlJM">
+          <node concept="TZ5HA" id="4dNj9j_5KJM" role="3HnX3l" />
+        </node>
+        <node concept="TZ5HA" id="4dNj9j_5KKh" role="TZ5H$">
+          <node concept="1dT_AC" id="4dNj9j_5KKi" role="1dT_Ay">
+            <property role="1dT_AB" value="Since MPS 3.4 use " />
+          </node>
+          <node concept="1dT_AA" id="4dNj9j_5KKn" role="1dT_Ay">
+            <node concept="92FcH" id="4dNj9j_5KKt" role="qph3F">
+              <node concept="TZ5HA" id="4dNj9j_5KKv" role="2XjZqd" />
+              <node concept="VXe0Z" id="4dNj9j_7np7" role="92FcQ">
+                <ref role="VXe0S" node="4dNj9j_5Kld" resolve="build" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dT_AC" id="4dNj9j_5KKm" role="1dT_Ay">
+            <property role="1dT_AB" value="}" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="3HJD4JbIwfF" role="1B3o_S" />
       <node concept="3cqZAl" id="3HJD4JbIwfG" role="3clF45" />
       <node concept="37vLTG" id="3HJD4JbIwfH" role="3clF46">
@@ -1547,12 +1601,36 @@
         </node>
       </node>
       <node concept="37vLTG" id="3HJD4JbIwfJ" role="3clF46">
-        <property role="TrG5h" value="_context" />
+        <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="3HJD4JbIwfK" role="1tU5fm">
           <ref role="3uigEE" node="3HJD4JbIvKw" resolve="DataFlowBuilderContext" />
         </node>
       </node>
       <node concept="3clFbS" id="3HJD4JbIwfL" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="4dNj9j_5KkV" role="jymVt" />
+    <node concept="3clFb_" id="4dNj9j_5Kld" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="build" />
+      <node concept="3Tm1VV" id="4dNj9j_5Kle" role="1B3o_S" />
+      <node concept="3cqZAl" id="4dNj9j_5Klf" role="3clF45" />
+      <node concept="37vLTG" id="4dNj9j_5Klg" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="4dNj9j_5Klh" role="1tU5fm">
+          <ref role="3uigEE" node="3HJD4JbIvKw" resolve="DataFlowBuilderContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="4dNj9j_5Klj" role="3clF47">
+        <node concept="3clFbF" id="4dNj9j_5KFK" role="3cqZAp">
+          <node concept="1rXfSq" id="4dNj9j_5KFJ" role="3clFbG">
+            <ref role="37wK5l" node="3HJD4JbIwfE" resolve="build" />
+            <node concept="10Nm6u" id="4dNj9j_5KGx" role="37wK5m" />
+            <node concept="37vLTw" id="4dNj9j_5KI1" role="37wK5m">
+              <ref role="3cqZAo" node="4dNj9j_5Klg" resolve="context" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3HJD4JbIwfM">

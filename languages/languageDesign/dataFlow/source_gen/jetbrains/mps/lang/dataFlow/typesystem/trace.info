@@ -8,9 +8,6 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,12,0" name="jetbrains.mps.lang.dataFlow.typesystem.DFABuilders" />
-    </file>
     <file name="TypesystemDescriptor.java">
       <unit at="8,0,44,0" name="jetbrains.mps.lang.dataFlow.typesystem.TypesystemDescriptor" />
     </file>
