@@ -4,12 +4,8 @@
     <file name="DFABuilders.java">
       <unit at="8,0,12,0" name="jetbrains.mps.lang.findUsages.DFABuilders" />
     </file>
-    <file name="Generator.java">
-      <unit at="17,0,67,0" name="jetbrains.mps.lang.findUsages.Generator" />
-    </file>
     <file name="Language.java">
-      <unit at="56,21,56,58" name="jetbrains.mps.lang.findUsages.Language$1" />
-      <unit at="22,0,70,0" name="jetbrains.mps.lang.findUsages.Language" />
+      <unit at="19,0,63,0" name="jetbrains.mps.lang.findUsages.Language" />
     </file>
   </root>
 </debug-info>

@@ -12,8 +12,8 @@
     <classNode dependClassName="java.util.UUID" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AbstractDataFlowAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptorBase" />
     <classNode dependClassName="jetbrains.mps.lang.generator.generationContext.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="jetbrains.mps.lang.generator.generationContext.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.generator.generationContext.constraints.ConstraintsAspectDescriptor" />

@@ -5,7 +5,6 @@
       <unit at="8,0,12,0" name="jetbrains.mps.lang.smodel.query.DFABuilders" />
     </file>
     <file name="Language.java">
-      <unit at="61,21,61,58" name="jetbrains.mps.lang.smodel.query.Language$1" />
       <unit at="24,0,75,0" name="jetbrains.mps.lang.smodel.query.Language" />
     </file>
   </root>

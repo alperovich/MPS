@@ -5,7 +5,6 @@
       <unit at="8,0,12,0" name="jetbrains.mps.lang.refactoring.DFABuilders" />
     </file>
     <file name="Language.java">
-      <unit at="56,21,56,58" name="jetbrains.mps.lang.refactoring.Language$1" />
       <unit at="22,0,70,0" name="jetbrains.mps.lang.refactoring.Language" />
     </file>
   </root>

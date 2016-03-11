@@ -5,7 +5,6 @@
       <unit at="8,0,12,0" name="jetbrains.mps.baseLanguage.logging.DFABuilders" />
     </file>
     <file name="Language.java">
-      <unit at="59,21,59,58" name="jetbrains.mps.baseLanguage.logging.Language$1" />
       <unit at="25,0,76,0" name="jetbrains.mps.baseLanguage.logging.Language" />
     </file>
   </root>

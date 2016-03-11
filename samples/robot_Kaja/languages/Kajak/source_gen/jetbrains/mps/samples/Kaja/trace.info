@@ -4,12 +4,8 @@
     <file name="DFABuilders.java">
       <unit at="8,0,12,0" name="jetbrains.mps.samples.Kaja.DFABuilders" />
     </file>
-    <file name="Generator.java">
-      <unit at="18,0,68,0" name="jetbrains.mps.samples.Kaja.Generator" />
-    </file>
     <file name="Language.java">
-      <unit at="59,21,59,58" name="jetbrains.mps.samples.Kaja.Language$1" />
-      <unit at="25,0,76,0" name="jetbrains.mps.samples.Kaja.Language" />
+      <unit at="22,0,69,0" name="jetbrains.mps.samples.Kaja.Language" />
     </file>
   </root>
 </debug-info>
