@@ -23,7 +23,7 @@ public class CounterAnalyzerWithConstructorAnalyzerRunner extends CustomAnalyzer
     prepareProgram();
   }
   private void prepareProgram() {
-    new AnalyzerRules(CounterAnalyzerWithConstructorAnalyzerRunner.CounterAnalyzerWithConstructorAnalyzer.getId(), myNode, myProgram).apply();
+    new AnalyzerRules("testCustomAnalyzer.dataFlow.CounterAnalyzerWithConstructor", myNode, myProgram).apply();
   }
   public static class CounterAnalyzerWithConstructorAnalyzer implements DataFlowAnalyzer<Integer> {
     private int initialCounter;
@@ -48,8 +48,13 @@ public class CounterAnalyzerWithConstructorAnalyzerRunner extends CustomAnalyzer
     public AnalysisDirection getDirection() {
       return AnalysisDirection.FORWARD;
     }
+    /**
+     * 
+     * @deprecated 
+     */
+    @Deprecated
     public static String getId() {
-      return "testCustomAnalyzer.dataFlow.CounterAnalyzerWithConstructorAnalyzerRunner.CounterAnalyzerWithConstructorAnalyzer";
+      return "testCustomAnalyzer.dataFlow.CounterAnalyzerWithConstructor";
     }
   }
 }

@@ -1,885 +1,890 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.AbstractUnaryNumberOperation_DataFlow" file="AbstractUnaryNumberOperation_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.AndExpression_DataFlow" file="AndExpression_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IConditional__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.NextProgramPoint" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.NextProgramPoint" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IConditional__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.AnonymousClassCreator_DataFlow" file="AnonymousClassCreator_DataFlow.java">
-    <classNode dependClassName="java.util.HashSet" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.Set" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ClassConcept__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.StatementList__BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.SetSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ClassConcept__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="java.util.HashSet" />
+    <classNode dependClassName="java.util.Set" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.StatementList__BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ArrayAccessExpression_DataFlow" file="ArrayAccessExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ArrayCreatorWithInitializer_DataFlow" file="ArrayCreatorWithInitializer_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ArrayCreator_DataFlow" file="ArrayCreator_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ArrayLiteral_DataFlow" file="ArrayLiteral_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.AsExpression_DataFlow" file="AsExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.AssertStatement_DataFlow" file="AssertStatement_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.AssignmentExpression_DataFlow" file="AssignmentExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.VariableReference__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.BaseAssignmentExpression_DataFlow" file="BaseAssignmentExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.BaseAssignmentExpression__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.BaseMethodCall_DataFlow" file="BaseMethodCall_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.BaseMethodDeclaration_DataFlow" file="BaseMethodDeclaration_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.BinaryOperation_DataFlow" file="BinaryOperation_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.BitwiseNotExpression_DataFlow" file="BitwiseNotExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.BlockStatement_DataFlow" file="BlockStatement_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.BreakStatement_DataFlow" file="BreakStatement_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.BreakStatement__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.BreakStatement__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.CastExpression_DataFlow" file="CastExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.CatchClause_DataFlow" file="CatchClause_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.Closure_DataFlow" file="Closure_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Closure__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Closure__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.CommentedStatementsBlock_DataFlow" file="CommentedStatementsBlock_DataFlow.java">
     <classNode dependClassName="java.lang.Runnable" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ConceptFunction_DataFlow" file="ConceptFunction_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ContinueStatement_DataFlow" file="ContinueStatement_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ContinueStatement__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.DFABuilders" file="DFABuilders.java">
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AbstractUnaryNumberOperation_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AndExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AnonymousClassCreator_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ArrayAccessExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ArrayCreatorWithInitializer_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ArrayCreator_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ArrayLiteral_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AsExpression_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AssertStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AssignmentExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BaseAssignmentExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BaseMethodCall_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BaseMethodDeclaration_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BinaryOperation_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BitwiseNotExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BlockStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BreakStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.CastExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.CatchClause_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.Closure_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.CommentedStatementsBlock_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ConceptFunction_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ContinueStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.DimensionExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.DoWhileStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.DotExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ElsifClause_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ExpressionStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.Expression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.FieldReferenceOperation_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ForStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ForeachStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.GenericNewExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.IMethodCall_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.IfStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.InstanceInitializer_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.InstanceMethodCallOperation_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.InstanceOfExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.LocalVariableDeclarationStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.LocalVariableDeclaration_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NotExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.OrExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ParameterDeclaration_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ParenthesizedExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.PostfixDecrementExpression_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.PostfixIncrementExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.PrefixDecrementExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.PrefixIncrementExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RemarkStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ContinueStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.CommentedStatementsBlock_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ExpressionStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.Closure_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ParameterDeclaration_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ReturnStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.StatementList_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ParenthesizedExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.IMethodCall_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.CastExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ArrayCreator_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.PrefixDecrementExpression_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.StaticInitializer_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ForeachStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AndExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.LocalVariableDeclarationStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BlockStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RemarkStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.WhileStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.PrefixIncrementExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.DimensionExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ConceptFunction_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.TernaryOperatorExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.InstanceMethodCallOperation_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.FieldReferenceOperation_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.VariableReference_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.SwitchCase_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ForStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.VariableDeclaration_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BitwiseNotExpression_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.StaticMethodCall_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.StubStatementList_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.SubstringExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.SwitchCase_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.SwitchStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.SynchronizedStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.TernaryOperatorExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ThrowStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.TryCatchStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.StatementList_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AnonymousClassCreator_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.Expression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BaseAssignmentExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ArrayLiteral_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BaseMethodDeclaration_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BinaryOperation_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.DotExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AssignmentExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ArrayAccessExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.InstanceOfExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.DoWhileStatement_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.TryStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.VariableDeclaration_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.VariableReference_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.WhileStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ElsifClause_DataFlow" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowManager" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BreakStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AbstractUnaryNumberOperation_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.SwitchStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ThrowStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BaseMethodCall_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.LocalVariableDeclaration_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ArrayCreatorWithInitializer_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.TryCatchStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.SubstringExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.OrExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AsExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.GenericNewExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.CatchClause_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NotExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.SynchronizedStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.InstanceInitializer_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.PostfixDecrementExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.IfStatement_DataFlow" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilders" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.DataFlowAspectDescriptorImpl" file="DataFlowAspectDescriptorImpl.java">
-    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="java.util.Collections" />
-    <classNode dependClassName="java.util.HashMap" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.Map" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableAnalyzerRunner" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleAfterDotExpression" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleAssertNotNull" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleCreator" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleEqualsExpression" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleFieldReference" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleMethodCall" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleNotEqualsExpression" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleNullLiteral" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleTernaryOperation" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleVariableDeclaration" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleMethodCall" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleEqualsExpression" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleNotEqualsExpression" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleFieldReference" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleCreator" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleAfterDotExpression" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleTernaryOperation" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableAnalyzerRunner" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleAssertNotNull" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleNullLiteral" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptorBase" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.DataFlowTryCatchUtil" file="DataFlowTryCatchUtil.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.Set" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Statement__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
-    <classNode dependClassName="jetbrains.mps.smodel.SReference" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeChecker" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Statement__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeAccessUtil" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeChecker" />
+    <classNode dependClassName="jetbrains.mps.smodel.SReference" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="java.util.Set" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.DimensionExpression_DataFlow" file="DimensionExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.DoWhileStatement_DataFlow" file="DoWhileStatement_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.DotExpression_DataFlow" file="DotExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ElsifClause_DataFlow" file="ElsifClause_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="java.lang.Runnable" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ElsifClause__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ElsifClause__BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ExpressionStatement_DataFlow" file="ExpressionStatement_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.Expression_DataFlow" file="Expression_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.FieldReferenceOperation_DataFlow" file="FieldReferenceOperation_DataFlow.java">
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ForStatement_DataFlow" file="ForStatement_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ForeachStatement_DataFlow" file="ForeachStatement_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.GenericNewExpression_DataFlow" file="GenericNewExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.IMethodCall_DataFlow" file="IMethodCall_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.IfStatement_DataFlow" file="IfStatement_DataFlow.java">
-    <classNode dependClassName="java.lang.Runnable" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.InstanceInitializer_DataFlow" file="InstanceInitializer_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.InstanceMethodCallOperation_DataFlow" file="InstanceMethodCallOperation_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.InstanceOfExpression_DataFlow" file="InstanceOfExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.LocalVariableDeclarationStatement_DataFlow" file="LocalVariableDeclarationStatement_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.LocalVariableDeclaration_DataFlow" file="LocalVariableDeclaration_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.NotExpression_DataFlow" file="NotExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.NullableAnalyzerRunner" file="NullableAnalyzerRunner.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.HashMap" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.Map" />
-    <classNode dependClassName="jetbrains.mps.analyzers.runtime.framework.GeneratedInstruction" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableState" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullableInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowManager" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.MPSProgramBuilder" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AnalysisDirection" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AnalyzerRules" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzer" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.ProgramState" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.WriteInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AnalyzerRules" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.WriteInstruction" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.MPSProgramBuilder" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AnalysisDirection" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.analyzers.runtime.framework.GeneratedInstruction" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowManager" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableState" />
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullableInstruction" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzer" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.ProgramState" />
     <classNode extendsClassName="jetbrains.mps.analyzers.runtime.framework.CustomAnalyzerRunner" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.NullableState" file="NullableState.java" />
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.NullableUtil" file="NullableUtil.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Iterator" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.Map" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.DotExpression__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IOperation__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableState" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AnalysisResult" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.ReadInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.WriteInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AnalysisResult" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.WriteInstruction" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableState" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.DotExpression__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.ReadInstruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IOperation__BehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.OrExpression_DataFlow" file="OrExpression_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IConditional__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.NextProgramPoint" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.NextProgramPoint" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IConditional__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ParameterDeclaration_DataFlow" file="ParameterDeclaration_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ParenthesizedExpression_DataFlow" file="ParenthesizedExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.PostfixDecrementExpression_DataFlow" file="PostfixDecrementExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.PostfixIncrementExpression_DataFlow" file="PostfixIncrementExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.PrefixDecrementExpression_DataFlow" file="PrefixDecrementExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.PrefixIncrementExpression_DataFlow" file="PrefixIncrementExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RemarkStatement_DataFlow" file="RemarkStatement_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ReturnStatement_DataFlow" file="ReturnStatement_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ReturnStatement__BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ReturnStatement__BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RuleAfterDotExpression" file="RuleAfterDotExpression.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.DotExpression__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IOperation__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.DotExpression__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullableInstruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IOperation__BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RuleAssertNotNull" file="RuleAssertNotNull.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.pattern.GeneratedMatchingPattern" />
-    <classNode dependClassName="jetbrains.mps.lang.pattern.IMatchingPattern" />
-    <classNode dependClassName="jetbrains.mps.lang.pattern.runtime.PatternUtil" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.util.IterableUtil" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.pattern.runtime.PatternUtil" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.pattern.GeneratedMatchingPattern" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="jetbrains.mps.util.IterableUtil" />
+    <classNode dependClassName="jetbrains.mps.lang.pattern.IMatchingPattern" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RuleCreator" file="RuleCreator.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RuleEqualsExpression" file="RuleEqualsExpression.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IConditional__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.NextProgramPoint" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableUtil" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableUtil" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.NextProgramPoint" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IConditional__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RuleFieldReference" file="RuleFieldReference.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RuleMethodCall" file="RuleMethodCall.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullableInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullableInstruction" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RuleNotEqualsExpression" file="RuleNotEqualsExpression.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IConditional__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.NextProgramPoint" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableUtil" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableUtil" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.NextProgramPoint" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IConditional__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RuleNullLiteral" file="RuleNullLiteral.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RuleTernaryOperation" file="RuleTernaryOperation.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableUtil" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullableInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NullableUtil" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullableInstruction" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.RuleVariableDeclaration" file="RuleVariableDeclaration.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullableInstruction" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.nullableInstruction" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.StatementList_DataFlow" file="StatementList_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ExpressionStatement__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IMethodLike__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.IMethodLike__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ExpressionStatement__BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.StaticInitializer_DataFlow" file="StaticInitializer_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.StaticMethodCall_DataFlow" file="StaticMethodCall_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.StubStatementList_DataFlow" file="StubStatementList_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.SubstringExpression_DataFlow" file="SubstringExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.SwitchCase_DataFlow" file="SwitchCase_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.SwitchStatement_DataFlow" file="SwitchStatement_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.SynchronizedStatement_DataFlow" file="SynchronizedStatement_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.TernaryOperatorExpression_DataFlow" file="TernaryOperatorExpression_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.ThrowStatement_DataFlow" file="ThrowStatement_DataFlow.java">
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ITryCatchStatement__BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeChecker" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.ITryCatchStatement__BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.TryCatchStatement_DataFlow" file="TryCatchStatement_DataFlow.java">
-    <classNode dependClassName="java.lang.Runnable" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.DataFlowTryCatchUtil" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.InstructionUtil" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.InstructionUtil" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.DataFlowTryCatchUtil" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.TryStatement_DataFlow" file="TryStatement_DataFlow.java">
-    <classNode dependClassName="java.lang.Runnable" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.DataFlowTryCatchUtil" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.InstructionUtil" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.InstructionUtil" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.DataFlowTryCatchUtil" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.VariableDeclaration_DataFlow" file="VariableDeclaration_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.VariableReference_DataFlow" file="VariableReference_DataFlow.java">
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.WhileStatement_DataFlow" file="WhileStatement_DataFlow.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" file="notNullInstruction.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.StringBuilder" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.StringBuilder" />
+    <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.analyzers.runtime.framework.GeneratedInstruction" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.nullInstruction" file="nullInstruction.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.StringBuilder" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.StringBuilder" />
+    <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.analyzers.runtime.framework.GeneratedInstruction" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.dataFlow.nullableInstruction" file="nullableInstruction.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.StringBuilder" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.StringBuilder" />
+    <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.analyzers.runtime.framework.GeneratedInstruction" />
   </dependency>
 </dependenciesRoot>
