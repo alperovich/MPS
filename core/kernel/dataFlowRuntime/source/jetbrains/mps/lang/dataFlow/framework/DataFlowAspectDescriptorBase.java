@@ -1,5 +1,5 @@
 /*
- * Copyright 2003-2015 JetBrains s.r.o.
+ * Copyright 2003-2016 JetBrains s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,18 +15,19 @@
  */
 package jetbrains.mps.lang.dataFlow.framework;
 
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 
 /**
  * @author simon
- * @deprecated since MPS 3.4 use {@link DataFlowAspectDescriptorBase}
  */
+public class DataFlowAspectDescriptorBase implements DataFlowAspectDescriptor {
 
-@Deprecated
-public abstract class AbstractDataFlowAspectDescriptor implements DataFlowAspectDescriptor {
+  @NotNull
   @Override
   public Collection<DataFlowConstructor> getConstructors(String analyzerId) {
-    return Collections.emptyList();
+    return new ArrayList<DataFlowConstructor>();
   }
 }

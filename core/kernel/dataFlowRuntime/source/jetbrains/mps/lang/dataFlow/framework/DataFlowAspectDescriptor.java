@@ -16,12 +16,15 @@
 package jetbrains.mps.lang.dataFlow.framework;
 
 import jetbrains.mps.smodel.runtime.LanguageAspectDescriptor;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Collection;
 
 /**
- * Created by simon on 26/03/15.
+ * @author simon
  */
+
 public interface DataFlowAspectDescriptor extends LanguageAspectDescriptor{
+  @NotNull
   Collection<DataFlowConstructor> getConstructors(String analyzerId);
 }
