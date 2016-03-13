@@ -21,9 +21,9 @@
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -81,9 +81,6 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
@@ -160,23 +157,35 @@
         <node concept="3cpWs8" id="4KDfkUwM7D$" role="3cqZAp">
           <node concept="3cpWsn" id="4KDfkUwM7D_" role="3cpWs9">
             <property role="TrG5h" value="program" />
-            <node concept="3uibUv" id="4KDfkUwM7DA" role="1tU5fm">
-              <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
-            </node>
-            <node concept="2OqwBi" id="4KDfkUwM7DB" role="33vP2m">
-              <node concept="liA8E" id="4KDfkUwM7DC" role="2OqNvi">
-                <ref role="37wK5l" to="aplb:3HJD4JbIwhr" resolve="buildProgramFor" />
-                <node concept="2OqwBi" id="4KDfkUwM7DD" role="37wK5m">
-                  <node concept="3gHZIF" id="4KDfkUwM7DE" role="2OqNvi">
-                    <ref role="2WH_rO" node="4KDfkUwM7DP" resolve="node" />
+            <node concept="2OqwBi" id="qrAFe9jSKo" role="33vP2m">
+              <node concept="2ShNRf" id="qrAFe9jSKp" role="2Oq$k0">
+                <node concept="1pGfFk" id="qrAFe9jSKq" role="2ShVmc">
+                  <ref role="37wK5l" to="aplb:qrAFe9j8zl" resolve="MPSProgramBuilder" />
+                  <node concept="2OqwBi" id="qrAFe9knEf" role="37wK5m">
+                    <node concept="2OqwBi" id="qrAFe9kkND" role="2Oq$k0">
+                      <node concept="2WthIp" id="qrAFe9kkNG" role="2Oq$k0" />
+                      <node concept="1DTwFV" id="qrAFe9kof6" role="2OqNvi">
+                        <ref role="2WH_rO" node="qrAFe9ko92" resolve="project" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="qrAFe9kotv" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    </node>
                   </node>
-                  <node concept="2WthIp" id="4KDfkUwM7DF" role="2Oq$k0" />
                 </node>
               </node>
-              <node concept="2YIFZM" id="4KDfkUwM7DG" role="2Oq$k0">
-                <ref role="37wK5l" to="aplb:3HJD4JbIwg9" resolve="getInstance" />
-                <ref role="1Pybhc" to="aplb:3HJD4JbIwfM" resolve="DataFlowManager" />
+              <node concept="liA8E" id="qrAFe9jSKs" role="2OqNvi">
+                <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
+                <node concept="2OqwBi" id="qrAFe9k9Hr" role="37wK5m">
+                  <node concept="2WthIp" id="qrAFe9k9Hu" role="2Oq$k0" />
+                  <node concept="3gHZIF" id="qrAFe9k9Hw" role="2OqNvi">
+                    <ref role="2WH_rO" node="4KDfkUwM7DP" resolve="node" />
+                  </node>
+                </node>
               </node>
+            </node>
+            <node concept="3uibUv" id="4KDfkUwM7DA" role="1tU5fm">
+              <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
             </node>
           </node>
         </node>
@@ -209,6 +218,11 @@
       <node concept="3Tm1VV" id="4KDfkUwM7DQ" role="1B3o_S" />
       <node concept="3Tqbb2" id="4KDfkUwM7DR" role="1tU5fm" />
       <node concept="1oajcY" id="4KDfkUwM7DS" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="qrAFe9ko92" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="qrAFe9ko93" role="1oa70y" />
     </node>
   </node>
   <node concept="tC5Ba" id="4KDfkUwM7DT">
@@ -268,18 +282,30 @@
                   <node concept="3clFbF" id="1KUoCipvzhb" role="3cqZAp">
                     <node concept="37vLTI" id="1KUoCipvzhc" role="3clFbG">
                       <node concept="2OqwBi" id="1KUoCipvzhd" role="37vLTx">
+                        <node concept="2ShNRf" id="qrAFe9kshb" role="2Oq$k0">
+                          <node concept="1pGfFk" id="qrAFe9kshc" role="2ShVmc">
+                            <ref role="37wK5l" to="aplb:qrAFe9j8zl" resolve="MPSProgramBuilder" />
+                            <node concept="2OqwBi" id="qrAFe9kshd" role="37wK5m">
+                              <node concept="2OqwBi" id="qrAFe9kshe" role="2Oq$k0">
+                                <node concept="2WthIp" id="qrAFe9kshf" role="2Oq$k0" />
+                                <node concept="1DTwFV" id="qrAFe9ksr5" role="2OqNvi">
+                                  <ref role="2WH_rO" node="3D0DuOpxYDJ" resolve="mpsProject" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="qrAFe9kshh" role="2OqNvi">
+                                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="liA8E" id="1KUoCipvzhe" role="2OqNvi">
-                          <ref role="37wK5l" to="aplb:3HJD4JbIwhr" resolve="buildProgramFor" />
+                          <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
                           <node concept="2OqwBi" id="1KUoCipvzhf" role="37wK5m">
                             <node concept="3gHZIF" id="1KUoCipvzhg" role="2OqNvi">
                               <ref role="2WH_rO" node="4KDfkUwM7El" resolve="node" />
                             </node>
                             <node concept="2WthIp" id="1KUoCipvzhh" role="2Oq$k0" />
                           </node>
-                        </node>
-                        <node concept="2YIFZM" id="1KUoCipvzhi" role="2Oq$k0">
-                          <ref role="37wK5l" to="aplb:3HJD4JbIwg9" resolve="getInstance" />
-                          <ref role="1Pybhc" to="aplb:3HJD4JbIwfM" resolve="DataFlowManager" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="3GM_nagTzXG" role="37vLTJ">
@@ -370,18 +396,30 @@
               <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
             </node>
             <node concept="2OqwBi" id="4KDfkUwM7Ex" role="33vP2m">
+              <node concept="2ShNRf" id="qrAFe9kq4J" role="2Oq$k0">
+                <node concept="1pGfFk" id="qrAFe9kq4K" role="2ShVmc">
+                  <ref role="37wK5l" to="aplb:qrAFe9j8zl" resolve="MPSProgramBuilder" />
+                  <node concept="2OqwBi" id="qrAFe9kq4L" role="37wK5m">
+                    <node concept="2OqwBi" id="qrAFe9kq4M" role="2Oq$k0">
+                      <node concept="2WthIp" id="qrAFe9kq4N" role="2Oq$k0" />
+                      <node concept="1DTwFV" id="qrAFe9kq4O" role="2OqNvi">
+                        <ref role="2WH_rO" node="qrAFe9krEK" resolve="project" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="qrAFe9kq4P" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="liA8E" id="4KDfkUwM7Ey" role="2OqNvi">
-                <ref role="37wK5l" to="aplb:3HJD4JbIwhr" resolve="buildProgramFor" />
+                <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
                 <node concept="2OqwBi" id="4KDfkUwM7Ez" role="37wK5m">
                   <node concept="3gHZIF" id="4KDfkUwM7E$" role="2OqNvi">
                     <ref role="2WH_rO" node="4KDfkUwM7ES" resolve="node" />
                   </node>
                   <node concept="2WthIp" id="4KDfkUwM7E_" role="2Oq$k0" />
                 </node>
-              </node>
-              <node concept="2YIFZM" id="4KDfkUwM7EA" role="2Oq$k0">
-                <ref role="37wK5l" to="aplb:3HJD4JbIwg9" resolve="getInstance" />
-                <ref role="1Pybhc" to="aplb:3HJD4JbIwfM" resolve="DataFlowManager" />
               </node>
             </node>
           </node>
@@ -439,6 +477,11 @@
       <node concept="3Tqbb2" id="4KDfkUwM7EU" role="1tU5fm" />
       <node concept="1oajcY" id="4KDfkUwM7EV" role="1oa70y" />
     </node>
+    <node concept="1DS2jV" id="qrAFe9krEK" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="qrAFe9krEL" role="1oa70y" />
+    </node>
   </node>
   <node concept="sE7Ow" id="4KDfkUwM7EW">
     <property role="TrG5h" value="PrintInitializationInformation" />
@@ -452,18 +495,30 @@
               <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
             </node>
             <node concept="2OqwBi" id="4KDfkUwM7F2" role="33vP2m">
+              <node concept="2ShNRf" id="qrAFe9kp5s" role="2Oq$k0">
+                <node concept="1pGfFk" id="qrAFe9kp5t" role="2ShVmc">
+                  <ref role="37wK5l" to="aplb:qrAFe9j8zl" resolve="MPSProgramBuilder" />
+                  <node concept="2OqwBi" id="qrAFe9kp5u" role="37wK5m">
+                    <node concept="2OqwBi" id="qrAFe9kp5v" role="2Oq$k0">
+                      <node concept="2WthIp" id="qrAFe9kp5w" role="2Oq$k0" />
+                      <node concept="1DTwFV" id="qrAFe9kp5x" role="2OqNvi">
+                        <ref role="2WH_rO" node="qrAFe9kpAZ" resolve="project" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="qrAFe9kp5y" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="liA8E" id="4KDfkUwM7F3" role="2OqNvi">
-                <ref role="37wK5l" to="aplb:3HJD4JbIwhr" resolve="buildProgramFor" />
+                <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
                 <node concept="2OqwBi" id="4KDfkUwM7F4" role="37wK5m">
                   <node concept="3gHZIF" id="4KDfkUwM7F5" role="2OqNvi">
                     <ref role="2WH_rO" node="4KDfkUwM7Fo" resolve="node" />
                   </node>
                   <node concept="2WthIp" id="4KDfkUwM7F6" role="2Oq$k0" />
                 </node>
-              </node>
-              <node concept="2YIFZM" id="4KDfkUwM7F7" role="2Oq$k0">
-                <ref role="37wK5l" to="aplb:3HJD4JbIwg9" resolve="getInstance" />
-                <ref role="1Pybhc" to="aplb:3HJD4JbIwfM" resolve="DataFlowManager" />
               </node>
             </node>
           </node>
@@ -518,6 +573,11 @@
       <node concept="3Tm1VV" id="4KDfkUwM7Fp" role="1B3o_S" />
       <node concept="3Tqbb2" id="4KDfkUwM7Fq" role="1tU5fm" />
       <node concept="1oajcY" id="4KDfkUwM7Fr" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="qrAFe9kpAZ" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="qrAFe9kpB0" role="1oa70y" />
     </node>
   </node>
   <node concept="tC5Ba" id="4KDfkUwM7Go">

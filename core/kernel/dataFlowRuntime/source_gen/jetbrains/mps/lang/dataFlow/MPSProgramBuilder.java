@@ -47,7 +47,7 @@ public class MPSProgramBuilder extends StructuralProgramBuilder<SNode> {
 
       // todo to remove after 3.4 
       if (dataFlowBuilder == null && this.myDataFlowManager != null) {
-        dataFlowBuilder = this.myDataFlowManager.getBuilderFor(concept);
+        dataFlowBuilder = this.myDataFlowManager.getBuilderFor(concept.getQualifiedName());
       }
       if (dataFlowBuilder != null) {
         dataFlowBuilder.build(new DataFlowBuilderContext(snode, MPSProgramBuilder.this));

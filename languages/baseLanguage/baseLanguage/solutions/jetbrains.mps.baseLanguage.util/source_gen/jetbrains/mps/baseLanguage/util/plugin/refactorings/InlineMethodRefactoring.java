@@ -8,7 +8,8 @@ import java.util.List;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.dataFlow.DataFlowManager;
+import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
+import org.jetbrains.mps.openapi.module.SRepository;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.Map;
@@ -51,7 +52,7 @@ public class InlineMethodRefactoring {
     } else {
       this.myMethodCall = methodCall;
     }
-    this.myMethodProgram = DataFlowManager.getInstance().buildProgramFor(this.myMethodDeclaration);
+    this.myMethodProgram = new MPSProgramBuilder(((SRepository) null)).buildProgram(myMethodDeclaration);
     List<SNode> returns = SNodeOperations.getNodeDescendants(this.myMethodDeclaration, MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7feL, "jetbrains.mps.baseLanguage.structure.ReturnStatement"), false, new SAbstractConcept[]{});
     this.myHasManyReturns = ListSequence.fromList(returns).count() > 1;
     this.myReturnType = SLinkOperations.getTarget(this.myMethodDeclaration, MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1fdL, "returnType"));

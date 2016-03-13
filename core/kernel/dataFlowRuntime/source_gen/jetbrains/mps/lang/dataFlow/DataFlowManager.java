@@ -9,12 +9,10 @@ import jetbrains.mps.classloading.MPSClassesListenerAdapter;
 import java.util.Set;
 import jetbrains.mps.module.ReloadableModuleBase;
 import java.util.Map;
-import jetbrains.mps.lang.dataFlow.framework.IDataFlowBuilder;
 import java.util.HashMap;
 import jetbrains.mps.smodel.MPSModuleRepository;
 import jetbrains.mps.lang.dataFlow.framework.Program;
 import org.jetbrains.mps.openapi.model.SNode;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.Language;
 import jetbrains.mps.smodel.ModuleRepositoryFacade;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -38,7 +36,7 @@ public class DataFlowManager implements CoreComponent {
       DataFlowManager.this.clear();
     }
   };
-  private Map<String, IDataFlowBuilder> myBuilders = new HashMap<String, IDataFlowBuilder>();
+  private Map<String, DataFlowBuilder> myBuilders = new HashMap<String, DataFlowBuilder>();
   private boolean myLoaded = false;
 
   @Deprecated
@@ -67,7 +65,7 @@ public class DataFlowManager implements CoreComponent {
     return new MPSProgramBuilder(this).buildProgram(node);
   }
 
-  /*package*/ IDataFlowBuilder getBuilderFor(SAbstractConcept concept) {
+  /*package*/ DataFlowBuilder getBuilderFor(String concept) {
     checkLoaded();
     return this.myBuilders.get(concept);
   }

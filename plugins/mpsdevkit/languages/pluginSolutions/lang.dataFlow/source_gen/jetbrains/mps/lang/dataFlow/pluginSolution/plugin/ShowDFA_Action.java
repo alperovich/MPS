@@ -14,7 +14,7 @@ import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.lang.dataFlow.framework.Program;
 import jetbrains.mps.ide.dataFlow.presentation.ControlFlowGraph;
 import jetbrains.mps.ide.dataFlow.presentation.InstructionWrapper;
-import jetbrains.mps.lang.dataFlow.DataFlowManager;
+import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
 import jetbrains.mps.ide.dataFlow.presentation.ProgramWrapper;
 import jetbrains.mps.ide.dataFlow.presentation.GraphCreator;
 import jetbrains.mps.ide.dataFlow.presentation.ShowCFGDialog;
@@ -55,7 +55,7 @@ public class ShowDFA_Action extends BaseAction {
     final Wrappers._T<ControlFlowGraph<InstructionWrapper>> graph = new Wrappers._T<ControlFlowGraph<InstructionWrapper>>();
     event.getData(MPSCommonDataKeys.MPS_PROJECT).getModelAccess().runReadAction(new Runnable() {
       public void run() {
-        program.value = DataFlowManager.getInstance().buildProgramFor(event.getData(MPSCommonDataKeys.NODE));
+        program.value = new MPSProgramBuilder(event.getData(MPSCommonDataKeys.MPS_PROJECT).getRepository()).buildProgram(event.getData(MPSCommonDataKeys.NODE));
         graph.value = new ControlFlowGraph<InstructionWrapper>(new ProgramWrapper(program.value), new GraphCreator());
       }
     });

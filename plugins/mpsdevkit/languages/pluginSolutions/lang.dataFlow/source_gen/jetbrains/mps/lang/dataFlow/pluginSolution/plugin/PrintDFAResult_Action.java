@@ -8,9 +8,10 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import java.util.Map;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
+import jetbrains.mps.project.MPSProject;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.dataFlow.framework.Program;
-import jetbrains.mps.lang.dataFlow.DataFlowManager;
+import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
 
 public class PrintDFAResult_Action extends BaseAction {
   private static final Icon ICON = null;
@@ -34,11 +35,17 @@ public class PrintDFAResult_Action extends BaseAction {
         return false;
       }
     }
+    {
+      MPSProject p = event.getData(MPSCommonDataKeys.MPS_PROJECT);
+      if (p == null) {
+        return false;
+      }
+    }
     return true;
   }
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
-    Program program = DataFlowManager.getInstance().buildProgramFor(event.getData(MPSCommonDataKeys.NODE));
+    Program program = new MPSProgramBuilder(event.getData(MPSCommonDataKeys.MPS_PROJECT).getRepository()).buildProgram(event.getData(MPSCommonDataKeys.NODE));
     System.out.println(program.toString(true));
   }
 }

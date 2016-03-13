@@ -5,6 +5,7 @@ package jetbrains.mps.lang.dataFlow;
 import jetbrains.mps.lang.dataFlow.framework.instructions.Instruction;
 import jetbrains.mps.lang.dataFlow.framework.Program;
 import org.jetbrains.mps.openapi.model.SNode;
+import org.jetbrains.mps.openapi.module.SRepository;
 import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -20,7 +21,7 @@ public class DataFlow {
     return Boolean.TRUE.equals(instruction.getUserObject(MAY_BE_UNREACHABLE));
   }
   public static Program buildProgram(SNode node) {
-    return DataFlowManager.getInstance().buildProgramFor(node);
+    return new MPSProgramBuilder(((SRepository) null)).buildProgram(node);
   }
   public static Set<SNode> getUnreachableNodes(Program program) {
     Set<Instruction> unreachable = program.getUnreachableInstructions();
