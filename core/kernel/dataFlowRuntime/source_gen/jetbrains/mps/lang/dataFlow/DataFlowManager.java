@@ -9,10 +9,12 @@ import jetbrains.mps.classloading.MPSClassesListenerAdapter;
 import java.util.Set;
 import jetbrains.mps.module.ReloadableModuleBase;
 import java.util.Map;
+import jetbrains.mps.lang.dataFlow.framework.IDataFlowBuilder;
 import java.util.HashMap;
 import jetbrains.mps.smodel.MPSModuleRepository;
 import jetbrains.mps.lang.dataFlow.framework.Program;
 import org.jetbrains.mps.openapi.model.SNode;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.Language;
 import jetbrains.mps.smodel.ModuleRepositoryFacade;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -22,6 +24,11 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
+/**
+ * 
+ * @deprecated 
+ */
+@Deprecated
 public class DataFlowManager implements CoreComponent {
   private static DataFlowManager INSTANCE;
   private final ClassLoaderManager myManager;
@@ -31,9 +38,10 @@ public class DataFlowManager implements CoreComponent {
       DataFlowManager.this.clear();
     }
   };
-  private Map<String, DataFlowBuilder> myBuilders = new HashMap<String, DataFlowBuilder>();
+  private Map<String, IDataFlowBuilder> myBuilders = new HashMap<String, IDataFlowBuilder>();
   private boolean myLoaded = false;
 
+  @Deprecated
   public DataFlowManager(MPSModuleRepository moduleRepository, ClassLoaderManager manager) {
     myManager = manager;
   }
@@ -58,9 +66,10 @@ public class DataFlowManager implements CoreComponent {
     checkLoaded();
     return new MPSProgramBuilder(this).buildProgram(node);
   }
-  /*package*/ DataFlowBuilder getBuilderFor(String conceptName) {
+
+  /*package*/ IDataFlowBuilder getBuilderFor(SAbstractConcept concept) {
     checkLoaded();
-    return this.myBuilders.get(conceptName);
+    return this.myBuilders.get(concept);
   }
   private void clear() {
     myBuilders.clear();

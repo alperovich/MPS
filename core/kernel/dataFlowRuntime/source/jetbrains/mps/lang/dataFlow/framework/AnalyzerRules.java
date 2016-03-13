@@ -27,11 +27,9 @@ import org.jetbrains.mps.openapi.language.SLanguage;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.model.SNode;
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -40,8 +38,7 @@ import java.util.Set;
 public class AnalyzerRules {
   private static Logger LOG = Logger.wrap(LogManager.getLogger(AnalyzerRules.class));
 
-  private List<DataFlowConstructor> myConceptRules = new LinkedList<DataFlowConstructor>();
-  private Map<SConcept, Set<DataFlowConstructor>> myConceptRulesCache = new HashMap<SConcept, Set<DataFlowConstructor>>();
+  private List<DataFlowConstructor> myRules = new LinkedList<DataFlowConstructor>();
   private String myAnalyzerId;
   private final SNode myNodeToApply;
   private final Program myProgram;
@@ -69,7 +66,7 @@ public class AnalyzerRules {
         continue;
       }
       for (DataFlowConstructor rule : aspect.getConstructors(myAnalyzerId)) {
-        myConceptRules.add(rule);
+        myRules.add(rule);
       }
     }
     for (SNode descendant : SNodeOperations.getNodeDescendants(myNodeToApply, null, false, new SAbstractConcept[]{})) {
@@ -80,17 +77,12 @@ public class AnalyzerRules {
   }
   private Set<DataFlowConstructor> getRules(SNode node) {
     SConcept concept = node.getConcept();
-    Set<DataFlowConstructor> cachedResult = myConceptRulesCache.get(concept);
-    if (cachedResult != null) {
-      return cachedResult;
-    }
     Set<DataFlowConstructor> result = new HashSet<DataFlowConstructor>();
-    for (DataFlowConstructor rule : myConceptRules) {
+    for (DataFlowConstructor rule : myRules) {
       if (rule.isApplicable(node)) {
         result.add(rule);
       }
     }
-    myConceptRulesCache.put(concept, result);
     return result;
   }
 }
