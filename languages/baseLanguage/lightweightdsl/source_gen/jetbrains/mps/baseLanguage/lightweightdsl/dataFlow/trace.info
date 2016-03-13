@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,13,0" name="jetbrains.mps.baseLanguage.lightweightdsl.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,33,0" name="jetbrains.mps.baseLanguage.lightweightdsl.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:c69ac5b7-b187-4d3d-9b72-1ea0bcdc2e06(jetbrains.mps.baseLanguage.lightweightdsl.dataFlow)/1596715779714800223">
     <file name="PropertyInstance_DataFlow.java">
-      <node id="1596715779714821027" at="12,102,13,170" concept="1" />
-      <node id="1596715779714820959" at="13,170,14,169" concept="1" />
-      <node id="1596715779714800223" at="10,0,12,0" concept="0" trace="PropertyInstance_DataFlow#()V" />
-      <node id="1596715779714800223" at="12,0,16,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1596715779714800223" at="10,38,10,38" />
-      <scope id="1596715779714800223" at="10,0,12,0" />
-      <scope id="1596715779714800225" at="12,102,14,169" />
-      <scope id="1596715779714800223" at="12,0,16,0">
+      <node id="1596715779714821027" at="9,60,10,170" concept="0" />
+      <node id="1596715779714820959" at="10,170,11,169" concept="0" />
+      <node id="1596715779714800223" at="9,0,13,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1596715779714800225" at="9,60,11,169" />
+      <scope id="1596715779714800223" at="9,0,13,0">
         <var name="_context" id="1596715779714800223" />
-        <var name="operationContext" id="1596715779714800223" />
       </scope>
-      <unit id="1596715779714800223" at="9,0,17,0" name="jetbrains.mps.baseLanguage.lightweightdsl.dataFlow.PropertyInstance_DataFlow" />
+      <unit id="1596715779714800223" at="8,0,14,0" name="jetbrains.mps.baseLanguage.lightweightdsl.dataFlow.PropertyInstance_DataFlow" />
     </file>
   </root>
 </debug-info>

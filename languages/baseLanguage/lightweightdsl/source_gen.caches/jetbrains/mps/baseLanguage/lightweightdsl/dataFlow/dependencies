@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.baseLanguage.lightweightdsl.dataFlow.DFABuilders" file="DFABuilders.java">
+  <dependency className="jetbrains.mps.baseLanguage.lightweightdsl.dataFlow.DataFlowAspectDescriptorImpl" file="DataFlowAspectDescriptorImpl.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.lightweightdsl.dataFlow.PropertyInstance_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowManager" />
-    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilders" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.IDataFlowBuilder" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptorBase" />
   </dependency>
   <dependency className="jetbrains.mps.baseLanguage.lightweightdsl.dataFlow.PropertyInstance_DataFlow" file="PropertyInstance_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
   </dependency>
 </dependenciesRoot>

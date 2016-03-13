@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,13,0" name="org.jetbrains.mps.samples.ParallelFor.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,33,0" name="org.jetbrains.mps.samples.ParallelFor.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:fe5285c7-54ed-422a-b9ef-c710009e0ee7(org.jetbrains.mps.samples.ParallelFor.dataFlow)/7793246093816003150">
     <file name="ParallelFor_DataFlow.java">
-      <node id="7793246093816011745" at="15,102,16,226" concept="1" />
-      <node id="7793246093816011234" at="16,226,17,227" concept="1" />
-      <node id="4659204813808536387" at="18,201,19,226" concept="1" />
-      <node id="4659204813808536399" at="19,226,20,331" concept="1" />
-      <node id="7793246093816003221" at="21,5,22,44" concept="1" />
-      <node id="7793246093816003169" at="22,44,23,519" concept="1" />
-      <node id="7793246093816003203" at="23,519,24,196" concept="1" />
-      <node id="7793246093816003209" at="24,196,25,208" concept="1" />
-      <node id="7793246093816003218" at="25,208,26,204" concept="1" />
-      <node id="7793246093816003150" at="13,0,15,0" concept="0" trace="ParallelFor_DataFlow#()V" />
-      <node id="4659204813808536367" at="17,227,21,5" concept="2" />
-      <node id="7793246093816003150" at="15,0,28,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="7793246093816003150" at="13,33,13,33" />
-      <scope id="7793246093816003150" at="13,0,15,0" />
-      <scope id="4659204813808536368" at="18,201,20,331" />
-      <scope id="7793246093816003152" at="15,102,26,204" />
-      <scope id="7793246093816003150" at="15,0,28,0">
+      <node id="7793246093816011745" at="12,60,13,226" concept="0" />
+      <node id="7793246093816011234" at="13,226,14,227" concept="0" />
+      <node id="4659204813808536387" at="15,201,16,226" concept="0" />
+      <node id="4659204813808536399" at="16,226,17,331" concept="0" />
+      <node id="7793246093816003221" at="18,5,19,44" concept="0" />
+      <node id="7793246093816003169" at="19,44,20,519" concept="0" />
+      <node id="7793246093816003203" at="20,519,21,196" concept="0" />
+      <node id="7793246093816003209" at="21,196,22,208" concept="0" />
+      <node id="7793246093816003218" at="22,208,23,204" concept="0" />
+      <node id="4659204813808536367" at="14,227,18,5" concept="1" />
+      <node id="7793246093816003150" at="12,0,25,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="4659204813808536368" at="15,201,17,331" />
+      <scope id="7793246093816003152" at="12,60,23,204" />
+      <scope id="7793246093816003150" at="12,0,25,0">
         <var name="_context" id="7793246093816003150" />
-        <var name="operationContext" id="7793246093816003150" />
       </scope>
-      <unit id="7793246093816003150" at="12,0,29,0" name="org.jetbrains.mps.samples.ParallelFor.dataFlow.ParallelFor_DataFlow" />
+      <unit id="7793246093816003150" at="11,0,26,0" name="org.jetbrains.mps.samples.ParallelFor.dataFlow.ParallelFor_DataFlow" />
     </file>
   </root>
 </debug-info>

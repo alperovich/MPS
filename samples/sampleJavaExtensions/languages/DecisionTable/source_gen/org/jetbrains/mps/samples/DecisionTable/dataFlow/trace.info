@@ -1,50 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,13,0" name="org.jetbrains.mps.samples.DecisionTable.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,33,0" name="org.jetbrains.mps.samples.DecisionTable.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:241cf93e-3ab8-4ff2-b162-46fd2d7b00c0(org.jetbrains.mps.samples.DecisionTable.dataFlow)/6590643739750295650">
     <file name="DecisionTable_DataFlow.java">
-      <node id="6590643739750295653" at="17,102,18,226" concept="1" />
-      <node id="6590643739750329919" at="20,35,21,48" concept="1" />
-      <node id="6590643739750329930" at="25,35,26,48" concept="1" />
-      <node id="6590643739750329942" at="30,35,31,48" concept="1" />
-      <node id="6590643739750295650" at="15,0,17,0" concept="0" trace="DecisionTable_DataFlow#()V" />
-      <node id="6590643739750329915" at="20,0,23,0" concept="2" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="6590643739750329928" at="25,0,28,0" concept="2" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="6590643739750329940" at="30,0,33,0" concept="2" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="6590643739750329903" at="18,226,23,7" concept="1" />
-      <node id="6590643739750329922" at="23,7,28,7" concept="1" />
-      <node id="6590643739750329934" at="28,7,33,7" concept="1" />
-      <node id="6590643739750295650" at="17,0,35,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="6590643739750295650" at="15,35,15,35" />
-      <scope id="6590643739750329916" at="20,35,21,48" />
-      <scope id="6590643739750329929" at="25,35,26,48" />
-      <scope id="6590643739750329941" at="30,35,31,48" />
-      <scope id="6590643739750295650" at="15,0,17,0" />
-      <scope id="6590643739750329915" at="20,0,23,0">
+      <node id="6590643739750295653" at="14,60,15,226" concept="0" />
+      <node id="6590643739750329919" at="17,35,18,48" concept="0" />
+      <node id="6590643739750329930" at="22,35,23,48" concept="0" />
+      <node id="6590643739750329942" at="27,35,28,48" concept="0" />
+      <node id="6590643739750329915" at="17,0,20,0" concept="1" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6590643739750329928" at="22,0,25,0" concept="1" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6590643739750329940" at="27,0,30,0" concept="1" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6590643739750329903" at="15,226,20,7" concept="0" />
+      <node id="6590643739750329922" at="20,7,25,7" concept="0" />
+      <node id="6590643739750329934" at="25,7,30,7" concept="0" />
+      <node id="6590643739750295650" at="14,0,32,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6590643739750329916" at="17,35,18,48" />
+      <scope id="6590643739750329929" at="22,35,23,48" />
+      <scope id="6590643739750329941" at="27,35,28,48" />
+      <scope id="6590643739750329915" at="17,0,20,0">
         <var name="it" id="6590643739750329915" />
       </scope>
-      <scope id="6590643739750329928" at="25,0,28,0">
+      <scope id="6590643739750329928" at="22,0,25,0">
         <var name="it" id="6590643739750329928" />
       </scope>
-      <scope id="6590643739750329940" at="30,0,33,0">
+      <scope id="6590643739750329940" at="27,0,30,0">
         <var name="it" id="6590643739750329940" />
       </scope>
-      <scope id="6590643739750295652" at="17,102,33,7" />
-      <scope id="6590643739750295650" at="17,0,35,0">
+      <scope id="6590643739750295652" at="14,60,30,7" />
+      <scope id="6590643739750295650" at="14,0,32,0">
         <var name="_context" id="6590643739750295650" />
-        <var name="operationContext" id="6590643739750295650" />
       </scope>
-      <unit id="6590643739750329915" at="19,225,23,5" name="org.jetbrains.mps.samples.DecisionTable.dataFlow.DecisionTable_DataFlow$1" />
-      <unit id="6590643739750329928" at="24,225,28,5" name="org.jetbrains.mps.samples.DecisionTable.dataFlow.DecisionTable_DataFlow$2" />
-      <unit id="6590643739750329940" at="29,227,33,5" name="org.jetbrains.mps.samples.DecisionTable.dataFlow.DecisionTable_DataFlow$3" />
-      <unit id="6590643739750295650" at="14,0,36,0" name="org.jetbrains.mps.samples.DecisionTable.dataFlow.DecisionTable_DataFlow" />
+      <unit id="6590643739750329915" at="16,225,20,5" name="org.jetbrains.mps.samples.DecisionTable.dataFlow.DecisionTable_DataFlow$1" />
+      <unit id="6590643739750329928" at="21,225,25,5" name="org.jetbrains.mps.samples.DecisionTable.dataFlow.DecisionTable_DataFlow$2" />
+      <unit id="6590643739750329940" at="26,227,30,5" name="org.jetbrains.mps.samples.DecisionTable.dataFlow.DecisionTable_DataFlow$3" />
+      <unit id="6590643739750295650" at="13,0,33,0" name="org.jetbrains.mps.samples.DecisionTable.dataFlow.DecisionTable_DataFlow" />
     </file>
   </root>
 </debug-info>

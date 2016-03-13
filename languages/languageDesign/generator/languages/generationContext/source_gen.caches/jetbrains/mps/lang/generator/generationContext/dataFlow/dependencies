@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.lang.generator.generationContext.dataFlow.DFABuilders" file="DFABuilders.java">
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowManager" />
+  <dependency className="jetbrains.mps.lang.generator.generationContext.dataFlow.DataFlowAspectDescriptorImpl" file="DataFlowAspectDescriptorImpl.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.IDataFlowBuilder" />
     <classNode dependClassName="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_CreateUniqueName_DataFlow" />
     <classNode dependClassName="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_GetCopiedOutputByInput_DataFlow" />
     <classNode dependClassName="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_GetOriginalCopiedInputByOutput_DataFlow" />
@@ -10,12 +13,16 @@
     <classNode dependClassName="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_GetOutputListByLabelAndInput_DataFlow" />
     <classNode dependClassName="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_ShowMessageBase_DataFlow" />
     <classNode dependClassName="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_UserObjectAccessBase_DataFlow" />
-    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilders" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptorBase" />
   </dependency>
   <dependency className="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_CreateUniqueName_DataFlow" file="GenerationContextOp_CreateUniqueName_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
@@ -23,7 +30,6 @@
   <dependency className="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_GetCopiedOutputByInput_DataFlow" file="GenerationContextOp_GetCopiedOutputByInput_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
@@ -31,7 +37,6 @@
   <dependency className="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_GetOriginalCopiedInputByOutput_DataFlow" file="GenerationContextOp_GetOriginalCopiedInputByOutput_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
@@ -39,7 +44,6 @@
   <dependency className="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_GetOutputByLabelAndInputAndReferenceScope_DataFlow" file="GenerationContextOp_GetOutputByLabelAndInputAndReferenceScope_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
@@ -47,7 +51,6 @@
   <dependency className="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_GetOutputByLabelAndInput_DataFlow" file="GenerationContextOp_GetOutputByLabelAndInput_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
@@ -55,7 +58,6 @@
   <dependency className="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_GetOutputListByLabelAndInput_DataFlow" file="GenerationContextOp_GetOutputListByLabelAndInput_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
@@ -63,7 +65,6 @@
   <dependency className="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_ShowMessageBase_DataFlow" file="GenerationContextOp_ShowMessageBase_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />
@@ -71,7 +72,6 @@
   <dependency className="jetbrains.mps.lang.generator.generationContext.dataFlow.GenerationContextOp_UserObjectAccessBase_DataFlow" file="GenerationContextOp_UserObjectAccessBase_DataFlow.java">
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilderContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilder" />

@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="testExtendingAnalyzer.dataFlow.DFABuilders" file="DFABuilders.java">
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowManager" />
-    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilders" />
-  </dependency>
-  <dependency className="testExtendingAnalyzer.dataFlow.DataFlowAspectDescriptorImpl" file="DataFlowAspectDescriptorImpl.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.Arrays" />
-    <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="java.util.Collections" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowConstructor" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="testExtendingAnalyzer.dataFlow.NullSafeRule" />
-    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptorBase" />
-  </dependency>
   <dependency className="testExtendingAnalyzer.dataFlow.NullSafeRule" file="NullSafeRule.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.notNullInstruction" />

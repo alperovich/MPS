@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,13,0" name="jetbrains.mps.baseLanguage.classifiers.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,33,0" name="jetbrains.mps.baseLanguage.classifiers.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:00000000-0000-4000-0000-011c8959036f(jetbrains.mps.baseLanguage.classifiers.dataFlow)/1216898711583">
     <file name="DefaultClassifierMethodCallOperation_DataFlow.java">
-      <node id="1216898780187" at="16,207,17,52" concept="1" />
-      <node id="1216898711583" at="13,0,15,0" concept="0" trace="DefaultClassifierMethodCallOperation_DataFlow#()V" />
-      <node id="1216898735883" at="15,102,18,5" concept="2" />
-      <node id="1216898711583" at="15,0,20,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1216898711583" at="13,58,13,58" />
-      <scope id="1216898735887" at="16,207,17,52" />
-      <scope id="1216898711583" at="13,0,15,0" />
-      <scope id="1216898711585" at="15,102,18,5" />
-      <scope id="1216898735883" at="15,102,18,5">
+      <node id="1216898780187" at="13,207,14,52" concept="0" />
+      <node id="1216898735883" at="12,60,15,5" concept="1" />
+      <node id="1216898711583" at="12,0,17,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1216898735887" at="13,207,14,52" />
+      <scope id="1216898711585" at="12,60,15,5" />
+      <scope id="1216898735883" at="12,60,15,5">
         <var name="argument" id="1216898735885" />
       </scope>
-      <scope id="1216898711583" at="15,0,20,0">
+      <scope id="1216898711583" at="12,0,17,0">
         <var name="_context" id="1216898711583" />
-        <var name="operationContext" id="1216898711583" />
       </scope>
-      <unit id="1216898711583" at="12,0,21,0" name="jetbrains.mps.baseLanguage.classifiers.dataFlow.DefaultClassifierMethodCallOperation_DataFlow" />
+      <unit id="1216898711583" at="11,0,18,0" name="jetbrains.mps.baseLanguage.classifiers.dataFlow.DefaultClassifierMethodCallOperation_DataFlow" />
     </file>
   </root>
 </debug-info>

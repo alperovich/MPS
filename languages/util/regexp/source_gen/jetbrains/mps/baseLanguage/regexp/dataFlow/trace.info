@@ -1,411 +1,314 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,36,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,125,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1222616427165">
     <file name="MatchVariableReference_DataFlow.java">
-      <node id="1222879118110" at="14,102,15,302" concept="1" />
-      <node id="1222616427165" at="12,0,14,0" concept="0" trace="MatchVariableReference_DataFlow#()V" />
-      <node id="1222616427165" at="14,0,17,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1222616427165" at="12,44,12,44" />
-      <scope id="1222616427167" at="14,102,15,302" />
-      <scope id="1222616427165" at="12,0,14,0" />
-      <scope id="1222616427165" at="14,0,17,0">
+      <node id="1222879118110" at="11,60,12,302" concept="0" />
+      <node id="1222616427165" at="11,0,14,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1222616427167" at="11,60,12,302" />
+      <scope id="1222616427165" at="11,0,14,0">
         <var name="_context" id="1222616427165" />
-        <var name="operationContext" id="1222616427165" />
       </scope>
-      <unit id="1222616427165" at="11,0,18,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchVariableReference_DataFlow" />
+      <unit id="1222616427165" at="10,0,15,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchVariableReference_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1222878765427">
     <file name="MatchParensRegexp_DataFlow.java">
-      <node id="1222878915218" at="15,102,16,156" concept="1" />
-      <node id="1222878928284" at="16,156,17,210" concept="1" />
-      <node id="1222878765427" at="13,0,15,0" concept="0" trace="MatchParensRegexp_DataFlow#()V" />
-      <node id="1222878765427" at="15,0,19,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1222878765427" at="13,39,13,39" />
-      <scope id="1222878765427" at="13,0,15,0" />
-      <scope id="1222878765429" at="15,102,17,210" />
-      <scope id="1222878765427" at="15,0,19,0">
+      <node id="1222878915218" at="12,60,13,156" concept="0" />
+      <node id="1222878928284" at="13,156,14,210" concept="0" />
+      <node id="1222878765427" at="12,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1222878765429" at="12,60,14,210" />
+      <scope id="1222878765427" at="12,0,16,0">
         <var name="_context" id="1222878765427" />
-        <var name="operationContext" id="1222878765427" />
       </scope>
-      <unit id="1222878765427" at="12,0,20,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchParensRegexp_DataFlow" />
+      <unit id="1222878765427" at="11,0,17,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchParensRegexp_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1222878945495">
     <file name="Regexp_DataFlow.java">
-      <node id="1222878948576" at="12,102,13,134" concept="1" />
-      <node id="1222878945495" at="10,0,12,0" concept="0" trace="Regexp_DataFlow#()V" />
-      <node id="1222878945495" at="12,0,15,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1222878945495" at="10,28,10,28" />
-      <scope id="1222878945497" at="12,102,13,134" />
-      <scope id="1222878945495" at="10,0,12,0" />
-      <scope id="1222878945495" at="12,0,15,0">
+      <node id="1222878948576" at="9,60,10,134" concept="0" />
+      <node id="1222878945495" at="9,0,12,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1222878945497" at="9,60,10,134" />
+      <scope id="1222878945495" at="9,0,12,0">
         <var name="_context" id="1222878945495" />
-        <var name="operationContext" id="1222878945495" />
       </scope>
-      <unit id="1222878945495" at="9,0,16,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.Regexp_DataFlow" />
+      <unit id="1222878945495" at="8,0,13,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.Regexp_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1222879245754">
     <file name="MatchVariableReferenceRegexp_DataFlow.java">
-      <node id="1222879249100" at="14,102,15,302" concept="1" />
-      <node id="1222879245754" at="12,0,14,0" concept="0" trace="MatchVariableReferenceRegexp_DataFlow#()V" />
-      <node id="1222879245754" at="14,0,17,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1222879245754" at="12,50,12,50" />
-      <scope id="1222879245756" at="14,102,15,302" />
-      <scope id="1222879245754" at="12,0,14,0" />
-      <scope id="1222879245754" at="14,0,17,0">
+      <node id="1222879249100" at="11,60,12,302" concept="0" />
+      <node id="1222879245754" at="11,0,14,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1222879245756" at="11,60,12,302" />
+      <scope id="1222879245754" at="11,0,14,0">
         <var name="_context" id="1222879245754" />
-        <var name="operationContext" id="1222879245754" />
       </scope>
-      <unit id="1222879245754" at="11,0,18,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchVariableReferenceRegexp_DataFlow" />
+      <unit id="1222879245754" at="10,0,15,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchVariableReferenceRegexp_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1222880783870">
     <file name="MatchRegexpStatement_DataFlow.java">
-      <node id="1222880790732" at="15,102,16,208" concept="1" />
-      <node id="1222881621263" at="16,208,17,210" concept="1" />
-      <node id="633895403833151076" at="17,210,18,200" concept="1" />
-      <node id="633895403833151079" at="18,200,19,208" concept="1" />
-      <node id="1222881643896" at="19,208,20,45" concept="1" />
-      <node id="1222880783870" at="13,0,15,0" concept="0" trace="MatchRegexpStatement_DataFlow#()V" />
-      <node id="1222880783870" at="15,0,22,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1222880783870" at="13,42,13,42" />
-      <scope id="1222880783870" at="13,0,15,0" />
-      <scope id="1222880783872" at="15,102,20,45" />
-      <scope id="1222880783870" at="15,0,22,0">
+      <node id="1222880790732" at="12,60,13,208" concept="0" />
+      <node id="1222881621263" at="13,208,14,210" concept="0" />
+      <node id="633895403833151076" at="14,210,15,200" concept="0" />
+      <node id="633895403833151079" at="15,200,16,208" concept="0" />
+      <node id="1222881643896" at="16,208,17,45" concept="0" />
+      <node id="1222880783870" at="12,0,19,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1222880783872" at="12,60,17,45" />
+      <scope id="1222880783870" at="12,0,19,0">
         <var name="_context" id="1222880783870" />
-        <var name="operationContext" id="1222880783870" />
       </scope>
-      <unit id="1222880783870" at="12,0,23,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchRegexpStatement_DataFlow" />
+      <unit id="1222880783870" at="11,0,20,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchRegexpStatement_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1222881745113">
     <file name="FindMatchStatement_DataFlow.java">
-      <node id="1222881746241" at="15,102,16,208" concept="1" />
-      <node id="1222881746245" at="16,208,17,210" concept="1" />
-      <node id="1222881746254" at="17,210,18,195" concept="1" />
-      <node id="1222881746250" at="18,195,19,208" concept="1" />
-      <node id="1222881746249" at="19,208,20,45" concept="1" />
-      <node id="1222881745113" at="13,0,15,0" concept="0" trace="FindMatchStatement_DataFlow#()V" />
-      <node id="1222881745113" at="15,0,22,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1222881745113" at="13,40,13,40" />
-      <scope id="1222881745113" at="13,0,15,0" />
-      <scope id="1222881745115" at="15,102,20,45" />
-      <scope id="1222881745113" at="15,0,22,0">
+      <node id="1222881746241" at="12,60,13,208" concept="0" />
+      <node id="1222881746245" at="13,208,14,210" concept="0" />
+      <node id="1222881746254" at="14,210,15,195" concept="0" />
+      <node id="1222881746250" at="15,195,16,208" concept="0" />
+      <node id="1222881746249" at="16,208,17,45" concept="0" />
+      <node id="1222881745113" at="12,0,19,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1222881745115" at="12,60,17,45" />
+      <scope id="1222881745113" at="12,0,19,0">
         <var name="_context" id="1222881745113" />
-        <var name="operationContext" id="1222881745113" />
       </scope>
-      <unit id="1222881745113" at="12,0,23,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.FindMatchStatement_DataFlow" />
+      <unit id="1222881745113" at="11,0,20,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.FindMatchStatement_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1222881765852">
     <file name="ForEachMatchStatement_DataFlow.java">
-      <node id="1222882361050" at="15,102,16,208" concept="1" />
-      <node id="1222882858809" at="16,208,17,210" concept="1" />
-      <node id="1222882383625" at="17,210,18,49" concept="1" />
-      <node id="1222882396959" at="18,49,19,186" concept="1" />
-      <node id="1222882635918" at="19,186,20,208" concept="1" />
-      <node id="1222882660146" at="22,25,23,201" concept="1" />
-      <node id="1222881765852" at="13,0,15,0" concept="0" trace="ForEachMatchStatement_DataFlow#()V" />
-      <node id="1222882685419" at="22,0,25,0" concept="3" trace="run#()V" />
-      <node id="1222882685419" at="20,208,25,7" concept="1" />
-      <node id="1222881765852" at="15,0,27,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1222881765852" at="13,43,13,43" />
-      <scope id="1222882685419" at="22,25,23,201" />
-      <scope id="1222881765852" at="13,0,15,0" />
-      <scope id="1222882685419" at="22,0,25,0" />
-      <scope id="1222881765854" at="15,102,25,7" />
-      <scope id="1222881765852" at="15,0,27,0">
+      <node id="1222882361050" at="12,60,13,208" concept="0" />
+      <node id="1222882858809" at="13,208,14,210" concept="0" />
+      <node id="1222882383625" at="14,210,15,49" concept="0" />
+      <node id="1222882396959" at="15,49,16,186" concept="0" />
+      <node id="1222882635918" at="16,186,17,208" concept="0" />
+      <node id="1222882660146" at="19,25,20,201" concept="0" />
+      <node id="1222882685419" at="19,0,22,0" concept="2" trace="run#()V" />
+      <node id="1222882685419" at="17,208,22,7" concept="0" />
+      <node id="1222881765852" at="12,0,24,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1222882685419" at="19,25,20,201" />
+      <scope id="1222882685419" at="19,0,22,0" />
+      <scope id="1222881765854" at="12,60,22,7" />
+      <scope id="1222881765852" at="12,0,24,0">
         <var name="_context" id="1222881765852" />
-        <var name="operationContext" id="1222881765852" />
       </scope>
-      <unit id="1222882685419" at="21,51,25,5" name="jetbrains.mps.baseLanguage.regexp.dataFlow.ForEachMatchStatement_DataFlow$1" />
-      <unit id="1222881765852" at="12,0,28,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.ForEachMatchStatement_DataFlow" />
+      <unit id="1222882685419" at="18,51,22,5" name="jetbrains.mps.baseLanguage.regexp.dataFlow.ForEachMatchStatement_DataFlow$1" />
+      <unit id="1222881765852" at="11,0,25,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.ForEachMatchStatement_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223044979251">
     <file name="MatchRegexpOperation_DataFlow.java">
-      <node id="1223044982771" at="15,102,16,210" concept="1" />
-      <node id="1223044979251" at="13,0,15,0" concept="0" trace="MatchRegexpOperation_DataFlow#()V" />
-      <node id="1223044979251" at="15,0,18,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223044979251" at="13,42,13,42" />
-      <scope id="1223044979253" at="15,102,16,210" />
-      <scope id="1223044979251" at="13,0,15,0" />
-      <scope id="1223044979251" at="15,0,18,0">
+      <node id="1223044982771" at="12,60,13,210" concept="0" />
+      <node id="1223044979251" at="12,0,15,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223044979253" at="12,60,13,210" />
+      <scope id="1223044979251" at="12,0,15,0">
         <var name="_context" id="1223044979251" />
-        <var name="operationContext" id="1223044979251" />
       </scope>
-      <unit id="1223044979251" at="12,0,19,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchRegexpOperation_DataFlow" />
+      <unit id="1223044979251" at="11,0,16,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchRegexpOperation_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223045071367">
     <file name="InlineRegexpExpression_DataFlow.java">
-      <node id="1223045077527" at="15,102,16,210" concept="1" />
-      <node id="1223045071367" at="13,0,15,0" concept="0" trace="InlineRegexpExpression_DataFlow#()V" />
-      <node id="1223045071367" at="15,0,18,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223045071367" at="13,44,13,44" />
-      <scope id="1223045071369" at="15,102,16,210" />
-      <scope id="1223045071367" at="13,0,15,0" />
-      <scope id="1223045071367" at="15,0,18,0">
+      <node id="1223045077527" at="12,60,13,210" concept="0" />
+      <node id="1223045071367" at="12,0,15,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223045071369" at="12,60,13,210" />
+      <scope id="1223045071367" at="12,0,15,0">
         <var name="_context" id="1223045071367" />
-        <var name="operationContext" id="1223045071367" />
       </scope>
-      <unit id="1223045071367" at="12,0,19,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.InlineRegexpExpression_DataFlow" />
+      <unit id="1223045071367" at="11,0,16,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.InlineRegexpExpression_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223045512026">
     <file name="ReplaceWithRegexpOperation_DataFlow.java">
-      <node id="1223045515326" at="15,102,16,210" concept="1" />
-      <node id="1223045528760" at="16,210,17,216" concept="1" />
-      <node id="1223045512026" at="13,0,15,0" concept="0" trace="ReplaceWithRegexpOperation_DataFlow#()V" />
-      <node id="1223045512026" at="15,0,19,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223045512026" at="13,48,13,48" />
-      <scope id="1223045512026" at="13,0,15,0" />
-      <scope id="1223045512028" at="15,102,17,216" />
-      <scope id="1223045512026" at="15,0,19,0">
+      <node id="1223045515326" at="12,60,13,210" concept="0" />
+      <node id="1223045528760" at="13,210,14,216" concept="0" />
+      <node id="1223045512026" at="12,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223045512028" at="12,60,14,216" />
+      <scope id="1223045512026" at="12,0,16,0">
         <var name="_context" id="1223045512026" />
-        <var name="operationContext" id="1223045512026" />
       </scope>
-      <unit id="1223045512026" at="12,0,20,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.ReplaceWithRegexpOperation_DataFlow" />
+      <unit id="1223045512026" at="11,0,17,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.ReplaceWithRegexpOperation_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223045543003">
     <file name="SplitOperation_DataFlow.java">
-      <node id="1223045546115" at="15,102,16,210" concept="1" />
-      <node id="1223045543003" at="13,0,15,0" concept="0" trace="SplitOperation_DataFlow#()V" />
-      <node id="1223045543003" at="15,0,18,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223045543003" at="13,36,13,36" />
-      <scope id="1223045543005" at="15,102,16,210" />
-      <scope id="1223045543003" at="13,0,15,0" />
-      <scope id="1223045543003" at="15,0,18,0">
+      <node id="1223045546115" at="12,60,13,210" concept="0" />
+      <node id="1223045543003" at="12,0,15,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223045543005" at="12,60,13,210" />
+      <scope id="1223045543003" at="12,0,15,0">
         <var name="_context" id="1223045543003" />
-        <var name="operationContext" id="1223045543003" />
       </scope>
-      <unit id="1223045543003" at="12,0,19,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.SplitOperation_DataFlow" />
+      <unit id="1223045543003" at="11,0,16,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.SplitOperation_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223046603457">
     <file name="Regexps_DataFlow.java">
-      <node id="1223047870258" at="16,197,17,50" concept="1" />
-      <node id="1223046603457" at="13,0,15,0" concept="0" trace="Regexps_DataFlow#()V" />
-      <node id="1223047840936" at="15,102,18,5" concept="2" />
-      <node id="1223046603457" at="15,0,20,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223046603457" at="13,29,13,29" />
-      <scope id="1223047840937" at="16,197,17,50" />
-      <scope id="1223046603457" at="13,0,15,0" />
-      <scope id="1223046603459" at="15,102,18,5" />
-      <scope id="1223047840936" at="15,102,18,5">
+      <node id="1223047870258" at="13,197,14,50" concept="0" />
+      <node id="1223047840936" at="12,60,15,5" concept="1" />
+      <node id="1223046603457" at="12,0,17,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223047840937" at="13,197,14,50" />
+      <scope id="1223046603459" at="12,60,15,5" />
+      <scope id="1223047840936" at="12,60,15,5">
         <var name="regexp" id="1223047840940" />
       </scope>
-      <scope id="1223046603457" at="15,0,20,0">
+      <scope id="1223046603457" at="12,0,17,0">
         <var name="_context" id="1223046603457" />
-        <var name="operationContext" id="1223046603457" />
       </scope>
-      <unit id="1223046603457" at="12,0,21,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.Regexps_DataFlow" />
+      <unit id="1223046603457" at="11,0,18,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.Regexps_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223046630436">
     <file name="RegexpExpression_DataFlow.java">
-      <node id="1223046634673" at="12,102,13,134" concept="1" />
-      <node id="1223046630436" at="10,0,12,0" concept="0" trace="RegexpExpression_DataFlow#()V" />
-      <node id="1223046630436" at="12,0,15,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223046630436" at="10,38,10,38" />
-      <scope id="1223046630438" at="12,102,13,134" />
-      <scope id="1223046630436" at="10,0,12,0" />
-      <scope id="1223046630436" at="12,0,15,0">
+      <node id="1223046634673" at="9,60,10,134" concept="0" />
+      <node id="1223046630436" at="9,0,12,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223046630438" at="9,60,10,134" />
+      <scope id="1223046630436" at="9,0,12,0">
         <var name="_context" id="1223046630436" />
-        <var name="operationContext" id="1223046630436" />
       </scope>
-      <unit id="1223046630436" at="9,0,16,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.RegexpExpression_DataFlow" />
+      <unit id="1223046630436" at="8,0,13,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.RegexpExpression_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223046876718">
     <file name="RegexpDeclaration_DataFlow.java">
-      <node id="1223046881550" at="15,102,16,210" concept="1" />
-      <node id="1223046876718" at="13,0,15,0" concept="0" trace="RegexpDeclaration_DataFlow#()V" />
-      <node id="1223046876718" at="15,0,18,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223046876718" at="13,39,13,39" />
-      <scope id="1223046876720" at="15,102,16,210" />
-      <scope id="1223046876718" at="13,0,15,0" />
-      <scope id="1223046876718" at="15,0,18,0">
+      <node id="1223046881550" at="12,60,13,210" concept="0" />
+      <node id="1223046876718" at="12,0,15,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223046876720" at="12,60,13,210" />
+      <scope id="1223046876718" at="12,0,15,0">
         <var name="_context" id="1223046876718" />
-        <var name="operationContext" id="1223046876718" />
       </scope>
-      <unit id="1223046876718" at="12,0,19,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.RegexpDeclaration_DataFlow" />
+      <unit id="1223046876718" at="11,0,16,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.RegexpDeclaration_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223047350586">
     <file name="UnaryRegexp_DataFlow.java">
-      <node id="1223047353276" at="15,102,16,210" concept="1" />
-      <node id="1223047350586" at="13,0,15,0" concept="0" trace="UnaryRegexp_DataFlow#()V" />
-      <node id="1223047350586" at="15,0,18,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223047350586" at="13,33,13,33" />
-      <scope id="1223047350588" at="15,102,16,210" />
-      <scope id="1223047350586" at="13,0,15,0" />
-      <scope id="1223047350586" at="15,0,18,0">
+      <node id="1223047353276" at="12,60,13,210" concept="0" />
+      <node id="1223047350586" at="12,0,15,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223047350588" at="12,60,13,210" />
+      <scope id="1223047350586" at="12,0,15,0">
         <var name="_context" id="1223047350586" />
-        <var name="operationContext" id="1223047350586" />
       </scope>
-      <unit id="1223047350586" at="12,0,19,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.UnaryRegexp_DataFlow" />
+      <unit id="1223047350586" at="11,0,16,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.UnaryRegexp_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223047413847">
     <file name="SymbolClassRegexp_DataFlow.java">
-      <node id="1223047417241" at="16,193,17,48" concept="1" />
-      <node id="1223047413847" at="13,0,15,0" concept="0" trace="SymbolClassRegexp_DataFlow#()V" />
-      <node id="1223047897807" at="15,102,18,5" concept="2" />
-      <node id="1223047413847" at="15,0,20,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223047413847" at="13,39,13,39" />
-      <scope id="1223047897808" at="16,193,17,48" />
-      <scope id="1223047413847" at="13,0,15,0" />
-      <scope id="1223047413849" at="15,102,18,5" />
-      <scope id="1223047897807" at="15,102,18,5">
+      <node id="1223047417241" at="13,193,14,48" concept="0" />
+      <node id="1223047897807" at="12,60,15,5" concept="1" />
+      <node id="1223047413847" at="12,0,17,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223047897808" at="13,193,14,48" />
+      <scope id="1223047413849" at="12,60,15,5" />
+      <scope id="1223047897807" at="12,60,15,5">
         <var name="part" id="1223047897811" />
       </scope>
-      <scope id="1223047413847" at="15,0,20,0">
+      <scope id="1223047413847" at="12,0,17,0">
         <var name="_context" id="1223047413847" />
-        <var name="operationContext" id="1223047413847" />
       </scope>
-      <unit id="1223047413847" at="12,0,21,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.SymbolClassRegexp_DataFlow" />
+      <unit id="1223047413847" at="11,0,18,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.SymbolClassRegexp_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223047488830">
     <file name="RegexpDeclarationReferenceRegexp_DataFlow.java">
-      <node id="1223047537982" at="15,102,16,208" concept="1" />
-      <node id="1223047488830" at="13,0,15,0" concept="0" trace="RegexpDeclarationReferenceRegexp_DataFlow#()V" />
-      <node id="1223047488830" at="15,0,18,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223047488830" at="13,54,13,54" />
-      <scope id="1223047488832" at="15,102,16,208" />
-      <scope id="1223047488830" at="13,0,15,0" />
-      <scope id="1223047488830" at="15,0,18,0">
+      <node id="1223047537982" at="12,60,13,208" concept="0" />
+      <node id="1223047488830" at="12,0,15,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223047488832" at="12,60,13,208" />
+      <scope id="1223047488830" at="12,0,15,0">
         <var name="_context" id="1223047488830" />
-        <var name="operationContext" id="1223047488830" />
       </scope>
-      <unit id="1223047488830" at="12,0,19,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.RegexpDeclarationReferenceRegexp_DataFlow" />
+      <unit id="1223047488830" at="11,0,16,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.RegexpDeclarationReferenceRegexp_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223047583396">
     <file name="LookRegexp_DataFlow.java">
-      <node id="1223047588055" at="15,102,16,210" concept="1" />
-      <node id="1223047583396" at="13,0,15,0" concept="0" trace="LookRegexp_DataFlow#()V" />
-      <node id="1223047583396" at="15,0,18,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223047583396" at="13,32,13,32" />
-      <scope id="1223047583398" at="15,102,16,210" />
-      <scope id="1223047583396" at="13,0,15,0" />
-      <scope id="1223047583396" at="15,0,18,0">
+      <node id="1223047588055" at="12,60,13,210" concept="0" />
+      <node id="1223047583396" at="12,0,15,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223047583398" at="12,60,13,210" />
+      <scope id="1223047583396" at="12,0,15,0">
         <var name="_context" id="1223047583396" />
-        <var name="operationContext" id="1223047583396" />
       </scope>
-      <unit id="1223047583396" at="12,0,19,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.LookRegexp_DataFlow" />
+      <unit id="1223047583396" at="11,0,16,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.LookRegexp_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223047610860">
     <file name="ParensRegexp_DataFlow.java">
-      <node id="1223047613347" at="15,102,16,208" concept="1" />
-      <node id="1223047610860" at="13,0,15,0" concept="0" trace="ParensRegexp_DataFlow#()V" />
-      <node id="1223047610860" at="15,0,18,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223047610860" at="13,34,13,34" />
-      <scope id="1223047610862" at="15,102,16,208" />
-      <scope id="1223047610860" at="13,0,15,0" />
-      <scope id="1223047610860" at="15,0,18,0">
+      <node id="1223047613347" at="12,60,13,208" concept="0" />
+      <node id="1223047610860" at="12,0,15,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223047610862" at="12,60,13,208" />
+      <scope id="1223047610860" at="12,0,15,0">
         <var name="_context" id="1223047610860" />
-        <var name="operationContext" id="1223047610860" />
       </scope>
-      <unit id="1223047610860" at="12,0,19,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.ParensRegexp_DataFlow" />
+      <unit id="1223047610860" at="11,0,16,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.ParensRegexp_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/1223047727950">
     <file name="BinaryRegexp_DataFlow.java">
-      <node id="1223047733188" at="15,102,16,208" concept="1" />
-      <node id="1223047738086" at="16,208,17,209" concept="1" />
-      <node id="1223047727950" at="13,0,15,0" concept="0" trace="BinaryRegexp_DataFlow#()V" />
-      <node id="1223047727950" at="15,0,19,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1223047727950" at="13,34,13,34" />
-      <scope id="1223047727950" at="13,0,15,0" />
-      <scope id="1223047727952" at="15,102,17,209" />
-      <scope id="1223047727950" at="15,0,19,0">
+      <node id="1223047733188" at="12,60,13,208" concept="0" />
+      <node id="1223047738086" at="13,208,14,209" concept="0" />
+      <node id="1223047727950" at="12,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1223047727952" at="12,60,14,209" />
+      <scope id="1223047727950" at="12,0,16,0">
         <var name="_context" id="1223047727950" />
-        <var name="operationContext" id="1223047727950" />
       </scope>
-      <unit id="1223047727950" at="12,0,20,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.BinaryRegexp_DataFlow" />
+      <unit id="1223047727950" at="11,0,17,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.BinaryRegexp_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/3796137614137203415">
     <file name="ReplaceRegexpOperation_DataFlow.java">
-      <node id="3796137614137203418" at="16,102,17,220" concept="1" />
-      <node id="3796137614137327290" at="18,230,19,45" concept="1" />
-      <node id="3796137614137203415" at="14,0,16,0" concept="0" trace="ReplaceRegexpOperation_DataFlow#()V" />
-      <node id="3796137614137327281" at="17,220,20,5" concept="2" />
-      <node id="3796137614137203415" at="16,0,22,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="3796137614137203415" at="14,44,14,44" />
-      <scope id="3796137614137327284" at="18,230,19,45" />
-      <scope id="3796137614137203415" at="14,0,16,0" />
-      <scope id="3796137614137327281" at="17,220,20,5">
+      <node id="3796137614137203418" at="13,60,14,220" concept="0" />
+      <node id="3796137614137327290" at="15,230,16,45" concept="0" />
+      <node id="3796137614137327281" at="14,220,17,5" concept="1" />
+      <node id="3796137614137203415" at="13,0,19,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="3796137614137327284" at="15,230,16,45" />
+      <scope id="3796137614137327281" at="14,220,17,5">
         <var name="r" id="3796137614137327282" />
       </scope>
-      <scope id="3796137614137203417" at="16,102,20,5" />
-      <scope id="3796137614137203415" at="16,0,22,0">
+      <scope id="3796137614137203417" at="13,60,17,5" />
+      <scope id="3796137614137203415" at="13,0,19,0">
         <var name="_context" id="3796137614137203415" />
-        <var name="operationContext" id="3796137614137203415" />
       </scope>
-      <unit id="3796137614137203415" at="13,0,23,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.ReplaceRegexpOperation_DataFlow" />
+      <unit id="3796137614137203415" at="12,0,20,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.ReplaceRegexpOperation_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/3796137614137559556">
     <file name="MatchVariableReferenceReplacement_DataFlow.java">
-      <node id="1643569692137929228" at="14,102,15,318" concept="1" />
-      <node id="3796137614137559556" at="12,0,14,0" concept="0" trace="MatchVariableReferenceReplacement_DataFlow#()V" />
-      <node id="3796137614137559556" at="14,0,17,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="3796137614137559556" at="12,55,12,55" />
-      <scope id="3796137614137559558" at="14,102,15,318" />
-      <scope id="3796137614137559556" at="12,0,14,0" />
-      <scope id="3796137614137559556" at="14,0,17,0">
+      <node id="1643569692137929228" at="11,60,12,318" concept="0" />
+      <node id="3796137614137559556" at="11,0,14,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="3796137614137559558" at="11,60,12,318" />
+      <scope id="3796137614137559556" at="11,0,14,0">
         <var name="_context" id="3796137614137559556" />
-        <var name="operationContext" id="3796137614137559556" />
       </scope>
-      <unit id="3796137614137559556" at="11,0,18,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchVariableReferenceReplacement_DataFlow" />
+      <unit id="3796137614137559556" at="10,0,15,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchVariableReferenceReplacement_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/6129327962763258619">
     <file name="MatchRegexpExpression_DataFlow.java">
-      <node id="6129327962763258622" at="15,102,16,210" concept="1" />
-      <node id="6129327962763258631" at="16,210,17,219" concept="1" />
-      <node id="6129327962763258619" at="13,0,15,0" concept="0" trace="MatchRegexpExpression_DataFlow#()V" />
-      <node id="6129327962763258619" at="15,0,19,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="6129327962763258619" at="13,43,13,43" />
-      <scope id="6129327962763258619" at="13,0,15,0" />
-      <scope id="6129327962763258621" at="15,102,17,219" />
-      <scope id="6129327962763258619" at="15,0,19,0">
+      <node id="6129327962763258622" at="12,60,13,210" concept="0" />
+      <node id="6129327962763258631" at="13,210,14,219" concept="0" />
+      <node id="6129327962763258619" at="12,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6129327962763258621" at="12,60,14,219" />
+      <scope id="6129327962763258619" at="12,0,16,0">
         <var name="_context" id="6129327962763258619" />
-        <var name="operationContext" id="6129327962763258619" />
       </scope>
-      <unit id="6129327962763258619" at="12,0,20,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchRegexpExpression_DataFlow" />
+      <unit id="6129327962763258619" at="11,0,17,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.MatchRegexpExpression_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:f8e2b09f-b9d8-4076-a472-4264b3fb6a47(jetbrains.mps.baseLanguage.regexp.dataFlow)/6129327962763258641">
     <file name="FindMatchExpression_DataFlow.java">
-      <node id="6129327962763258644" at="15,102,16,210" concept="1" />
-      <node id="6129327962763258653" at="16,210,17,229" concept="1" />
-      <node id="6129327962763258641" at="13,0,15,0" concept="0" trace="FindMatchExpression_DataFlow#()V" />
-      <node id="6129327962763258641" at="15,0,19,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="6129327962763258641" at="13,41,13,41" />
-      <scope id="6129327962763258641" at="13,0,15,0" />
-      <scope id="6129327962763258643" at="15,102,17,229" />
-      <scope id="6129327962763258641" at="15,0,19,0">
+      <node id="6129327962763258644" at="12,60,13,210" concept="0" />
+      <node id="6129327962763258653" at="13,210,14,229" concept="0" />
+      <node id="6129327962763258641" at="12,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6129327962763258643" at="12,60,14,229" />
+      <scope id="6129327962763258641" at="12,0,16,0">
         <var name="_context" id="6129327962763258641" />
-        <var name="operationContext" id="6129327962763258641" />
       </scope>
-      <unit id="6129327962763258641" at="12,0,20,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.FindMatchExpression_DataFlow" />
+      <unit id="6129327962763258641" at="11,0,17,0" name="jetbrains.mps.baseLanguage.regexp.dataFlow.FindMatchExpression_DataFlow" />
     </file>
   </root>
 </debug-info>

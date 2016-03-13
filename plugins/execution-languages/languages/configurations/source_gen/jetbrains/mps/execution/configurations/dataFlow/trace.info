@@ -1,44 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,14,0" name="jetbrains.mps.execution.configurations.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,37,0" name="jetbrains.mps.execution.configurations.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:a2b2ec6f-979b-40b3-95b7-73340d2d1923(jetbrains.mps.execution.configurations.dataFlow)/3665474332687274359">
     <file name="RunConfigurationCreator_DataFlow.java">
-      <node id="3665474332687279477" at="15,102,16,331" concept="1" />
-      <node id="3665474332687274362" at="16,331,17,230" concept="1" />
-      <node id="3665474332687274359" at="13,0,15,0" concept="0" trace="RunConfigurationCreator_DataFlow#()V" />
-      <node id="3665474332687274359" at="15,0,19,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="3665474332687274359" at="13,45,13,45" />
-      <scope id="3665474332687274359" at="13,0,15,0" />
-      <scope id="3665474332687274361" at="15,102,17,230" />
-      <scope id="3665474332687274359" at="15,0,19,0">
+      <node id="3665474332687279477" at="12,60,13,331" concept="0" />
+      <node id="3665474332687274362" at="13,331,14,230" concept="0" />
+      <node id="3665474332687274359" at="12,0,16,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="3665474332687274361" at="12,60,14,230" />
+      <scope id="3665474332687274359" at="12,0,16,0">
         <var name="_context" id="3665474332687274359" />
-        <var name="operationContext" id="3665474332687274359" />
       </scope>
-      <unit id="3665474332687274359" at="12,0,20,0" name="jetbrains.mps.execution.configurations.dataFlow.RunConfigurationCreator_DataFlow" />
+      <unit id="3665474332687274359" at="11,0,17,0" name="jetbrains.mps.execution.configurations.dataFlow.RunConfigurationCreator_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:a2b2ec6f-979b-40b3-95b7-73340d2d1923(jetbrains.mps.execution.configurations.dataFlow)/946964771156870362">
     <file name="StartProcessHandlerStatement_DataFlow.java">
-      <node id="946964771156870365" at="15,102,16,212" concept="1" />
-      <node id="1594211126127687494" at="16,212,17,217" concept="1" />
-      <node id="946964771156870369" at="17,217,18,144" concept="1" />
-      <node id="946964771156870362" at="13,0,15,0" concept="0" trace="StartProcessHandlerStatement_DataFlow#()V" />
-      <node id="946964771156870362" at="15,0,20,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="946964771156870362" at="13,50,13,50" />
-      <scope id="946964771156870362" at="13,0,15,0" />
-      <scope id="946964771156870364" at="15,102,18,144" />
-      <scope id="946964771156870362" at="15,0,20,0">
+      <node id="946964771156870365" at="12,60,13,212" concept="0" />
+      <node id="1594211126127687494" at="13,212,14,217" concept="0" />
+      <node id="946964771156870369" at="14,217,15,144" concept="0" />
+      <node id="946964771156870362" at="12,0,17,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="946964771156870364" at="12,60,15,144" />
+      <scope id="946964771156870362" at="12,0,17,0">
         <var name="_context" id="946964771156870362" />
-        <var name="operationContext" id="946964771156870362" />
       </scope>
-      <unit id="946964771156870362" at="12,0,21,0" name="jetbrains.mps.execution.configurations.dataFlow.StartProcessHandlerStatement_DataFlow" />
+      <unit id="946964771156870362" at="11,0,18,0" name="jetbrains.mps.execution.configurations.dataFlow.StartProcessHandlerStatement_DataFlow" />
     </file>
   </root>
 </debug-info>

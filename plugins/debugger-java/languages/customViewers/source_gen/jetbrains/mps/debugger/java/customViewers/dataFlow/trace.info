@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,13,0" name="jetbrains.mps.debugger.java.customViewers.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,33,0" name="jetbrains.mps.debugger.java.customViewers.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:d4a86720-2793-4831-9aa8-bbdb2169ae4e(jetbrains.mps.debugger.java.customViewers.dataFlow)/1702017979374406642">
     <file name="HighLevelWatchableCreator_DataFlow.java">
-      <node id="523663634252216243" at="15,102,16,215" concept="1" />
-      <node id="1702017979374406642" at="13,0,15,0" concept="0" trace="HighLevelWatchableCreator_DataFlow#()V" />
-      <node id="1702017979374406642" at="15,0,18,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1702017979374406642" at="13,47,13,47" />
-      <scope id="1702017979374406644" at="15,102,16,215" />
-      <scope id="1702017979374406642" at="13,0,15,0" />
-      <scope id="1702017979374406642" at="15,0,18,0">
+      <node id="523663634252216243" at="12,60,13,215" concept="0" />
+      <node id="1702017979374406642" at="12,0,15,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1702017979374406644" at="12,60,13,215" />
+      <scope id="1702017979374406642" at="12,0,15,0">
         <var name="_context" id="1702017979374406642" />
-        <var name="operationContext" id="1702017979374406642" />
       </scope>
-      <unit id="1702017979374406642" at="12,0,19,0" name="jetbrains.mps.debugger.java.customViewers.dataFlow.HighLevelWatchableCreator_DataFlow" />
+      <unit id="1702017979374406642" at="11,0,16,0" name="jetbrains.mps.debugger.java.customViewers.dataFlow.HighLevelWatchableCreator_DataFlow" />
     </file>
   </root>
 </debug-info>

@@ -15,10 +15,8 @@
  */
 package jetbrains.mps.lang.dataFlow.framework;
 
-import jetbrains.mps.lang.dataFlow.IDataFlowBuilder;
 import jetbrains.mps.smodel.runtime.LanguageAspectDescriptor;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 import java.util.Collection;
 

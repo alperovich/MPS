@@ -1,87 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,15,0" name="jetbrains.mps.baseLanguageInternal.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,41,0" name="jetbrains.mps.baseLanguageInternal.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:3e9b7681-85ee-48b2-91d2-9a45a96731b1(jetbrains.mps.baseLanguageInternal.dataFlow)/3196918548954111907">
     <file name="ExtractStatementListExpression_DataFlow.java">
-      <node id="3196918548954111910" at="15,102,16,219" concept="1" />
-      <node id="3196918548954111917" at="16,219,17,223" concept="1" />
-      <node id="3196918548954111907" at="13,0,15,0" concept="0" trace="ExtractStatementListExpression_DataFlow#()V" />
-      <node id="3196918548954111907" at="15,0,19,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="3196918548954111907" at="13,52,13,52" />
-      <scope id="3196918548954111907" at="13,0,15,0" />
-      <scope id="3196918548954111909" at="15,102,17,223" />
-      <scope id="3196918548954111907" at="15,0,19,0">
+      <node id="3196918548954111910" at="12,60,13,219" concept="0" />
+      <node id="3196918548954111917" at="13,219,14,223" concept="0" />
+      <node id="3196918548954111907" at="12,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="3196918548954111909" at="12,60,14,223" />
+      <scope id="3196918548954111907" at="12,0,16,0">
         <var name="_context" id="3196918548954111907" />
-        <var name="operationContext" id="3196918548954111907" />
       </scope>
-      <unit id="3196918548954111907" at="12,0,20,0" name="jetbrains.mps.baseLanguageInternal.dataFlow.ExtractStatementListExpression_DataFlow" />
+      <unit id="3196918548954111907" at="11,0,17,0" name="jetbrains.mps.baseLanguageInternal.dataFlow.ExtractStatementListExpression_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:3e9b7681-85ee-48b2-91d2-9a45a96731b1(jetbrains.mps.baseLanguageInternal.dataFlow)/3196918548954111925">
     <file name="ExtractStatementListInnerExpression_DataFlow.java">
-      <node id="3196918548954111930" at="15,102,16,219" concept="1" />
-      <node id="3196918548954111925" at="13,0,15,0" concept="0" trace="ExtractStatementListInnerExpression_DataFlow#()V" />
-      <node id="3196918548954111925" at="15,0,18,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="3196918548954111925" at="13,57,13,57" />
-      <scope id="3196918548954111927" at="15,102,16,219" />
-      <scope id="3196918548954111925" at="13,0,15,0" />
-      <scope id="3196918548954111925" at="15,0,18,0">
+      <node id="3196918548954111930" at="12,60,13,219" concept="0" />
+      <node id="3196918548954111925" at="12,0,15,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="3196918548954111927" at="12,60,13,219" />
+      <scope id="3196918548954111925" at="12,0,15,0">
         <var name="_context" id="3196918548954111925" />
-        <var name="operationContext" id="3196918548954111925" />
       </scope>
-      <unit id="3196918548954111925" at="12,0,19,0" name="jetbrains.mps.baseLanguageInternal.dataFlow.ExtractStatementListInnerExpression_DataFlow" />
+      <unit id="3196918548954111925" at="11,0,16,0" name="jetbrains.mps.baseLanguageInternal.dataFlow.ExtractStatementListInnerExpression_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:3e9b7681-85ee-48b2-91d2-9a45a96731b1(jetbrains.mps.baseLanguageInternal.dataFlow)/3421461530438560062">
     <file name="InternalAnonymousClassCreator_DataFlow.java">
-      <node id="3421461530438560065" at="23,102,24,264" concept="4" />
-      <node id="3421461530438560073" at="24,264,25,64" concept="4" />
-      <node id="3421461530438560082" at="26,34,27,304" concept="1" />
-      <node id="3421461530438560096" at="29,28,30,149" concept="1" />
-      <node id="3421461530438560114" at="32,375,33,48" concept="1" />
-      <node id="3421461530438560125" at="35,274,36,60" concept="1" />
-      <node id="3421461530438560062" at="21,0,23,0" concept="0" trace="InternalAnonymousClassCreator_DataFlow#()V" />
-      <node id="3421461530438560080" at="25,64,28,5" concept="2" />
-      <node id="3421461530438560094" at="28,5,31,5" concept="2" />
-      <node id="3421461530438560112" at="31,5,34,5" concept="2" />
-      <node id="3421461530438560123" at="34,5,37,5" concept="2" />
-      <node id="3421461530438560062" at="23,0,39,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="3421461530438560062" at="21,51,21,51" />
-      <scope id="3421461530438560081" at="26,34,27,304" />
-      <scope id="3421461530438560095" at="29,28,30,149" />
-      <scope id="3421461530438560113" at="32,375,33,48" />
-      <scope id="3421461530438560124" at="35,274,36,60" />
-      <scope id="3421461530438560062" at="21,0,23,0" />
-      <scope id="3421461530438560080" at="25,64,28,5">
+      <node id="3421461530438560065" at="20,60,21,264" concept="3" />
+      <node id="3421461530438560073" at="21,264,22,64" concept="3" />
+      <node id="3421461530438560082" at="23,34,24,304" concept="0" />
+      <node id="3421461530438560096" at="26,28,27,149" concept="0" />
+      <node id="3421461530438560114" at="29,375,30,48" concept="0" />
+      <node id="3421461530438560125" at="32,274,33,60" concept="0" />
+      <node id="3421461530438560080" at="22,64,25,5" concept="1" />
+      <node id="3421461530438560094" at="25,5,28,5" concept="1" />
+      <node id="3421461530438560112" at="28,5,31,5" concept="1" />
+      <node id="3421461530438560123" at="31,5,34,5" concept="1" />
+      <node id="3421461530438560062" at="20,0,36,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="3421461530438560081" at="23,34,24,304" />
+      <scope id="3421461530438560095" at="26,28,27,149" />
+      <scope id="3421461530438560113" at="29,375,30,48" />
+      <scope id="3421461530438560124" at="32,274,33,60" />
+      <scope id="3421461530438560080" at="22,64,25,5">
         <var name="method" id="3421461530438560092" />
       </scope>
-      <scope id="3421461530438560094" at="28,5,31,5">
+      <scope id="3421461530438560094" at="25,5,28,5">
         <var name="var" id="3421461530438560099" />
       </scope>
-      <scope id="3421461530438560112" at="31,5,34,5">
+      <scope id="3421461530438560112" at="28,5,31,5">
         <var name="expr" id="3421461530438560121" />
       </scope>
-      <scope id="3421461530438560123" at="34,5,37,5">
+      <scope id="3421461530438560123" at="31,5,34,5">
         <var name="fieldDeclaration" id="3421461530438560132" />
       </scope>
-      <scope id="3421461530438560064" at="23,102,37,5">
+      <scope id="3421461530438560064" at="20,60,34,5">
         <var name="methods" id="3421461530438560066" />
         <var name="vars" id="3421461530438560074" />
       </scope>
-      <scope id="3421461530438560062" at="23,0,39,0">
+      <scope id="3421461530438560062" at="20,0,36,0">
         <var name="_context" id="3421461530438560062" />
-        <var name="operationContext" id="3421461530438560062" />
       </scope>
-      <unit id="3421461530438560062" at="20,0,40,0" name="jetbrains.mps.baseLanguageInternal.dataFlow.InternalAnonymousClassCreator_DataFlow" />
+      <unit id="3421461530438560062" at="19,0,37,0" name="jetbrains.mps.baseLanguageInternal.dataFlow.InternalAnonymousClassCreator_DataFlow" />
     </file>
   </root>
 </debug-info>

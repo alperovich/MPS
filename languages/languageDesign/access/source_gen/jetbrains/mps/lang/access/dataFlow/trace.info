@@ -1,68 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,15,0" name="jetbrains.mps.lang.access.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,41,0" name="jetbrains.mps.lang.access.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:7fecad41-ba00-432a-a44f-b9577c19856b(jetbrains.mps.lang.access.dataFlow)/8974276187400348263">
     <file name="BaseExecuteCommandStatement_DataFlow.java">
-      <node id="8974276187400348263" at="10,0,12,0" concept="1" trace="BaseExecuteCommandStatement_DataFlow#()V" />
-      <node id="8974276187400348263" at="12,0,14,0" concept="5" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="8974276187400348263" at="10,49,10,49" />
-      <scope id="8974276187400348265" at="12,102,12,102" />
-      <scope id="8974276187400348263" at="10,0,12,0" />
-      <scope id="8974276187400348263" at="12,0,14,0">
+      <node id="8974276187400348263" at="9,0,11,0" concept="4" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="8974276187400348265" at="9,60,9,60" />
+      <scope id="8974276187400348263" at="9,0,11,0">
         <var name="_context" id="8974276187400348263" />
-        <var name="operationContext" id="8974276187400348263" />
       </scope>
-      <unit id="8974276187400348263" at="9,0,15,0" name="jetbrains.mps.lang.access.dataFlow.BaseExecuteCommandStatement_DataFlow" />
+      <unit id="8974276187400348263" at="8,0,12,0" name="jetbrains.mps.lang.access.dataFlow.BaseExecuteCommandStatement_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:7fecad41-ba00-432a-a44f-b9577c19856b(jetbrains.mps.lang.access.dataFlow)/8974276187400348266">
     <file name="CommandClosureLiteral_DataFlow.java">
-      <node id="8974276187400348271" at="18,122,19,210" concept="2" />
-      <node id="8974276187400348282" at="21,277,22,142" concept="2" />
-      <node id="8974276187400348266" at="15,0,17,0" concept="1" trace="CommandClosureLiteral_DataFlow#()V" />
-      <node id="8974276187400348280" at="20,12,23,7" concept="3" />
-      <node id="8974276187400348278" at="20,10,24,5" concept="0" />
-      <node id="8974276187400348269" at="17,102,24,5" concept="4" />
-      <node id="8974276187400348266" at="17,0,26,0" concept="5" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="8974276187400348266" at="15,43,15,43" />
-      <scope id="8974276187400348270" at="18,122,19,210" />
-      <scope id="8974276187400348281" at="21,277,22,142" />
-      <scope id="8974276187400348266" at="15,0,17,0" />
-      <scope id="8974276187400348279" at="20,12,23,7" />
-      <scope id="8974276187400348280" at="20,12,23,7">
+      <node id="8974276187400348271" at="15,122,16,210" concept="1" />
+      <node id="8974276187400348282" at="18,277,19,142" concept="1" />
+      <node id="8974276187400348280" at="17,12,20,7" concept="2" />
+      <node id="8974276187400348278" at="17,10,21,5" concept="0" />
+      <node id="8974276187400348269" at="14,60,21,5" concept="3" />
+      <node id="8974276187400348266" at="14,0,23,0" concept="4" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="8974276187400348270" at="15,122,16,210" />
+      <scope id="8974276187400348281" at="18,277,19,142" />
+      <scope id="8974276187400348279" at="17,12,20,7" />
+      <scope id="8974276187400348280" at="17,12,20,7">
         <var name="var" id="8974276187400348284" />
       </scope>
-      <scope id="8974276187400348268" at="17,102,24,5" />
-      <scope id="8974276187400348266" at="17,0,26,0">
+      <scope id="8974276187400348268" at="14,60,21,5" />
+      <scope id="8974276187400348266" at="14,0,23,0">
         <var name="_context" id="8974276187400348266" />
-        <var name="operationContext" id="8974276187400348266" />
       </scope>
-      <unit id="8974276187400348266" at="14,0,27,0" name="jetbrains.mps.lang.access.dataFlow.CommandClosureLiteral_DataFlow" />
+      <unit id="8974276187400348266" at="13,0,24,0" name="jetbrains.mps.lang.access.dataFlow.CommandClosureLiteral_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:7fecad41-ba00-432a-a44f-b9577c19856b(jetbrains.mps.lang.access.dataFlow)/8974276187400348291">
     <file name="BaseExecuteCommandStatementSync_DataFlow.java">
-      <node id="8974276187400348294" at="15,102,16,383" concept="2" />
-      <node id="8974276187400348291" at="13,0,15,0" concept="1" trace="BaseExecuteCommandStatementSync_DataFlow#()V" />
-      <node id="8974276187400348291" at="15,0,18,0" concept="5" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="8974276187400348291" at="13,53,13,53" />
-      <scope id="8974276187400348293" at="15,102,16,383" />
-      <scope id="8974276187400348291" at="13,0,15,0" />
-      <scope id="8974276187400348291" at="15,0,18,0">
+      <node id="8974276187400348294" at="12,60,13,383" concept="1" />
+      <node id="8974276187400348291" at="12,0,15,0" concept="4" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="8974276187400348293" at="12,60,13,383" />
+      <scope id="8974276187400348291" at="12,0,15,0">
         <var name="_context" id="8974276187400348291" />
-        <var name="operationContext" id="8974276187400348291" />
       </scope>
-      <unit id="8974276187400348291" at="12,0,19,0" name="jetbrains.mps.lang.access.dataFlow.BaseExecuteCommandStatementSync_DataFlow" />
+      <unit id="8974276187400348291" at="11,0,16,0" name="jetbrains.mps.lang.access.dataFlow.BaseExecuteCommandStatementSync_DataFlow" />
     </file>
   </root>
 </debug-info>

@@ -7,14 +7,6 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-  <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,12,0" name="testExtendingAnalyzer.dataFlow.DFABuilders" />
-    </file>
-    <file name="DataFlowAspectDescriptorImpl.java">
-      <unit at="13,0,25,0" name="testExtendingAnalyzer.dataFlow.DataFlowAspectDescriptorImpl" />
-    </file>
-  </root>
   <root nodeRef="r:b7d9737f-8e9b-4112-92de-8cd1bf30ae09(testExtendingAnalyzer.dataFlow)/1417601170173058083">
     <file name="NullSafeRule.java">
       <node id="1417601170173058083" at="18,43,19,64" concept="5" />

@@ -1,33 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,13,0" name="jetbrains.mps.lang.editor.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,33,0" name="jetbrains.mps.lang.editor.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:ee466c3b-c879-435f-9e8d-bb261ada44ed(jetbrains.mps.lang.editor.dataFlow)/4531786690998643506">
     <file name="AbstractStyledTextOperation_DataFlow.java">
-      <node id="4531786690998643509" at="16,102,17,132" concept="1" />
-      <node id="4531786690998643525" at="18,240,19,52" concept="1" />
-      <node id="4531786690998643506" at="14,0,16,0" concept="0" trace="AbstractStyledTextOperation_DataFlow#()V" />
-      <node id="4531786690998643511" at="17,132,20,5" concept="2" />
-      <node id="4531786690998643506" at="16,0,22,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="4531786690998643506" at="14,49,14,49" />
-      <scope id="4531786690998643514" at="18,240,19,52" />
-      <scope id="4531786690998643506" at="14,0,16,0" />
-      <scope id="4531786690998643511" at="17,132,20,5">
+      <node id="4531786690998643509" at="13,60,14,132" concept="0" />
+      <node id="4531786690998643525" at="15,240,16,52" concept="0" />
+      <node id="4531786690998643511" at="14,132,17,5" concept="1" />
+      <node id="4531786690998643506" at="13,0,19,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="4531786690998643514" at="15,240,16,52" />
+      <scope id="4531786690998643511" at="14,132,17,5">
         <var name="argument" id="4531786690998643512" />
       </scope>
-      <scope id="4531786690998643508" at="16,102,20,5" />
-      <scope id="4531786690998643506" at="16,0,22,0">
+      <scope id="4531786690998643508" at="13,60,17,5" />
+      <scope id="4531786690998643506" at="13,0,19,0">
         <var name="_context" id="4531786690998643506" />
-        <var name="operationContext" id="4531786690998643506" />
       </scope>
-      <unit id="4531786690998643506" at="13,0,23,0" name="jetbrains.mps.lang.editor.dataFlow.AbstractStyledTextOperation_DataFlow" />
+      <unit id="4531786690998643506" at="12,0,20,0" name="jetbrains.mps.lang.editor.dataFlow.AbstractStyledTextOperation_DataFlow" />
     </file>
   </root>
 </debug-info>

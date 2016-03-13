@@ -1,73 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,16,0" name="jetbrains.mps.make.script.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,45,0" name="jetbrains.mps.make.script.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:0dda786b-09f8-475b-be83-f5140c0f0fe6(jetbrains.mps.make.script.dataFlow)/187226666892820023">
     <file name="BeginWorkStatement_DataFlow.java">
-      <node id="187226666892820026" at="15,102,16,220" concept="1" />
-      <node id="187226666892820035" at="16,220,17,219" concept="1" />
-      <node id="187226666892820023" at="13,0,15,0" concept="0" trace="BeginWorkStatement_DataFlow#()V" />
-      <node id="187226666892820023" at="15,0,19,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="187226666892820023" at="13,40,13,40" />
-      <scope id="187226666892820023" at="13,0,15,0" />
-      <scope id="187226666892820025" at="15,102,17,219" />
-      <scope id="187226666892820023" at="15,0,19,0">
+      <node id="187226666892820026" at="12,60,13,220" concept="0" />
+      <node id="187226666892820035" at="13,220,14,219" concept="0" />
+      <node id="187226666892820023" at="12,0,16,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="187226666892820025" at="12,60,14,219" />
+      <scope id="187226666892820023" at="12,0,16,0">
         <var name="_context" id="187226666892820023" />
-        <var name="operationContext" id="187226666892820023" />
       </scope>
-      <unit id="187226666892820023" at="12,0,20,0" name="jetbrains.mps.make.script.dataFlow.BeginWorkStatement_DataFlow" />
+      <unit id="187226666892820023" at="11,0,17,0" name="jetbrains.mps.make.script.dataFlow.BeginWorkStatement_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:0dda786b-09f8-475b-be83-f5140c0f0fe6(jetbrains.mps.make.script.dataFlow)/187226666892820043">
     <file name="AdvanceWorkStatement_DataFlow.java">
-      <node id="187226666892820046" at="15,102,16,218" concept="1" />
-      <node id="532238834071743791" at="16,218,17,220" concept="1" />
-      <node id="187226666892820043" at="13,0,15,0" concept="0" trace="AdvanceWorkStatement_DataFlow#()V" />
-      <node id="187226666892820043" at="15,0,19,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="187226666892820043" at="13,42,13,42" />
-      <scope id="187226666892820043" at="13,0,15,0" />
-      <scope id="187226666892820045" at="15,102,17,220" />
-      <scope id="187226666892820043" at="15,0,19,0">
+      <node id="187226666892820046" at="12,60,13,218" concept="0" />
+      <node id="532238834071743791" at="13,218,14,220" concept="0" />
+      <node id="187226666892820043" at="12,0,16,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="187226666892820045" at="12,60,14,220" />
+      <scope id="187226666892820043" at="12,0,16,0">
         <var name="_context" id="187226666892820043" />
-        <var name="operationContext" id="187226666892820043" />
       </scope>
-      <unit id="187226666892820043" at="12,0,20,0" name="jetbrains.mps.make.script.dataFlow.AdvanceWorkStatement_DataFlow" />
+      <unit id="187226666892820043" at="11,0,17,0" name="jetbrains.mps.make.script.dataFlow.AdvanceWorkStatement_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:0dda786b-09f8-475b-be83-f5140c0f0fe6(jetbrains.mps.make.script.dataFlow)/4629164904928073861">
     <file name="OutputResources_DataFlow.java">
-      <node id="4629164904928091775" at="15,102,16,222" concept="1" />
-      <node id="4629164904928073861" at="13,0,15,0" concept="0" trace="OutputResources_DataFlow#()V" />
-      <node id="4629164904928073861" at="15,0,18,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="4629164904928073861" at="13,37,13,37" />
-      <scope id="4629164904928073863" at="15,102,16,222" />
-      <scope id="4629164904928073861" at="13,0,15,0" />
-      <scope id="4629164904928073861" at="15,0,18,0">
+      <node id="4629164904928091775" at="12,60,13,222" concept="0" />
+      <node id="4629164904928073861" at="12,0,15,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="4629164904928073863" at="12,60,13,222" />
+      <scope id="4629164904928073861" at="12,0,15,0">
         <var name="_context" id="4629164904928073861" />
-        <var name="operationContext" id="4629164904928073861" />
       </scope>
-      <unit id="4629164904928073861" at="12,0,19,0" name="jetbrains.mps.make.script.dataFlow.OutputResources_DataFlow" />
+      <unit id="4629164904928073861" at="11,0,16,0" name="jetbrains.mps.make.script.dataFlow.OutputResources_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:0dda786b-09f8-475b-be83-f5140c0f0fe6(jetbrains.mps.make.script.dataFlow)/7077360340906499756">
     <file name="ResultStatement_DataFlow.java">
-      <node id="7077360340906517549" at="12,102,13,132" concept="1" />
-      <node id="7077360340906499756" at="10,0,12,0" concept="0" trace="ResultStatement_DataFlow#()V" />
-      <node id="7077360340906499756" at="12,0,15,0" concept="2" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="7077360340906499756" at="10,37,10,37" />
-      <scope id="7077360340906499758" at="12,102,13,132" />
-      <scope id="7077360340906499756" at="10,0,12,0" />
-      <scope id="7077360340906499756" at="12,0,15,0">
+      <node id="7077360340906517549" at="9,60,10,132" concept="0" />
+      <node id="7077360340906499756" at="9,0,12,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="7077360340906499758" at="9,60,10,132" />
+      <scope id="7077360340906499756" at="9,0,12,0">
         <var name="_context" id="7077360340906499756" />
-        <var name="operationContext" id="7077360340906499756" />
       </scope>
-      <unit id="7077360340906499756" at="9,0,16,0" name="jetbrains.mps.make.script.dataFlow.ResultStatement_DataFlow" />
+      <unit id="7077360340906499756" at="8,0,13,0" name="jetbrains.mps.make.script.dataFlow.ResultStatement_DataFlow" />
     </file>
   </root>
 </debug-info>

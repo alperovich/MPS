@@ -17,7 +17,6 @@ public class DataFlowAspectDescriptorImpl extends DataFlowAspectDescriptorBase {
   @NotNull
   @Override
   public Collection<IDataFlowBuilder> getDataFlowBuilders(SAbstractConcept concept) {
-
     {
       SAbstractConcept cncpt = ((SAbstractConcept) concept);
       boolean matchedCase = false;

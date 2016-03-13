@@ -1,86 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,16,0" name="jetbrains.mps.execution.commands.dataFlow.DFABuilders" />
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,45,0" name="jetbrains.mps.execution.commands.dataFlow.DataFlowAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:106d443d-ed4f-44b7-91fa-ab9e0bf2751b(jetbrains.mps.execution.commands.dataFlow)/1594211126127613592">
     <file name="RedirectOutputExpression_DataFlow.java">
-      <node id="1594211126127687503" at="15,102,16,226" concept="1" />
-      <node id="1594211126127687512" at="16,226,17,220" concept="1" />
-      <node id="1594211126127613592" at="13,0,15,0" concept="0" trace="RedirectOutputExpression_DataFlow#()V" />
-      <node id="1594211126127613592" at="15,0,19,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="1594211126127613592" at="13,46,13,46" />
-      <scope id="1594211126127613592" at="13,0,15,0" />
-      <scope id="1594211126127613594" at="15,102,17,220" />
-      <scope id="1594211126127613592" at="15,0,19,0">
+      <node id="1594211126127687503" at="12,60,13,226" concept="0" />
+      <node id="1594211126127687512" at="13,226,14,220" concept="0" />
+      <node id="1594211126127613592" at="12,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1594211126127613594" at="12,60,14,220" />
+      <scope id="1594211126127613592" at="12,0,16,0">
         <var name="_context" id="1594211126127613592" />
-        <var name="operationContext" id="1594211126127613592" />
       </scope>
-      <unit id="1594211126127613592" at="12,0,20,0" name="jetbrains.mps.execution.commands.dataFlow.RedirectOutputExpression_DataFlow" />
+      <unit id="1594211126127613592" at="11,0,17,0" name="jetbrains.mps.execution.commands.dataFlow.RedirectOutputExpression_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:106d443d-ed4f-44b7-91fa-ab9e0bf2751b(jetbrains.mps.execution.commands.dataFlow)/2228878981387200506">
     <file name="ReportErrorStatement_DataFlow.java">
-      <node id="2228878981387200509" at="14,102,15,321" concept="1" />
-      <node id="2228878981387200518" at="15,321,16,319" concept="1" />
-      <node id="2228878981387200528" at="16,319,17,139" concept="1" />
-      <node id="2228878981387200506" at="12,0,14,0" concept="0" trace="ReportErrorStatement_DataFlow#()V" />
-      <node id="2228878981387200506" at="14,0,19,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="2228878981387200506" at="12,42,12,42" />
-      <scope id="2228878981387200506" at="12,0,14,0" />
-      <scope id="2228878981387200508" at="14,102,17,139" />
-      <scope id="2228878981387200506" at="14,0,19,0">
+      <node id="2228878981387200509" at="11,60,12,321" concept="0" />
+      <node id="2228878981387200518" at="12,321,13,319" concept="0" />
+      <node id="2228878981387200528" at="13,319,14,139" concept="0" />
+      <node id="2228878981387200506" at="11,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="2228878981387200508" at="11,60,14,139" />
+      <scope id="2228878981387200506" at="11,0,16,0">
         <var name="_context" id="2228878981387200506" />
-        <var name="operationContext" id="2228878981387200506" />
       </scope>
-      <unit id="2228878981387200506" at="11,0,20,0" name="jetbrains.mps.execution.commands.dataFlow.ReportErrorStatement_DataFlow" />
+      <unit id="2228878981387200506" at="10,0,17,0" name="jetbrains.mps.execution.commands.dataFlow.ReportErrorStatement_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:106d443d-ed4f-44b7-91fa-ab9e0bf2751b(jetbrains.mps.execution.commands.dataFlow)/856705193941282484">
     <file name="CommandBuilderExpression_DataFlow.java">
-      <node id="856705193941282493" at="17,227,18,204" concept="1" />
-      <node id="856705193941282484" at="14,0,16,0" concept="0" trace="CommandBuilderExpression_DataFlow#()V" />
-      <node id="856705193941282487" at="16,102,19,5" concept="2" />
-      <node id="856705193941282484" at="16,0,21,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="856705193941282484" at="14,46,14,46" />
-      <scope id="856705193941282492" at="17,227,18,204" />
-      <scope id="856705193941282484" at="14,0,16,0" />
-      <scope id="856705193941282486" at="16,102,19,5" />
-      <scope id="856705193941282487" at="16,102,19,5">
+      <node id="856705193941282493" at="14,227,15,204" concept="0" />
+      <node id="856705193941282487" at="13,60,16,5" concept="1" />
+      <node id="856705193941282484" at="13,0,18,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="856705193941282492" at="14,227,15,204" />
+      <scope id="856705193941282486" at="13,60,16,5" />
+      <scope id="856705193941282487" at="13,60,16,5">
         <var name="arg" id="856705193941282488" />
       </scope>
-      <scope id="856705193941282484" at="16,0,21,0">
+      <scope id="856705193941282484" at="13,0,18,0">
         <var name="_context" id="856705193941282484" />
-        <var name="operationContext" id="856705193941282484" />
       </scope>
-      <unit id="856705193941282484" at="13,0,22,0" name="jetbrains.mps.execution.commands.dataFlow.CommandBuilderExpression_DataFlow" />
+      <unit id="856705193941282484" at="12,0,19,0" name="jetbrains.mps.execution.commands.dataFlow.CommandBuilderExpression_DataFlow" />
     </file>
   </root>
   <root nodeRef="r:106d443d-ed4f-44b7-91fa-ab9e0bf2751b(jetbrains.mps.execution.commands.dataFlow)/889694274152095752">
     <file name="NewProcessBuilderExpression_DataFlow.java">
-      <node id="889694274152095761" at="17,233,18,48" concept="1" />
-      <node id="889694274152095765" at="19,5,20,230" concept="1" />
-      <node id="889694274152095752" at="14,0,16,0" concept="0" trace="NewProcessBuilderExpression_DataFlow#()V" />
-      <node id="889694274152095755" at="16,102,19,5" concept="2" />
-      <node id="889694274152095752" at="16,0,22,0" concept="3" trace="build#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
-      <scope id="889694274152095752" at="14,49,14,49" />
-      <scope id="889694274152095760" at="17,233,18,48" />
-      <scope id="889694274152095752" at="14,0,16,0" />
-      <scope id="889694274152095755" at="16,102,19,5">
+      <node id="889694274152095761" at="14,233,15,48" concept="0" />
+      <node id="889694274152095765" at="16,5,17,230" concept="0" />
+      <node id="889694274152095755" at="13,60,16,5" concept="1" />
+      <node id="889694274152095752" at="13,0,19,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="889694274152095760" at="14,233,15,48" />
+      <scope id="889694274152095755" at="13,60,16,5">
         <var name="part" id="889694274152095756" />
       </scope>
-      <scope id="889694274152095754" at="16,102,20,230" />
-      <scope id="889694274152095752" at="16,0,22,0">
+      <scope id="889694274152095754" at="13,60,17,230" />
+      <scope id="889694274152095752" at="13,0,19,0">
         <var name="_context" id="889694274152095752" />
-        <var name="operationContext" id="889694274152095752" />
       </scope>
-      <unit id="889694274152095752" at="13,0,23,0" name="jetbrains.mps.execution.commands.dataFlow.NewProcessBuilderExpression_DataFlow" />
+      <unit id="889694274152095752" at="12,0,20,0" name="jetbrains.mps.execution.commands.dataFlow.NewProcessBuilderExpression_DataFlow" />
     </file>
   </root>
 </debug-info>
