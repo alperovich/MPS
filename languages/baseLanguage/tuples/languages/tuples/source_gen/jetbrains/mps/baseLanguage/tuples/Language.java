@@ -14,7 +14,7 @@ import jetbrains.mps.baseLanguage.tuples.actions.ActionAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptor;
-import jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptorBase;
+import jetbrains.mps.baseLanguage.tuples.dataFlow.DataFlowAspectDescriptorImpl;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import jetbrains.mps.baseLanguage.tuples.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.lang.script.runtime.ScriptAspectDescriptor;
@@ -60,7 +60,7 @@ public class Language extends LanguageRuntime {
       return (T) new jetbrains.mps.baseLanguage.tuples.constraints.ConstraintsAspectDescriptor();
     }
     if (aspectClass == DataFlowAspectDescriptor.class) {
-      return (T) new DataFlowAspectDescriptorBase();
+      return (T) new DataFlowAspectDescriptorImpl();
     }
     if (aspectClass == EditorAspectDescriptor.class) {
       return (T) new EditorAspectDescriptorImpl();

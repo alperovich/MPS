@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.lang.plugin.DFABuilders" file="DFABuilders.java">
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowManager" />
-    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilders" />
-  </dependency>
   <dependency className="jetbrains.mps.lang.plugin.Language" file="Language.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
@@ -14,10 +10,10 @@
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
     <classNode dependClassName="jetbrains.mps.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptorBase" />
     <classNode dependClassName="jetbrains.mps.lang.plugin.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="jetbrains.mps.lang.plugin.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.plugin.constraints.ConstraintsAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.plugin.dataFlow.DataFlowAspectDescriptorImpl" />
     <classNode dependClassName="jetbrains.mps.lang.plugin.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="jetbrains.mps.lang.plugin.intentions.IntentionsDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.plugin.plugin.FacetAspectDescriptor" />

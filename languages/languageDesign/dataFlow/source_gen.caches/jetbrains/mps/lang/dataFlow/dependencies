@@ -12,9 +12,9 @@
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.constraints.ConstraintsAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.dataFlow.DataFlowAspectDescriptorImpl" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptorBase" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.intentions.IntentionsDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.structure.StructureAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.typesystem.TypesystemDescriptor" />

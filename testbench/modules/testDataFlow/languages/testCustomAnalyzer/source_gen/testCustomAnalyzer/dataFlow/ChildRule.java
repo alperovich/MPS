@@ -11,8 +11,6 @@ import jetbrains.mps.lang.dataFlow.framework.Program;
 import jetbrains.mps.lang.dataFlow.framework.instructions.Instruction;
 
 public class ChildRule implements DataFlowConstructor {
-  public ChildRule() {
-  }
   public boolean isApplicable(SNode node) {
     SAbstractConcept concept = SNodeOperations.getConcept(node);
     SAbstractConcept applicableConcept = getApplicableConcept();

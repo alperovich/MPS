@@ -1,56 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root>
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="12,0,26,0" name="testExtendingAnalyzer.dataFlow.DataFlowAspectDescriptorImpl" />
+    </file>
+  </root>
   <root nodeRef="r:b7d9737f-8e9b-4112-92de-8cd1bf30ae09(testExtendingAnalyzer.dataFlow)/1417601170173058083">
     <file name="NullSafeRule.java">
-      <node id="1417601170173058083" at="18,43,19,64" concept="5" />
-      <node id="1417601170173058083" at="19,64,20,64" concept="5" />
-      <node id="1417601170173058083" at="20,64,21,90" concept="6" />
-      <node id="1417601170173058083" at="23,50,24,161" concept="6" />
-      <node id="1417601170173058915" at="27,5,28,27" concept="5" />
-      <node id="1417601170173058915" at="29,43,30,30" concept="5" />
-      <node id="1417601170173058915" at="30,30,31,54" concept="5" />
-      <node id="1417601170173058915" at="31,54,32,214" concept="5" />
-      <node id="1417601170173058915" at="32,214,33,131" concept="2" />
-      <node id="1417601170173058915" at="33,131,34,36" concept="2" />
-      <node id="1417601170173058915" at="34,36,35,68" concept="2" />
-      <node id="1417601170173058083" at="16,0,18,0" concept="1" trace="NullSafeRule#()V" />
-      <node id="1417601170173058083" at="23,0,26,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="1417601170173058083" at="18,0,23,0" concept="4" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="1417601170173058915" at="28,27,36,7" concept="3" />
-      <node id="1417601170173058915" at="26,53,37,5" concept="0" />
-      <node id="1417601170173058083" at="26,0,39,0" concept="4" trace="performActions#(Ljetbrains/mps/lang/dataFlow/framework/Program;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="1417601170173058083" at="16,25,16,25" />
-      <scope id="1417601170173058083" at="23,50,24,161" />
-      <scope id="1417601170173058083" at="16,0,18,0" />
-      <scope id="1417601170173058083" at="18,43,21,90">
+      <node id="1417601170173058083" at="16,43,17,64" concept="4" />
+      <node id="1417601170173058083" at="17,64,18,64" concept="4" />
+      <node id="1417601170173058083" at="18,64,19,90" concept="5" />
+      <node id="1417601170173058083" at="21,50,22,161" concept="5" />
+      <node id="1417601170173058915" at="25,5,26,27" concept="4" />
+      <node id="1417601170173058915" at="27,43,28,30" concept="4" />
+      <node id="1417601170173058915" at="28,30,29,54" concept="4" />
+      <node id="1417601170173058915" at="29,54,30,214" concept="4" />
+      <node id="1417601170173058915" at="30,214,31,131" concept="1" />
+      <node id="1417601170173058915" at="31,131,32,36" concept="1" />
+      <node id="1417601170173058915" at="32,36,33,68" concept="1" />
+      <node id="1417601170173058083" at="21,0,24,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1417601170173058083" at="16,0,21,0" concept="3" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1417601170173058915" at="26,27,34,7" concept="2" />
+      <node id="1417601170173058915" at="24,53,35,5" concept="0" />
+      <node id="1417601170173058083" at="24,0,37,0" concept="3" trace="performActions#(Ljetbrains/mps/lang/dataFlow/framework/Program;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="1417601170173058083" at="21,50,22,161" />
+      <scope id="1417601170173058083" at="16,43,19,90">
         <var name="applicableConcept" id="1417601170173058083" />
         <var name="concept" id="1417601170173058083" />
       </scope>
-      <scope id="1417601170173058083" at="23,0,26,0" />
-      <scope id="1417601170173058083" at="18,0,23,0">
+      <scope id="1417601170173058083" at="21,0,24,0" />
+      <scope id="1417601170173058083" at="16,0,21,0">
         <var name="node" id="1417601170173058083" />
       </scope>
-      <scope id="1417601170173058915" at="29,43,35,68">
+      <scope id="1417601170173058915" at="27,43,33,68">
         <var name="before" id="1417601170173058915" />
         <var name="instruction" id="1417601170173058915" />
         <var name="position" id="1417601170173058915" />
       </scope>
-      <scope id="1417601170173058915" at="27,5,36,7">
+      <scope id="1417601170173058915" at="25,5,34,7">
         <var name="object" id="1417601170173058915" />
       </scope>
-      <scope id="1417601170173058918" at="26,53,37,5" />
-      <scope id="1417601170173058083" at="26,0,39,0">
+      <scope id="1417601170173058918" at="24,53,35,5" />
+      <scope id="1417601170173058083" at="24,0,37,0">
         <var name="node" id="1417601170173058083" />
         <var name="o" id="1417601170173058083" />
       </scope>
-      <unit id="1417601170173058083" at="15,0,40,0" name="testExtendingAnalyzer.dataFlow.NullSafeRule" />
+      <unit id="1417601170173058083" at="15,0,38,0" name="testExtendingAnalyzer.dataFlow.NullSafeRule" />
     </file>
   </root>
 </debug-info>

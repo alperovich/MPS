@@ -13,8 +13,6 @@ import jetbrains.mps.baseLanguage.dataFlow.notNullInstruction;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class NullSafeRule implements DataFlowConstructor {
-  public NullSafeRule() {
-  }
   public boolean isApplicable(SNode node) {
     SAbstractConcept concept = SNodeOperations.getConcept(node);
     SAbstractConcept applicableConcept = getApplicableConcept();

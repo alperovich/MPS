@@ -45,8 +45,9 @@
     <classNode dependClassName="jetbrains.mps.lang.quotation.Generator" />
     <classNode dependClassName="jetbrains.mps.lang.quotation.intentions.IntentionsDescriptor" />
     <classNode dependClassName="java.util.UUID" />
-    <classNode dependClassName="jetbrains.mps.lang.quotation.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.quotation.dataFlow.DataFlowAspectDescriptorImpl" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
+    <classNode dependClassName="jetbrains.mps.lang.quotation.structure.StructureAspectDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>
 </dependenciesRoot>
