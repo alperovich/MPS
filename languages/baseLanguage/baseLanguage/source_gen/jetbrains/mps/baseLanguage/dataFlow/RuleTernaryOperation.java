@@ -12,8 +12,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.dataFlow.framework.instructions.Instruction;
 
 public class RuleTernaryOperation implements DataFlowConstructor {
-  public RuleTernaryOperation() {
-  }
   public boolean isApplicable(SNode node) {
     SAbstractConcept concept = SNodeOperations.getConcept(node);
     SAbstractConcept applicableConcept = getApplicableConcept();

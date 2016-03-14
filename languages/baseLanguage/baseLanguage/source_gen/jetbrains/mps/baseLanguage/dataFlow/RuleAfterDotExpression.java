@@ -14,8 +14,6 @@ import jetbrains.mps.baseLanguage.behavior.DotExpression__BehaviorDescriptor;
 import jetbrains.mps.lang.dataFlow.framework.instructions.Instruction;
 
 public class RuleAfterDotExpression implements DataFlowConstructor {
-  public RuleAfterDotExpression() {
-  }
   public boolean isApplicable(SNode node) {
     SAbstractConcept concept = SNodeOperations.getConcept(node);
     SAbstractConcept applicableConcept = getApplicableConcept();

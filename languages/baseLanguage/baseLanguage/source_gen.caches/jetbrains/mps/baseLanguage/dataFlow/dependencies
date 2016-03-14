@@ -335,8 +335,8 @@
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AbstractUnaryNumberOperation_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleVariableDeclaration" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.SwitchStatement_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleVariableDeclaration" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ThrowStatement_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.BaseMethodCall_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.LocalVariableDeclaration_DataFlow" />
@@ -344,12 +344,12 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.ArrayCreatorWithInitializer_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.TryCatchStatement_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleFieldReference" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.SubstringExpression_DataFlow" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleFieldReference" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.OrExpression_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.AsExpression_DataFlow" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleCreator" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.RuleCreator" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.GenericNewExpression_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.CatchClause_DataFlow" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.dataFlow.NotExpression_DataFlow" />

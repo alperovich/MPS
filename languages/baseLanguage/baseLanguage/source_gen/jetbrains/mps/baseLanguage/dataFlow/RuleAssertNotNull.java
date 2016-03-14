@@ -18,8 +18,6 @@ import jetbrains.mps.lang.dataFlow.framework.instructions.Instruction;
 
 public class RuleAssertNotNull implements DataFlowConstructor {
   private GeneratedMatchingPattern myPattern = new RuleAssertNotNull.Pattern_7fbm30_a0a();
-  public RuleAssertNotNull() {
-  }
   public boolean isApplicable(SNode node) {
     return SNodeOperations.getConcept(node).equals(getApplicableConcept()) && myPattern.match(node);
   }

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <root>
-    <file name="DFABuilders.java">
-      <unit at="8,0,12,0" name="org.jetbrains.mps.samples.IfAndUnless.DFABuilders" />
-    </file>
     <file name="Language.java">
       <unit at="23,0,71,0" name="org.jetbrains.mps.samples.IfAndUnless.Language" />
     </file>
