@@ -21,8 +21,8 @@ import jetbrains.mps.lang.dataFlow.framework.Program.TryFinallyInfo;
 import java.util.*;
 
 public class EndInstruction extends Instruction {
-  private Set<RetInstruction> myReturns = new HashSet<RetInstruction>();
-  private Set<TryFinallyInfo> myRootTryFinallies = new HashSet<TryFinallyInfo>();
+  protected final Set<RetInstruction> myReturns = new HashSet<RetInstruction>();
+  protected final Set<TryFinallyInfo> myRootTryFinallies = new HashSet<TryFinallyInfo>();
 
   public EndInstruction() {
     super();

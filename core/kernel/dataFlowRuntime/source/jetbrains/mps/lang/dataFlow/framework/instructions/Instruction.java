@@ -23,14 +23,14 @@ import jetbrains.mps.lang.dataFlow.framework.Program.TryFinallyInfo;
 import java.util.*;
 
 public abstract class Instruction {
-  private Program myProgram;
-  private Object mySource;
+  protected Program myProgram;
+  protected Object mySource;
 
-  private String myRuleReference;
-  private Set<Instruction> myJumps = new HashSet<Instruction>();
-  private Map<Object, Object> myUserObjects = new HashMap<Object, Object>();
-  private TryFinallyInfo myBlockInfo;
-  private int myIndex;
+  protected String myRuleReference;
+  protected final Set<Instruction> myJumps = new HashSet<Instruction>();
+  protected final Map<Object, Object> myUserObjects = new HashMap<Object, Object>();
+  protected TryFinallyInfo myBlockInfo;
+  protected int myIndex;
 
   public Instruction() {
   }
@@ -59,12 +59,16 @@ public abstract class Instruction {
     return getIndex() == 0;
   }
 
-  void addJump(Instruction instruction) {
+  public void addJump(Instruction instruction) {
     myJumps.add(instruction);
   }
 
-  void removeJump(Instruction instruction) {
+  public void removeJump(Instruction instruction) {
     myJumps.remove(instruction);
+  }
+
+  public Set<Instruction> getJumps() {
+    return myJumps;
   }
 
   public void buildCaches() {
@@ -135,7 +139,7 @@ public abstract class Instruction {
   }
 
   public boolean isBefore(Instruction i) {
-    return getIndex() < i.getIndex();    
+    return getIndex() < i.getIndex();
   }
 
   public boolean isAfter(Instruction i) {

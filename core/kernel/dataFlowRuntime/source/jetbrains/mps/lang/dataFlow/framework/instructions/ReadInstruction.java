@@ -16,8 +16,8 @@
 package jetbrains.mps.lang.dataFlow.framework.instructions;
 
 public class ReadInstruction extends Instruction {
-  private Object myVar;
-  private int myIndex;
+  protected final Object myVar;
+  protected int myIndex;
 
   public ReadInstruction(Object var) {
     myVar = var;

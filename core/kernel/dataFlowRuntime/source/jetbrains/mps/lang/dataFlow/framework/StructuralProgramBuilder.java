@@ -16,18 +16,41 @@
 package jetbrains.mps.lang.dataFlow.framework;
 
 import jetbrains.mps.lang.dataFlow.framework.instructions.*;
+import jetbrains.mps.logging.Logger;
 import org.apache.log4j.LogManager;
 
 import java.util.*;
 import java.util.Map.Entry;
 
 public abstract class StructuralProgramBuilder<N> {
-  private Program myProgram = new Program();
-  private List<Runnable> myInvokeLater = new ArrayList<Runnable>();
+  private Program myProgram;
+  protected final List<Runnable> myInvokeLater;
+  protected final Map<N, Map<String, Integer>> myLabels;
+  protected final InstructionBuilder instructionBuilder;
+  private static final Logger LOG = Logger.wrap(LogManager.getLogger(StructuralProgramBuilder.class));
 
-  private Map<N, Map<String, Integer>> myLabels = new HashMap<N, Map<String, Integer>>();
+  public StructuralProgramBuilder(InstructionBuilder instructionBuilder) {
+    this.myLabels = new HashMap<N, Map<String, Integer>>();
+    this.myInvokeLater = new ArrayList<Runnable>();
+    this.instructionBuilder = instructionBuilder;
+  }
+
+  public StructuralProgramBuilder() {
+    this(new InstructionBuilder());
+  }
+
+  public Program getProgram() {
+    if (myProgram == null) {
+      myProgram = createProgram();
+    }
+    return myProgram;
+  }
 
   protected abstract void doBuild(N node);
+
+  protected Program createProgram() {
+    return new Program();
+  }
 
   public Program buildProgram(N node) {
     build(node);
@@ -36,21 +59,21 @@ public abstract class StructuralProgramBuilder<N> {
       r.run();
     }
 
-    myProgram.init();
-    return myProgram;
+    getProgram().init();
+    return getProgram();
   }
 
   public void build(N node) {
-    myProgram.start(node);
+    getProgram().start(node);
     doBuild(node);
-    myProgram.end(node);
+    getProgram().end(node);
   }
 
   public Position before(final N node) {
     return new Position() {
       @Override
       public int getPosition() {
-        return myProgram.getStart(node);
+        return getProgram().getStart(node);
       }
     };
   }
@@ -59,17 +82,17 @@ public abstract class StructuralProgramBuilder<N> {
     return new Position() {
       @Override
       public int getPosition() {
-        return myProgram.getEnd(node);
+        return getProgram().getEnd(node);
       }
     };
   }
 
   public int insertAfter(Instruction i) {
-    return myProgram.indexOf(i) + 1;
+    return getProgram().indexOf(i) + 1;
   }
 
   public int insertBefore(Instruction i) {
-    return myProgram.indexOf(i);
+    return getProgram().indexOf(i);
   }
 
   public Position label(final N node, final String label) {
@@ -85,13 +108,13 @@ public abstract class StructuralProgramBuilder<N> {
   }
 
   public void emitLabel(String label) {
-    if (!myLabels.containsKey(myProgram.getCurrent())) {
-      myLabels.put((N) myProgram.getCurrent(), new HashMap<String, Integer>());
+    if (!myLabels.containsKey(getProgram().getCurrent())) {
+      myLabels.put((N) getProgram().getCurrent(), new HashMap<String, Integer>());
     }
-    myLabels.get(myProgram.getCurrent()).put(label, myProgram.size());
+    myLabels.get(getProgram().getCurrent()).put(label, getProgram().size());
   }
 
-  private void updateLabelsOnInsert(final int position) {
+  protected void updateLabelsOnInsert(final int position) {
     for (Entry<N, Map<String, Integer>> labels : myLabels.entrySet()) {
       for (Entry<String, Integer> label : labels.getValue().entrySet()) {
         if (label.getValue() > position) {
@@ -103,15 +126,15 @@ public abstract class StructuralProgramBuilder<N> {
 
   public void insertInstruction(Instruction instruction, int position) {
     updateLabelsOnInsert(position);
-    myProgram.insert(instruction, position, false, false);
+    getProgram().insert(instruction, position, false, false);
   }
 
-  private NopInstruction emitNopCommon() {
+  protected NopInstruction emitNopCommon() {
     return emitNopCommon(null);
   }
 
-  private NopInstruction emitNopCommon(String ruleNodeReference) {
-    NopInstruction instruction = new NopInstruction(ruleNodeReference);
+  protected NopInstruction emitNopCommon(String ruleNodeReference) {
+    NopInstruction instruction = instructionBuilder.createNopInstruction(ruleNodeReference);
     onInstructionEmitted(instruction);
     return instruction;
   }
@@ -125,17 +148,17 @@ public abstract class StructuralProgramBuilder<N> {
   }
 
   public void emitNop() {
-    myProgram.add(emitNopCommon(null));
+    getProgram().add(emitNopCommon(null));
   }
 
   public void emitNop(String ruleNodeReference) {
-    myProgram.add(emitNopCommon(ruleNodeReference));
+    getProgram().add(emitNopCommon(ruleNodeReference));
   }
 
   public void emitRead(Object var, String ruleNodeReference) {
-    ReadInstruction instruction = new ReadInstruction(ruleNodeReference, var);
+    ReadInstruction instruction = instructionBuilder.createReadInstruction(ruleNodeReference, var);
     onInstructionEmitted(instruction);
-    myProgram.add(instruction);
+    getProgram().add(instruction);
   }
 
   public void emitRead(Object var) {
@@ -143,9 +166,9 @@ public abstract class StructuralProgramBuilder<N> {
   }
 
   public void emitWrite(Object var, Object value, String ruleNodeReference) {
-    WriteInstruction instruction = new WriteInstruction(ruleNodeReference, var, value);
+    WriteInstruction instruction = instructionBuilder.createWriteInstruction(ruleNodeReference, var, value);
     onInstructionEmitted(instruction);
-    myProgram.add(instruction);
+    getProgram().add(instruction);
   }
 
   public void emitWrite(Object var, Object value) {
@@ -161,9 +184,9 @@ public abstract class StructuralProgramBuilder<N> {
   }
 
   public void emitRet(String ruleNodeReference) {
-    RetInstruction instruction = new RetInstruction(ruleNodeReference);
+    RetInstruction instruction = instructionBuilder.createRetInstruction(ruleNodeReference);
     onInstructionEmitted(instruction);
-    myProgram.add(instruction);
+    getProgram().add(instruction);
   }
 
   public void emitRet() {
@@ -171,16 +194,16 @@ public abstract class StructuralProgramBuilder<N> {
   }
 
   public void emitJump(final Position position, String ruleNodeReference) {
-    final JumpInstruction instruction = new JumpInstruction(ruleNodeReference);
+    final JumpInstruction instruction = instructionBuilder.createJumpInstruction(ruleNodeReference);
     onInstructionEmitted(instruction);
-    myProgram.add(instruction);
+    getProgram().add(instruction);
     invokeLater(new Runnable() {
       @Override
       public void run() {
         try {
           instruction.setJumpTo(position);
         } catch (DataflowBuilderException e) {
-          LogManager.getLogger(StructuralProgramBuilder.class).warn("JumpTo instruction reference to outer node");
+          LOG.warning("JumpTo instruction reference to outer node");
           instruction.getProgram().setHasOuterJumps(true);
         }
       }
@@ -192,8 +215,8 @@ public abstract class StructuralProgramBuilder<N> {
   }
 
 
-  private IfJumpInstruction emitIfJumpCommon(final Position position, String ruleNodeReference) {
-    final IfJumpInstruction instruction = new IfJumpInstruction(ruleNodeReference);
+  protected IfJumpInstruction emitIfJumpCommon(final Position position, String ruleNodeReference) {
+    final IfJumpInstruction instruction = instructionBuilder.createIfJumpInstruction(ruleNodeReference);
     onInstructionEmitted(instruction);
     invokeLater(new Runnable() {
       @Override
@@ -201,7 +224,7 @@ public abstract class StructuralProgramBuilder<N> {
         try {
           instruction.setJumpTo(position);
         } catch (DataflowBuilderException e) {
-          LogManager.getLogger(StructuralProgramBuilder.class).warn("IfJumpTo instruction reference to outer node");
+          LOG.warning("IfJumpTo instruction reference to outer node");
           instruction.getProgram().setHasOuterJumps(true);
         }
       }
@@ -210,10 +233,11 @@ public abstract class StructuralProgramBuilder<N> {
   }
 
   public void emitIfJump(final Position position, String ruleNodeReference) {
-    myProgram.add(emitIfJumpCommon(position, ruleNodeReference));
+    getProgram().add(emitIfJumpCommon(position, ruleNodeReference));
   }
+
   public void emitIfJump(final Position position) {
-    myProgram.add(emitIfJumpCommon(position, null));
+    getProgram().add(emitIfJumpCommon(position, null));
   }
 
   public void emitIfJump(final Position position, int insertPosition, String ruleNodeReference) {
@@ -225,9 +249,9 @@ public abstract class StructuralProgramBuilder<N> {
   }
 
   public void emitTry(String ruleNodeReference) {
-    TryInstruction instruction = new TryInstruction(ruleNodeReference);
+    TryInstruction instruction = instructionBuilder.createTryInstruction(ruleNodeReference);
     onInstructionEmitted(instruction);
-    myProgram.add(instruction);
+    getProgram().add(instruction);
   }
 
   public void emitTry() {
@@ -235,18 +259,19 @@ public abstract class StructuralProgramBuilder<N> {
   }
 
   public void emitFinally(String ruleNodeReference) {
-    FinallyInstruction instruction = new FinallyInstruction(ruleNodeReference);
+    FinallyInstruction instruction = instructionBuilder.createFinallyInstruction(ruleNodeReference);
     onInstructionEmitted(instruction);
-    myProgram.add(instruction);
+    getProgram().add(instruction);
   }
+
   public void emitFinally() {
     emitFinally(null);
   }
 
   public void emitEndTry(String ruleNodeReference) {
-    EndTryInstruction instruction = new EndTryInstruction(ruleNodeReference);
+    EndTryInstruction instruction = instructionBuilder.createEndTryInstruction(ruleNodeReference);
     onInstructionEmitted(instruction);
-    myProgram.add(instruction);
+    getProgram().add(instruction);
   }
 
   public void emitEndTry() {
@@ -255,7 +280,7 @@ public abstract class StructuralProgramBuilder<N> {
 
   public void addInstruction(Instruction instruction, Position position) {
     if (position == null) {
-      myProgram.add(instruction);
+      getProgram().add(instruction);
     } else {
       insertInstruction(instruction, position.getPosition());
     }
@@ -264,7 +289,7 @@ public abstract class StructuralProgramBuilder<N> {
   protected void onInstructionEmitted(Instruction instruction) {
   }
 
-  private void invokeLater(Runnable r) {
+  protected void invokeLater(Runnable r) {
     myInvokeLater.add(r);
   }
 
@@ -273,10 +298,10 @@ public abstract class StructuralProgramBuilder<N> {
   }
 
   public boolean contains(Object o) {
-    return myProgram.contains(o);
+    return getProgram().contains(o);
   }
 
   public List<Instruction> getInstructionsFor(Object o) {
-    return myProgram.getInstructionsFor(o);
+    return getProgram().getInstructionsFor(o);
   }
 }

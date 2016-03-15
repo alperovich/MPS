@@ -26,14 +26,13 @@ import java.util.*;
 import java.util.Map.Entry;
 
 public class Program {
-  private List<Instruction> myInstructions = new ArrayList<Instruction>();
-  private List<TryFinallyInfo> myTryFinallyInfo = new ArrayList<TryFinallyInfo>();
-
-  private Map<Object, Integer> myStarts = new HashMap<Object, Integer>();
-  private Map<Object, Integer> myEnds = new HashMap<Object, Integer>();
-  private Stack<Object> myCreationStack = new Stack<Object>();
-  private List<Object> myVariables = new ArrayList<Object>();
-  private boolean hasOuterJumps = false;
+  protected final List<Instruction> myInstructions = new ArrayList<Instruction>();
+  protected final List<TryFinallyInfo> myTryFinallyInfo = new ArrayList<TryFinallyInfo>();
+  protected final Map<Object, Integer> myStarts = new HashMap<Object, Integer>();
+  protected final Map<Object, Integer> myEnds = new HashMap<Object, Integer>();
+  protected final Stack<Object> myCreationStack = new Stack<Object>();
+  protected List<Object> myVariables = new ArrayList<Object>();
+  protected boolean hasOuterJumps = false;
 
   public List<Instruction> getInstructions() {
     return Collections.unmodifiableList(myInstructions);
@@ -88,7 +87,7 @@ public class Program {
     return myVariables.get(index);
   }
 
-  void add(Instruction instruction) {
+  protected void add(Instruction instruction) {
     instruction.setProgram(this);
     instruction.setSource(getCurrent());
     instruction.setIndex(myInstructions.size());
@@ -103,21 +102,21 @@ public class Program {
   public void insert(Instruction instruction, int position, boolean update, boolean before) {
     instruction.setProgram(this);
     if (instruction.getSource() == null) {
-      instruction.setSource(myInstructions.get(position-1).getSource());
+      instruction.setSource(myInstructions.get(position - 1).getSource());
     }
     instruction.setIndex(position);
-    for (Instruction i : myInstructions.subList(position,myInstructions.size())) {
-        i.setIndex(i.getIndex()+1);
+    for (Instruction i : myInstructions.subList(position, myInstructions.size())) {
+      i.setIndex(i.getIndex() + 1);
     }
-    for (Entry<Object,Integer> e: myEnds.entrySet()) {
-        if (e.getValue() > position) {
-          e.setValue(e.getValue()+1);
-        }
+    for (Entry<Object, Integer> e : myEnds.entrySet()) {
+      if (e.getValue() > position) {
+        e.setValue(e.getValue() + 1);
+      }
     }
-    for (Entry<Object,Integer> e: myStarts.entrySet()) {
-        if (e.getValue() >= position) {
-          e.setValue(e.getValue()+1);
-        }
+    for (Entry<Object, Integer> e : myStarts.entrySet()) {
+      if (e.getValue() >= position) {
+        e.setValue(e.getValue() + 1);
+      }
     }
     myInstructions.add(position, instruction);
     if (update) {
@@ -125,7 +124,7 @@ public class Program {
     }
   }
 
-  void start(Object o) {
+  protected void start(Object o) {
     if (myCreationStack.contains(o)) {
       throw new RuntimeException("Cycle!");
     }
@@ -133,35 +132,35 @@ public class Program {
     myStarts.put(o, getCurrentPosition());
   }
 
-  void end(Object o) {
+  protected void end(Object o) {
     if (myCreationStack.isEmpty() || myCreationStack.peek() != o) {
       throw new RuntimeException("Unexpected end");
     }
     myCreationStack.pop();
-    myEnds.put(o, getCurrentPosition());    
+    myEnds.put(o, getCurrentPosition());
   }
 
-  Object getCurrent() {
+  protected Object getCurrent() {
     if (myCreationStack.isEmpty()) {
       return null;
     }
     return myCreationStack.peek();
   }
 
-  private int getCurrentPosition() {
+  protected int getCurrentPosition() {
     return myInstructions.size();
   }
 
   public int getStart(Object o) {
     if (!myStarts.containsKey(o)) {
-        throw new DataflowBuilderException("Can't find a start of node " + o);
+      throw new DataflowBuilderException("Can't find a start of node " + o);
     }
     return myStarts.get(o);
   }
 
   public int getEnd(Object o) {
     if (!myEnds.containsKey(o)) {
-        throw new DataflowBuilderException("Can't find an end of node " + o);
+      throw new DataflowBuilderException("Can't find an end of node " + o);
     }
     return myEnds.get(o);
   }
@@ -177,7 +176,7 @@ public class Program {
     return new ArrayList<Instruction>();
   }
 
-  void init() {
+  protected void init() {
     add(new EndInstruction());
 
     collectVariables();
@@ -187,13 +186,13 @@ public class Program {
     sanityCheck();
   }
 
-  private void buildInstructionCaches() {
+  protected void buildInstructionCaches() {
     for (Instruction i : myInstructions) {
       i.buildCaches();
     }
   }
 
-  private void collectVariables() {
+  protected void collectVariables() {
     Set<Object> result = new LinkedHashSet<Object>();
     for (Instruction i : myInstructions) {
       if (i instanceof ReadInstruction) {
@@ -207,15 +206,15 @@ public class Program {
     myVariables = new ArrayList<Object>(result);
   }
 
-  private void buildBlockInfos() {
+  protected void buildBlockInfos() {
     Stack<TryFinallyInfo> stack = new Stack<TryFinallyInfo>();
     for (Instruction i : myInstructions) {
       if (i instanceof TryInstruction) {
-        Program.TryFinallyInfo info = new TryFinallyInfo();
+        TryFinallyInfo info = new TryFinallyInfo();
         info.myTry = (TryInstruction) i;
         myTryFinallyInfo.add(info);
         if (!stack.isEmpty()) {
-          Program.TryFinallyInfo parent = stack.peek();
+          TryFinallyInfo parent = stack.peek();
           info.myParent = parent;
           parent.myChildren.add(info);
         }
@@ -233,7 +232,7 @@ public class Program {
 
       if (i instanceof EndTryInstruction) {
         if (stack.isEmpty() ||
-          stack.peek().myEndTry != null) {
+            stack.peek().myEndTry != null) {
           throw new IllegalStateException("unexpected endtry");
         }
 
@@ -303,12 +302,12 @@ public class Program {
         VarSet liveAfter = new VarSet(this);
         for (ProgramState succ : s.succ()) {
           liveAfter.addAll(analysisResult.get(succ));
-        }        
+        }
         if (!liveAfter.contains(write.getVariableIndex())) {
           if (s.isReturnMode()) {
-             retModeTrue.add(write);
+            retModeTrue.add(write);
           } else {
-             retModeFalse.add(write);
+            retModeFalse.add(write);
           }
         }
       }
@@ -341,14 +340,14 @@ public class Program {
     return new ProgramState(myInstructions.get(n >> 1), (n & 1) == 0);
   }
 
-  private void sanityCheck() {
+  protected void sanityCheck() {
     for (Instruction i : myInstructions) {
       sanityCheck(new ProgramState(i, true));
       sanityCheck(new ProgramState(i, false));
     }
   }
 
-  private void sanityCheck(ProgramState ps) {
+  protected void sanityCheck(ProgramState ps) {
     for (ProgramState pred : ps.pred()) {
       if (!pred.succ().contains(ps)) {
         ps.pred();
@@ -366,11 +365,11 @@ public class Program {
   }
 
   public class TryFinallyInfo {
-    private TryInstruction myTry;
-    private FinallyInstruction myFinally;
-    private EndTryInstruction myEndTry;
-    private TryFinallyInfo myParent;
-    private List<TryFinallyInfo> myChildren = new ArrayList<TryFinallyInfo>();
+    protected TryInstruction myTry;
+    protected FinallyInstruction myFinally;
+    protected EndTryInstruction myEndTry;
+    protected TryFinallyInfo myParent;
+    protected List<TryFinallyInfo> myChildren = new ArrayList<TryFinallyInfo>();
 
     public TryInstruction getTry() {
       return myTry;
@@ -393,50 +392,50 @@ public class Program {
     }
   }
 
-   public boolean contains(Object o) {
-     Instruction i = null;
-     myInstructions.indexOf(i);
-      return myStarts.containsKey(o);
-   }
+  public boolean contains(Object o) {
+    Instruction i = null;
+    myInstructions.indexOf(i);
+    return myStarts.containsKey(o);
+  }
 
-   public boolean hasOuterJumps() {
-     return hasOuterJumps;
-   }
+  public boolean hasOuterJumps() {
+    return hasOuterJumps;
+  }
 
-   public void setHasOuterJumps(boolean hasOuterJumps) {
-     this.hasOuterJumps = hasOuterJumps;
-   }
+  public void setHasOuterJumps(boolean hasOuterJumps) {
+    this.hasOuterJumps = hasOuterJumps;
+  }
 
-   public void updateJumpsOnInsert(int position, boolean before) {
-     for (Instruction i : myInstructions) {
-       if (i instanceof IfJumpInstruction) {
-         IfJumpInstruction ifJump = ((IfJumpInstruction)i);
-         int jumpTo = ifJump.getJumpTo();
-         if (jumpTo > position) {
-           ifJump.setJumpTo(jumpTo + 1);
-         } else if (jumpTo == position) {
-           if (before) {
-             ifJump.updateJumps(jumpTo + 1);
-           } else {
-             ifJump.setJumpTo(jumpTo + 1);
-           }
-         }
-       } else if (i instanceof JumpInstruction) {
-         JumpInstruction jump = ((JumpInstruction)i);
-         int jumpTo = jump.getJumpTo();
-         if (jumpTo > position) {
-           jump.setJumpTo(jumpTo + 1);
-         } else if (jumpTo == position) {
-           jump.updateJumps(jumpTo + 1);
-           if (before) {
-             jump.updateJumps(jumpTo + 1);
-           } else {
-             jump.setJumpTo(jumpTo + 1);
-           }
-         }
-       }
-     }
-   }
+  public void updateJumpsOnInsert(int position, boolean before) {
+    for (Instruction i : myInstructions) {
+      if (i instanceof IfJumpInstruction) {
+        IfJumpInstruction ifJump = ((IfJumpInstruction) i);
+        int jumpTo = ifJump.getJumpTo();
+        if (jumpTo > position) {
+          ifJump.setJumpTo(jumpTo + 1);
+        } else if (jumpTo == position) {
+          if (before) {
+            ifJump.updateJumps(jumpTo + 1);
+          } else {
+            ifJump.setJumpTo(jumpTo + 1);
+          }
+        }
+      } else if (i instanceof JumpInstruction) {
+        JumpInstruction jump = ((JumpInstruction) i);
+        int jumpTo = jump.getJumpTo();
+        if (jumpTo > position) {
+          jump.setJumpTo(jumpTo + 1);
+        } else if (jumpTo == position) {
+          jump.updateJumps(jumpTo + 1);
+          if (before) {
+            jump.updateJumps(jumpTo + 1);
+          } else {
+            jump.setJumpTo(jumpTo + 1);
+          }
+        }
+      }
+    }
+  }
 
   public Program copy() {
     Program program = new Program();

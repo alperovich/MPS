@@ -5,6 +5,7 @@ package jetbrains.mps.lang.dataFlow;
 import jetbrains.mps.lang.dataFlow.framework.StructuralProgramBuilder;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.module.SRepository;
+import jetbrains.mps.lang.dataFlow.framework.instructions.InstructionBuilder;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -24,10 +25,19 @@ public class MPSProgramBuilder extends StructuralProgramBuilder<SNode> {
 
 
   public MPSProgramBuilder(SRepository repository) {
+    super();
     this.myRepository = repository;
     // todo remove after 3.4 
     this.myDataFlowManager = DataFlowManager.getInstance();
   }
+
+  public MPSProgramBuilder(SRepository repository, InstructionBuilder builder) {
+    super(builder);
+    this.myRepository = repository;
+    // todo remove after 3.4 
+    this.myDataFlowManager = DataFlowManager.getInstance();
+  }
+
   /**
    * 
    * @deprecated 
@@ -36,6 +46,10 @@ public class MPSProgramBuilder extends StructuralProgramBuilder<SNode> {
   public MPSProgramBuilder(DataFlowManager dataFlowManager) {
     this.myDataFlowManager = dataFlowManager;
   }
+  protected DataFlowBuilderContext createContext(SNode node) {
+    return new DataFlowBuilderContext(node, this);
+  }
+
   @Override
   protected void doBuild(SNode node) {
     if (node == null) {
@@ -50,7 +64,7 @@ public class MPSProgramBuilder extends StructuralProgramBuilder<SNode> {
         dataFlowBuilder = this.myDataFlowManager.getBuilderFor(concept.getQualifiedName());
       }
       if (dataFlowBuilder != null) {
-        dataFlowBuilder.build(new DataFlowBuilderContext(snode, MPSProgramBuilder.this));
+        dataFlowBuilder.build(createContext(snode));
         break;
       }
     }

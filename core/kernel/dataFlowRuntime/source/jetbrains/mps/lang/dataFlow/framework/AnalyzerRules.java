@@ -40,18 +40,30 @@ public class AnalyzerRules {
 
   private List<DataFlowConstructor> myRules = new LinkedList<DataFlowConstructor>();
   private String myAnalyzerId;
-  private final SNode myNodeToApply;
+  private final Set<SNode> myNodesToApply;
   private final Program myProgram;
 
   public AnalyzerRules(String analyzerId, SNode nodeToApply, Program program) {
-    myNodeToApply = nodeToApply;
+    myNodesToApply = new HashSet<SNode>();
+    myNodesToApply.add(nodeToApply);
+    myProgram = program;
+    myAnalyzerId = analyzerId;
+  }
+
+  public AnalyzerRules(String analyzerId, Set<SNode> nodesToApply, Program program) {
+    myNodesToApply = new HashSet<SNode>();
+    myNodesToApply.addAll(nodesToApply);
     myProgram = program;
     myAnalyzerId = analyzerId;
   }
   public void apply() {
-    SModel model = myNodeToApply.getModel();
+    if (myNodesToApply.isEmpty()) {
+      return;
+    }
+    SNode first = myNodesToApply.iterator().next();
+    SModel model = first.getModel();
     if (!(model instanceof SModelInternal)) {
-      LOG.warning(model == null ? "Checking node which is not attached to the model: " + myNodeToApply.getPresentation() + " " + myNodeToApply.getNodeId()
+      LOG.warning(model == null ? "Checking node which is not attached to the model: " + first.getPresentation() + " " + first.getNodeId()
                                 : "Model " + model.getModelName() + " is not instance of SModelInternal");
       return;
     }
@@ -69,14 +81,17 @@ public class AnalyzerRules {
         myRules.add(rule);
       }
     }
-    for (SNode descendant : SNodeOperations.getNodeDescendants(myNodeToApply, null, false, new SAbstractConcept[]{})) {
+    Set<SNode> descendants = new HashSet<SNode>();
+    for (SNode myNodeToApply : myNodesToApply) {
+      descendants.addAll(SNodeOperations.getNodeDescendants(myNodeToApply, null, false, new SAbstractConcept[]{}));
+    }
+    for (SNode descendant : descendants) {
       for (DataFlowConstructor rule : getRules(descendant)) {
         rule.performActions(myProgram, descendant);
       }
     }
   }
   private Set<DataFlowConstructor> getRules(SNode node) {
-    SConcept concept = node.getConcept();
     Set<DataFlowConstructor> result = new HashSet<DataFlowConstructor>();
     for (DataFlowConstructor rule : myRules) {
       if (rule.isApplicable(node)) {

@@ -77,6 +77,7 @@
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.IDataFlowBuilder" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.EndTryInstruction" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.InstructionBuilder" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageRegistry" />

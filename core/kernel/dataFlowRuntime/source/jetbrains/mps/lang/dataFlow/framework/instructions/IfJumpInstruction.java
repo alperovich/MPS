@@ -21,7 +21,7 @@ import jetbrains.mps.lang.dataFlow.framework.StructuralProgramBuilder.Position;
 import java.util.List;
 
 public class IfJumpInstruction extends Instruction {
-  private int myJumpTo;
+  protected int myJumpTo;
 
   public IfJumpInstruction() {
   }
