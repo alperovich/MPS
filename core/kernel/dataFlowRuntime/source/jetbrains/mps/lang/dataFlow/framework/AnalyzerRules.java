@@ -27,6 +27,7 @@ import org.jetbrains.mps.openapi.language.SLanguage;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.model.SNode;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -41,18 +42,18 @@ public class AnalyzerRules {
 
   private List<DataFlowConstructor> myRules = new LinkedList<DataFlowConstructor>();
   private String myAnalyzerId;
-  private final Set<SNode> myNodesToApply;
+  private final List<SNode> myNodesToApply;
   private final Program myProgram;
 
   public AnalyzerRules(String analyzerId, SNode nodeToApply, Program program) {
-    myNodesToApply = new HashSet<SNode>();
+    myNodesToApply = new ArrayList<SNode>();
     myNodesToApply.add(nodeToApply);
     myProgram = program;
     myAnalyzerId = analyzerId;
   }
 
   public AnalyzerRules(String analyzerId, Collection<SNode> nodesToApply, Program program) {
-    myNodesToApply = new HashSet<SNode>();
+    myNodesToApply = new ArrayList<SNode>();
     myNodesToApply.addAll(nodesToApply);
     myProgram = program;
     myAnalyzerId = analyzerId;
@@ -82,7 +83,7 @@ public class AnalyzerRules {
         myRules.add(rule);
       }
     }
-    Set<SNode> descendants = new HashSet<SNode>();
+    List<SNode> descendants = new ArrayList<SNode>();
     for (SNode myNodeToApply : myNodesToApply) {
       descendants.addAll(SNodeOperations.getNodeDescendants(myNodeToApply, null, false, new SAbstractConcept[]{}));
     }
