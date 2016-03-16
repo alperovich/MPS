@@ -31390,12 +31390,6 @@
           <node concept="1Wc70l" id="45d1QTBBhLc" role="3clFbG">
             <node concept="1eOMI4" id="F2L8fX9JeU" role="3uHU7w">
               <node concept="22lmx$" id="F2L8fX9Mv6" role="1eOMHV">
-                <node concept="1rXfSq" id="F2L8fX9N3H" role="3uHU7w">
-                  <ref role="37wK5l" node="F2L8fX91e$" resolve="refersToDeclarationWithInitializer" />
-                  <node concept="37vLTw" id="F2L8fX9NAU" role="37wK5m">
-                    <ref role="3cqZAo" node="45d1QTBBhLm" resolve="node" />
-                  </node>
-                </node>
                 <node concept="1eOMI4" id="F2L8fX9JeV" role="3uHU7B">
                   <node concept="1Wc70l" id="F2L8fX9JeW" role="1eOMHV">
                     <node concept="3clFbC" id="F2L8fX9JeX" role="3uHU7B">
@@ -31428,6 +31422,12 @@
                       </node>
                       <node concept="10Nm6u" id="F2L8fX9Jfa" role="3uHU7w" />
                     </node>
+                  </node>
+                </node>
+                <node concept="1rXfSq" id="F2L8fX9N3H" role="3uHU7w">
+                  <ref role="37wK5l" node="F2L8fX91e$" resolve="refersToDeclarationWithInitializer" />
+                  <node concept="37vLTw" id="F2L8fX9NAU" role="37wK5m">
+                    <ref role="3cqZAo" node="45d1QTBBhLm" resolve="node" />
                   </node>
                 </node>
               </node>
@@ -32901,12 +32901,13 @@
                   <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
                 </node>
                 <node concept="2OqwBi" id="2FeVmOilmuE" role="33vP2m">
-                  <node concept="2YIFZM" id="2FeVmOilmuH" role="2Oq$k0">
-                    <ref role="37wK5l" to="8ov6:~DataFlowManager.getInstance():jetbrains.mps.lang.dataFlow.DataFlowManager" resolve="getInstance" />
-                    <ref role="1Pybhc" to="8ov6:~DataFlowManager" resolve="DataFlowManager" />
+                  <node concept="2ShNRf" id="5uYjGaoVQWz" role="2Oq$k0">
+                    <node concept="1pGfFk" id="5uYjGaoVTig" role="2ShVmc">
+                      <ref role="37wK5l" to="aplb:4mpxoQud1f6" resolve="MPSProgramBuilder" />
+                    </node>
                   </node>
                   <node concept="liA8E" id="2FeVmOilmuF" role="2OqNvi">
-                    <ref role="37wK5l" to="8ov6:~DataFlowManager.buildProgramFor(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgramFor" />
+                    <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
                     <node concept="37vLTw" id="3GM_nagTsVi" role="37wK5m">
                       <ref role="3cqZAo" node="2FeVmOilmtT" resolve="ourContainer" />
                     </node>
@@ -33223,12 +33224,13 @@
               <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
             </node>
             <node concept="2OqwBi" id="5DI3cLBq_rE" role="33vP2m">
-              <node concept="2YIFZM" id="5DI3cLBq_rF" role="2Oq$k0">
-                <ref role="37wK5l" to="8ov6:~DataFlowManager.getInstance():jetbrains.mps.lang.dataFlow.DataFlowManager" resolve="getInstance" />
-                <ref role="1Pybhc" to="8ov6:~DataFlowManager" resolve="DataFlowManager" />
+              <node concept="2ShNRf" id="5uYjGaoVTsb" role="2Oq$k0">
+                <node concept="1pGfFk" id="5uYjGaoVTXh" role="2ShVmc">
+                  <ref role="37wK5l" to="aplb:4mpxoQud1f6" resolve="MPSProgramBuilder" />
+                </node>
               </node>
               <node concept="liA8E" id="5DI3cLBq_rG" role="2OqNvi">
-                <ref role="37wK5l" to="8ov6:~DataFlowManager.buildProgramFor(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgramFor" />
+                <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
                 <node concept="37vLTw" id="5DI3cLBqBll" role="37wK5m">
                   <ref role="3cqZAo" node="5DI3cLBqpB_" resolve="currentBody" />
                 </node>
@@ -33770,12 +33772,13 @@
               <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
             </node>
             <node concept="2OqwBi" id="5DI3cLBw$Ow" role="33vP2m">
-              <node concept="2YIFZM" id="5DI3cLBw$Ox" role="2Oq$k0">
-                <ref role="37wK5l" to="8ov6:~DataFlowManager.getInstance():jetbrains.mps.lang.dataFlow.DataFlowManager" resolve="getInstance" />
-                <ref role="1Pybhc" to="8ov6:~DataFlowManager" resolve="DataFlowManager" />
+              <node concept="2ShNRf" id="5uYjGaoVUbo" role="2Oq$k0">
+                <node concept="1pGfFk" id="5uYjGaoVUu8" role="2ShVmc">
+                  <ref role="37wK5l" to="aplb:4mpxoQud1f6" resolve="MPSProgramBuilder" />
+                </node>
               </node>
               <node concept="liA8E" id="5DI3cLBw$Oy" role="2OqNvi">
-                <ref role="37wK5l" to="8ov6:~DataFlowManager.buildProgramFor(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgramFor" />
+                <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
                 <node concept="37vLTw" id="5DI3cLBw_BY" role="37wK5m">
                   <ref role="3cqZAo" node="5DI3cLBw_0y" resolve="statements" />
                 </node>
@@ -36610,6 +36613,13 @@
           </node>
         </node>
         <node concept="1Wc70l" id="45d1QTBBhLQ" role="3clFbw">
+          <node concept="2YIFZM" id="45d1QTBBhLv" role="3uHU7w">
+            <ref role="1Pybhc" node="6UtDUq0tqUO" resolve="CheckingUtil" />
+            <ref role="37wK5l" node="45d1QTBBhKZ" resolve="isAssignedIllegaly" />
+            <node concept="1YBJjd" id="45d1QTBBhLw" role="37wK5m">
+              <ref role="1YBMHb" node="45d1QTBA$7h" resolve="reference" />
+            </node>
+          </node>
           <node concept="2OqwBi" id="45d1QTBA$7c" role="3uHU7B">
             <node concept="2OqwBi" id="45d1QTBA$7d" role="2Oq$k0">
               <node concept="1YBJjd" id="45d1QTBA$7e" role="2Oq$k0">
@@ -36621,13 +36631,6 @@
             </node>
             <node concept="3TrcHB" id="45d1QTBA$7g" role="2OqNvi">
               <ref role="3TsBF5" to="tpee:h7TUv0c" resolve="isFinal" />
-            </node>
-          </node>
-          <node concept="2YIFZM" id="45d1QTBBhLv" role="3uHU7w">
-            <ref role="1Pybhc" node="6UtDUq0tqUO" resolve="CheckingUtil" />
-            <ref role="37wK5l" node="45d1QTBBhKZ" resolve="isAssignedIllegaly" />
-            <node concept="1YBJjd" id="45d1QTBBhLw" role="37wK5m">
-              <ref role="1YBMHb" node="45d1QTBA$7h" resolve="reference" />
             </node>
           </node>
         </node>
@@ -47701,15 +47704,7 @@
               <node concept="2OqwBi" id="qrAFe9jxGo" role="33vP2m">
                 <node concept="2ShNRf" id="qrAFe9juKs" role="2Oq$k0">
                   <node concept="1pGfFk" id="qrAFe9jwF4" role="2ShVmc">
-                    <ref role="37wK5l" to="aplb:qrAFe9j8zl" resolve="MPSProgramBuilder" />
-                    <node concept="1eOMI4" id="qrAFe9rDey" role="37wK5m">
-                      <node concept="10QFUN" id="qrAFe9rDez" role="1eOMHV">
-                        <node concept="10Nm6u" id="qrAFe9rDex" role="10QFUP" />
-                        <node concept="3uibUv" id="qrAFe9rDev" role="10QFUM">
-                          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-                        </node>
-                      </node>
-                    </node>
+                    <ref role="37wK5l" to="aplb:4mpxoQud1f6" resolve="MPSProgramBuilder" />
                   </node>
                 </node>
                 <node concept="liA8E" id="qrAFe9jyi2" role="2OqNvi">
@@ -50646,11 +50641,11 @@
                                 <node concept="2OqwBi" id="1hIAVHbutkx" role="3JuZjQ">
                                   <node concept="2OqwBi" id="1hIAVHbu6Fm" role="2Oq$k0">
                                     <node concept="2OqwBi" id="1hIAVHbtSKA" role="2Oq$k0">
-                                      <node concept="37vLTw" id="1hIAVHbtQOp" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="1hIAVHbd7GI" resolve="method" />
-                                      </node>
                                       <node concept="3Tsc0h" id="1hIAVHbtYWk" role="2OqNvi">
                                         <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                                      </node>
+                                      <node concept="37vLTw" id="1hIAVHbtQOp" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="1hIAVHbd7GI" resolve="method" />
                                       </node>
                                     </node>
                                     <node concept="1uHKPH" id="1hIAVHbui8A" role="2OqNvi" />
@@ -50672,11 +50667,11 @@
                                 <node concept="2OqwBi" id="1hIAVHbtFuS" role="3JuY14">
                                   <node concept="2OqwBi" id="1hIAVHbtFuT" role="2Oq$k0">
                                     <node concept="2OqwBi" id="1hIAVHbtFuU" role="2Oq$k0">
-                                      <node concept="37vLTw" id="1hIAVHbtFuV" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="1hIAVHbd7GI" resolve="method" />
-                                      </node>
                                       <node concept="3Tsc0h" id="1hIAVHbtFuW" role="2OqNvi">
                                         <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                                      </node>
+                                      <node concept="37vLTw" id="1hIAVHbtFuV" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="1hIAVHbd7GI" resolve="method" />
                                       </node>
                                     </node>
                                     <node concept="1uHKPH" id="1hIAVHbtFuX" role="2OqNvi" />
@@ -50710,11 +50705,11 @@
                             <node concept="3clFbC" id="1hIAVHb3h$I" role="3uHU7w">
                               <node concept="2OqwBi" id="1hIAVHb2OCe" role="3uHU7B">
                                 <node concept="2OqwBi" id="1hIAVHb2FxK" role="2Oq$k0">
-                                  <node concept="37vLTw" id="1hIAVHbtu7$" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1hIAVHbd7GI" resolve="method" />
-                                  </node>
                                   <node concept="3Tsc0h" id="1hIAVHb2IaY" role="2OqNvi">
                                     <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                                  </node>
+                                  <node concept="37vLTw" id="1hIAVHbtu7$" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1hIAVHbd7GI" resolve="method" />
                                   </node>
                                 </node>
                                 <node concept="34oBXx" id="1hIAVHb36JX" role="2OqNvi" />
@@ -56029,12 +56024,13 @@
                       <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
                     </node>
                     <node concept="2OqwBi" id="73g2kXOyjrw" role="33vP2m">
-                      <node concept="2YIFZM" id="73g2kXOyjrx" role="2Oq$k0">
-                        <ref role="37wK5l" to="8ov6:~DataFlowManager.getInstance():jetbrains.mps.lang.dataFlow.DataFlowManager" resolve="getInstance" />
-                        <ref role="1Pybhc" to="8ov6:~DataFlowManager" resolve="DataFlowManager" />
+                      <node concept="2ShNRf" id="5uYjGaoVWDR" role="2Oq$k0">
+                        <node concept="1pGfFk" id="5uYjGaoVXgM" role="2ShVmc">
+                          <ref role="37wK5l" to="aplb:4mpxoQud1f6" resolve="MPSProgramBuilder" />
+                        </node>
                       </node>
                       <node concept="liA8E" id="73g2kXOyjry" role="2OqNvi">
-                        <ref role="37wK5l" to="8ov6:~DataFlowManager.buildProgramFor(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgramFor" />
+                        <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
                         <node concept="37vLTw" id="73g2kXOymcw" role="37wK5m">
                           <ref role="3cqZAo" node="73g2kXOydUe" resolve="body" />
                         </node>

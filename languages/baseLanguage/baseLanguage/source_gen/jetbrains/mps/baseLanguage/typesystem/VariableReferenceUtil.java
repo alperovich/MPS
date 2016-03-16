@@ -7,7 +7,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.dataFlow.framework.Program;
-import jetbrains.mps.lang.dataFlow.DataFlowManager;
+import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
 import jetbrains.mps.lang.dataFlow.DataFlow;
 import jetbrains.mps.lang.typesystem.dependencies.CheckingMethod;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
@@ -52,7 +52,7 @@ public class VariableReferenceUtil {
       currentContainer = SNodeOperations.getNodeAncestor(currentContainer, MetaAdapterFactory.getInterfaceConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11750ef8265L, "jetbrains.mps.baseLanguage.structure.IStatementListContainer"), false, false);
     }
     if ((ourContainer != null)) {
-      Program program = DataFlowManager.getInstance().buildProgramFor(ourContainer);
+      Program program = new MPSProgramBuilder().buildProgram(ourContainer);
       return !(DataFlow.isInitializedRewritten(program, assignmentExpression));
     } else {
       return true;
@@ -108,7 +108,7 @@ public class VariableReferenceUtil {
   @CheckingMethod
   public static void checkPrecedingWriteInstructions(final TypeCheckingContext typeCheckingContext, SNode contextReference, SNode currentBody, SNode field) {
 
-    Program program = DataFlowManager.getInstance().buildProgramFor(currentBody);
+    Program program = new MPSProgramBuilder().buildProgram(currentBody);
     Set<SNode> uninitializedReads = DataFlow.getUninitializedReads(program);
     if (uninitializedReads.contains(contextReference)) {
       final boolean onlyInstanceInitializers = VariableReferenceUtil.isReferredFromThisInvocation(currentBody, contextReference);
@@ -163,7 +163,7 @@ public class VariableReferenceUtil {
   }
 
   public static boolean containsWrite(SNode statements, SNode field) {
-    Program body = DataFlowManager.getInstance().buildProgramFor(statements);
+    Program body = new MPSProgramBuilder().buildProgram(statements);
     List<Instruction> instructions = body.getInstructions();
     Iterator<Instruction> iterator = instructions.iterator();
     while (iterator.hasNext()) {

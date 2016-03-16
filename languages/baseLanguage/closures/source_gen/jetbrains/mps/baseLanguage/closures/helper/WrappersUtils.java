@@ -16,7 +16,7 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
 import jetbrains.mps.lang.dataFlow.framework.Program;
-import jetbrains.mps.lang.dataFlow.DataFlowManager;
+import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
 import jetbrains.mps.lang.dataFlow.framework.instructions.Instruction;
 import jetbrains.mps.lang.dataFlow.framework.instructions.ReadInstruction;
 import jetbrains.mps.lang.dataFlow.framework.instructions.WriteInstruction;
@@ -47,7 +47,7 @@ public class WrappersUtils {
   }
   public static Map<SNode, Integer> collectVariableUsages(SNode start) {
     Map<SNode, Integer> resMap = MapSequence.fromMap(new HashMap<SNode, Integer>());
-    Program prg = DataFlowManager.getInstance().buildProgramFor(start);
+    Program prg = new MPSProgramBuilder().buildProgram(start);
     for (Instruction ins : prg.getInstructions()) {
       if (ins instanceof ReadInstruction) {
         ReadInstruction ri = ((ReadInstruction) ins);

@@ -18,70 +18,70 @@
   </root>
   <root nodeRef="r:11be8b48-b45e-48e5-98ad-b77dc1b202b1(testCustomAnalyzer.dataFlow)/6628579460233828323">
     <file name="CounterAnalyzerWithConstructorAnalyzerRunner.java">
-      <node id="6628579460233828323" at="17,0,18,0" concept="3" trace="myNode" />
-      <node id="6628579460233828323" at="18,87,19,22" concept="10" />
-      <node id="6628579460233828323" at="19,22,20,18" concept="2" />
-      <node id="6628579460233828323" at="20,18,21,121" concept="2" />
-      <node id="6628579460233828323" at="21,121,22,90" concept="2" />
-      <node id="6628579460233828323" at="22,90,23,21" concept="2" />
-      <node id="6628579460233828323" at="25,33,26,111" concept="2" />
-      <node id="6628579460233828323" at="29,0,30,0" concept="3" trace="initialCounter" />
-      <node id="6628579460233828323" at="30,71,31,43" concept="2" />
-      <node id="8332528989793377539" at="33,45,34,33" concept="8" />
-      <node id="8332528989793402998" at="36,64,37,43" concept="7" />
-      <node id="8332528989793410165" at="39,35,40,31" concept="2" />
-      <node id="8332528989793413070" at="42,7,43,24" concept="8" />
-      <node id="8332528989793395271" at="45,59,46,23" concept="8" />
-      <node id="6628579460233828323" at="48,45,49,39" concept="8" />
-      <node id="6628579460233828323" at="56,34,57,74" concept="8" />
-      <node id="6628579460233828323" at="25,0,28,0" concept="6" trace="prepareProgram#()V" />
-      <node id="6628579460233828323" at="30,0,33,0" concept="1" trace="CounterAnalyzerWithConstructorAnalyzer#(I)V" />
-      <node id="6628579460233828323" at="33,0,36,0" concept="6" trace="initial#(Ljetbrains/mps/lang/dataFlow/framework/Program;)Ljava/lang/Integer;" />
-      <node id="8332528989793401397" at="38,37,41,9" concept="5" />
-      <node id="6628579460233828323" at="45,0,48,0" concept="6" trace="fun#(Ljava/lang/Integer;Ljetbrains/mps/lang/dataFlow/framework/ProgramState;)Ljava/lang/Integer;" />
-      <node id="6628579460233828323" at="48,0,51,0" concept="6" trace="getDirection#()Ljetbrains/mps/lang/dataFlow/framework/AnalysisDirection;" />
-      <node id="6628579460233828323" at="55,0,59,0" concept="9" trace="getId#()Ljava/lang/String;" />
-      <node id="8332528989793418455" at="37,43,42,7" concept="4" />
-      <node id="6628579460233828323" at="18,0,25,0" concept="1" trace="CounterAnalyzerWithConstructorAnalyzerRunner#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
-      <node id="6628579460233828323" at="36,0,45,0" concept="6" trace="merge#(Ljetbrains/mps/lang/dataFlow/framework/Program;Ljava/util/List;)Ljava/lang/Integer;" />
-      <scope id="6628579460233828323" at="25,33,26,111" />
-      <scope id="6628579460233828323" at="30,71,31,43" />
-      <scope id="6628579460233828329" at="33,45,34,33" />
-      <scope id="8332528989793401398" at="39,35,40,31" />
-      <scope id="6628579460233828327" at="45,59,46,23" />
-      <scope id="6628579460233828323" at="48,45,49,39" />
-      <scope id="6628579460233828323" at="56,34,57,74" />
-      <scope id="6628579460233828323" at="25,0,28,0" />
-      <scope id="6628579460233828323" at="30,0,33,0">
+      <node id="6628579460233828323" at="16,0,17,0" concept="3" trace="myNode" />
+      <node id="6628579460233828323" at="17,87,18,22" concept="10" />
+      <node id="6628579460233828323" at="18,22,19,18" concept="2" />
+      <node id="6628579460233828323" at="19,18,20,121" concept="2" />
+      <node id="6628579460233828323" at="20,121,21,61" concept="2" />
+      <node id="6628579460233828323" at="21,61,22,21" concept="2" />
+      <node id="6628579460233828323" at="24,33,25,111" concept="2" />
+      <node id="6628579460233828323" at="28,0,29,0" concept="3" trace="initialCounter" />
+      <node id="6628579460233828323" at="29,71,30,43" concept="2" />
+      <node id="8332528989793377539" at="32,45,33,33" concept="8" />
+      <node id="8332528989793402998" at="35,64,36,43" concept="7" />
+      <node id="8332528989793410165" at="38,35,39,31" concept="2" />
+      <node id="8332528989793413070" at="41,7,42,24" concept="8" />
+      <node id="8332528989793395271" at="44,59,45,23" concept="8" />
+      <node id="6628579460233828323" at="47,45,48,39" concept="8" />
+      <node id="6628579460233828323" at="55,34,56,74" concept="8" />
+      <node id="6628579460233828323" at="24,0,27,0" concept="6" trace="prepareProgram#()V" />
+      <node id="6628579460233828323" at="29,0,32,0" concept="1" trace="CounterAnalyzerWithConstructorAnalyzer#(I)V" />
+      <node id="6628579460233828323" at="32,0,35,0" concept="6" trace="initial#(Ljetbrains/mps/lang/dataFlow/framework/Program;)Ljava/lang/Integer;" />
+      <node id="8332528989793401397" at="37,37,40,9" concept="5" />
+      <node id="6628579460233828323" at="44,0,47,0" concept="6" trace="fun#(Ljava/lang/Integer;Ljetbrains/mps/lang/dataFlow/framework/ProgramState;)Ljava/lang/Integer;" />
+      <node id="6628579460233828323" at="47,0,50,0" concept="6" trace="getDirection#()Ljetbrains/mps/lang/dataFlow/framework/AnalysisDirection;" />
+      <node id="6628579460233828323" at="54,0,58,0" concept="9" trace="getId#()Ljava/lang/String;" />
+      <node id="8332528989793418455" at="36,43,41,7" concept="4" />
+      <node id="6628579460233828323" at="17,0,24,0" concept="1" trace="CounterAnalyzerWithConstructorAnalyzerRunner#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
+      <node id="6628579460233828323" at="35,0,44,0" concept="6" trace="merge#(Ljetbrains/mps/lang/dataFlow/framework/Program;Ljava/util/List;)Ljava/lang/Integer;" />
+      <scope id="6628579460233828323" at="24,33,25,111" />
+      <scope id="6628579460233828323" at="29,71,30,43" />
+      <scope id="6628579460233828329" at="32,45,33,33" />
+      <scope id="8332528989793401398" at="38,35,39,31" />
+      <scope id="6628579460233828327" at="44,59,45,23" />
+      <scope id="6628579460233828323" at="47,45,48,39" />
+      <scope id="6628579460233828323" at="55,34,56,74" />
+      <scope id="6628579460233828323" at="24,0,27,0" />
+      <scope id="6628579460233828323" at="29,0,32,0">
         <var name="initialCounter" id="6628579460233828323" />
       </scope>
-      <scope id="6628579460233828323" at="33,0,36,0">
+      <scope id="6628579460233828323" at="32,0,35,0">
         <var name="program" id="6628579460233828323" />
       </scope>
-      <scope id="8332528989793418457" at="38,37,41,9" />
-      <scope id="6628579460233828323" at="45,0,48,0">
+      <scope id="8332528989793418457" at="37,37,40,9" />
+      <scope id="6628579460233828323" at="44,0,47,0">
         <var name="input" id="6628579460233828323" />
         <var name="state" id="6628579460233828323" />
       </scope>
-      <scope id="6628579460233828323" at="48,0,51,0" />
-      <scope id="6628579460233828323" at="55,0,59,0" />
-      <scope id="6628579460233828323" at="18,87,23,21" />
-      <scope id="8332528989793418455" at="37,43,42,7">
+      <scope id="6628579460233828323" at="47,0,50,0" />
+      <scope id="6628579460233828323" at="54,0,58,0" />
+      <scope id="6628579460233828323" at="17,87,22,21" />
+      <scope id="8332528989793418455" at="36,43,41,7">
         <var name="counter" id="8332528989793418456" />
       </scope>
-      <scope id="6628579460233828323" at="18,0,25,0">
+      <scope id="6628579460233828323" at="17,0,24,0">
         <var name="initialCounter" id="6628579460233828323" />
         <var name="node" id="6628579460233828323" />
       </scope>
-      <scope id="6628579460233828331" at="36,64,43,24">
+      <scope id="6628579460233828331" at="35,64,42,24">
         <var name="maxCounter" id="8332528989793403001" />
       </scope>
-      <scope id="6628579460233828323" at="36,0,45,0">
+      <scope id="6628579460233828323" at="35,0,44,0">
         <var name="input" id="6628579460233828323" />
         <var name="program" id="6628579460233828323" />
       </scope>
-      <unit id="6628579460233828323" at="28,0,60,0" name="testCustomAnalyzer.dataFlow.CounterAnalyzerWithConstructorAnalyzerRunner$CounterAnalyzerWithConstructorAnalyzer" />
-      <unit id="6628579460233828323" at="16,0,61,0" name="testCustomAnalyzer.dataFlow.CounterAnalyzerWithConstructorAnalyzerRunner" />
+      <unit id="6628579460233828323" at="27,0,59,0" name="testCustomAnalyzer.dataFlow.CounterAnalyzerWithConstructorAnalyzerRunner$CounterAnalyzerWithConstructorAnalyzer" />
+      <unit id="6628579460233828323" at="15,0,60,0" name="testCustomAnalyzer.dataFlow.CounterAnalyzerWithConstructorAnalyzerRunner" />
     </file>
     <file name="counterInstructionInstruction.java">
       <node id="6628579460233829743" at="8,0,9,0" concept="3" trace="myPresentation" />

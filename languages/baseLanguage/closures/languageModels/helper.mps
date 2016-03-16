@@ -8030,12 +8030,13 @@
               <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
             </node>
             <node concept="2OqwBi" id="5t97zErGafg" role="33vP2m">
-              <node concept="2YIFZM" id="5t97zErGafh" role="2Oq$k0">
-                <ref role="37wK5l" to="8ov6:~DataFlowManager.getInstance():jetbrains.mps.lang.dataFlow.DataFlowManager" resolve="getInstance" />
-                <ref role="1Pybhc" to="8ov6:~DataFlowManager" resolve="DataFlowManager" />
+              <node concept="2ShNRf" id="4mpxoQucTf1" role="2Oq$k0">
+                <node concept="1pGfFk" id="4mpxoQucZdI" role="2ShVmc">
+                  <ref role="37wK5l" to="8ov6:~MPSProgramBuilder.&lt;init&gt;()" resolve="MPSProgramBuilder" />
+                </node>
               </node>
               <node concept="liA8E" id="5t97zErGafi" role="2OqNvi">
-                <ref role="37wK5l" to="8ov6:~DataFlowManager.buildProgramFor(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgramFor" />
+                <ref role="37wK5l" to="1fjm:~StructuralProgramBuilder.buildProgram(java.lang.Object):jetbrains.mps.lang.dataFlow.framework.Program" resolve="buildProgram" />
                 <node concept="37vLTw" id="2BHiRxgl3IT" role="37wK5m">
                   <ref role="3cqZAo" node="5t97zErG9at" resolve="start" />
                 </node>

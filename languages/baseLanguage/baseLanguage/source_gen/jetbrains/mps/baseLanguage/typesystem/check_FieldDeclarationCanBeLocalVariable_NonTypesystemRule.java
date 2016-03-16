@@ -17,7 +17,6 @@ import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.dataFlow.framework.Program;
 import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
-import org.jetbrains.mps.openapi.module.SRepository;
 import java.util.ArrayList;
 import jetbrains.mps.lang.dataFlow.framework.instructions.ReadInstruction;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
@@ -82,7 +81,7 @@ public class check_FieldDeclarationCanBeLocalVariable_NonTypesystemRule extends 
       }
     })) {
       SNode method = Sequence.fromIterable(methods).first();
-      Program program = new MPSProgramBuilder(((SRepository) null)).buildProgram(SLinkOperations.getTarget(method, MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1ffL, "body")));
+      Program program = new MPSProgramBuilder().buildProgram(SLinkOperations.getTarget(method, MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1ffL, "body")));
 
       // find a read instruction for variableDeclaration not preceeded by a write instruction 
       boolean uninitializedRead = ListSequence.fromList(ListSequence.fromListWithValues(new ArrayList<ReadInstruction>(), program.getUninitializedReads())).any(new IWhereFilter<ReadInstruction>() {

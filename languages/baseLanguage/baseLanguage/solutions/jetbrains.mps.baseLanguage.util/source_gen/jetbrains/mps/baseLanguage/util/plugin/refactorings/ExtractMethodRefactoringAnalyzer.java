@@ -10,7 +10,6 @@ import jetbrains.mps.lang.dataFlow.framework.VarSet;
 import java.util.Set;
 import jetbrains.mps.lang.dataFlow.framework.instructions.WriteInstruction;
 import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
-import org.jetbrains.mps.openapi.module.SRepository;
 import jetbrains.mps.lang.dataFlow.framework.analyzers.ReachabilityAnalyzer;
 import jetbrains.mps.lang.dataFlow.framework.analyzers.LivenessAnalyzer;
 import jetbrains.mps.lang.dataFlow.framework.analyzers.ReachingDefinitionsAnalyzer;
@@ -52,7 +51,7 @@ public class ExtractMethodRefactoringAnalyzer {
   public ExtractMethodRefactoringAnalyzer(List<SNode> nodes) {
     this.myPartToExtract = nodes;
     this.findExtractMethodRefactoringProcessor();
-    this.myProgram = new MPSProgramBuilder(((SRepository) null)).buildProgram(this.myProcessor.getContainerMethod());
+    this.myProgram = new MPSProgramBuilder().buildProgram(this.myProcessor.getContainerMethod());
     this.myReachability = this.myProgram.analyze(new ReachabilityAnalyzer());
     this.myInternalExitPoints = this.calculateInternalExitPoints();
     this.myLiveVariables = this.myProgram.analyze(new LivenessAnalyzer());
@@ -267,7 +266,7 @@ public class ExtractMethodRefactoringAnalyzer {
     while (SNodeOperations.isInstanceOf(SNodeOperations.getParent(list), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b215L, "jetbrains.mps.baseLanguage.structure.Statement"))) {
       list = SNodeOperations.getNodeAncestor(list, MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b200L, "jetbrains.mps.baseLanguage.structure.StatementList"), false, false);
     }
-    Program program = new MPSProgramBuilder(((SRepository) null)).buildProgram(list);
+    Program program = new MPSProgramBuilder().buildProgram(list);
     Set<Instruction> nodeInstructions = SetSequence.fromSet(new HashSet<Instruction>());
     for (SNode node : ListSequence.fromList(myPartToExtract)) {
       SetSequence.fromSet(nodeInstructions).addSequence(ListSequence.fromList(program.getInstructionsFor(node)));

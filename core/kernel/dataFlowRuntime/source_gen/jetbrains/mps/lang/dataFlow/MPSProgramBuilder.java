@@ -23,14 +23,20 @@ public class MPSProgramBuilder extends StructuralProgramBuilder<SNode> {
   private boolean myMayBeUnreachable = false;
   private SRepository myRepository;
 
-
+  public MPSProgramBuilder() {
+    // todo remove after 3.4 
+    this.myDataFlowManager = DataFlowManager.getInstance();
+  }
+  public MPSProgramBuilder(InstructionBuilder builder) {
+    super(builder);
+    // todo remove after 3.4 
+    this.myDataFlowManager = DataFlowManager.getInstance();
+  }
   public MPSProgramBuilder(SRepository repository) {
-    super();
     this.myRepository = repository;
     // todo remove after 3.4 
     this.myDataFlowManager = DataFlowManager.getInstance();
   }
-
   public MPSProgramBuilder(SRepository repository, InstructionBuilder builder) {
     super(builder);
     this.myRepository = repository;

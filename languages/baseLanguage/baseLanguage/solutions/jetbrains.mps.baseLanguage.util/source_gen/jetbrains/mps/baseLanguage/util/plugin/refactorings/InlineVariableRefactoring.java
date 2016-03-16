@@ -5,7 +5,6 @@ package jetbrains.mps.baseLanguage.util.plugin.refactorings;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.dataFlow.framework.Program;
 import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
-import org.jetbrains.mps.openapi.module.SRepository;
 import jetbrains.mps.lang.dataFlow.framework.instructions.Instruction;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.dataFlow.framework.instructions.ReadInstruction;
@@ -23,7 +22,7 @@ public abstract class InlineVariableRefactoring {
   }
   public abstract SNode doRefactoring();
   public void optimizeDeclaration(SNode variable) {
-    Program program = new MPSProgramBuilder(((SRepository) null)).buildProgram(getBaseStatementList(variable));
+    Program program = new MPSProgramBuilder().buildProgram(getBaseStatementList(variable));
     for (Instruction instruction : ListSequence.fromList(program.getInstructions())) {
       if (instruction instanceof ReadInstruction) {
         ReadInstruction read = (ReadInstruction) instruction;
@@ -45,7 +44,7 @@ public abstract class InlineVariableRefactoring {
   }
   public void optimizeAssignment(SNode assignment, SNode variable) {
     SNode method = SNodeOperations.getNodeAncestor(assignment, MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, "jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration"), false, false);
-    Program program = new MPSProgramBuilder(((SRepository) null)).buildProgram(SLinkOperations.getTarget(method, MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1ffL, "body")));
+    Program program = new MPSProgramBuilder().buildProgram(SLinkOperations.getTarget(method, MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1ffL, "body")));
     AnalysisResult<Set<ReadInstruction>> reachingReads = program.analyze(new ReachingReadsAnalyzer());
     for (Instruction instruction : ListSequence.fromList(program.getInstructionsFor(assignment))) {
       for (Instruction next : SetSequence.fromSet(instruction.succ())) {

@@ -83,9 +83,6 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
@@ -1038,11 +1035,7 @@
             <node concept="2OqwBi" id="6EBM_lhyOr7" role="37vLTx">
               <node concept="2ShNRf" id="6EBM_lhyOr8" role="2Oq$k0">
                 <node concept="1pGfFk" id="6EBM_lhyOr9" role="2ShVmc">
-                  <ref role="37wK5l" to="8ov6:~MPSProgramBuilder.&lt;init&gt;(jetbrains.mps.lang.dataFlow.DataFlowManager)" resolve="MPSProgramBuilder" />
-                  <node concept="2YIFZM" id="6EBM_lhyOra" role="37wK5m">
-                    <ref role="1Pybhc" to="8ov6:~DataFlowManager" resolve="DataFlowManager" />
-                    <ref role="37wK5l" to="8ov6:~DataFlowManager.getInstance():jetbrains.mps.lang.dataFlow.DataFlowManager" resolve="getInstance" />
-                  </node>
+                  <ref role="37wK5l" to="8ov6:~MPSProgramBuilder.&lt;init&gt;()" resolve="MPSProgramBuilder" />
                 </node>
               </node>
               <node concept="liA8E" id="6EBM_lhyOrb" role="2OqNvi">

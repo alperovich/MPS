@@ -7,7 +7,6 @@ import java.util.Set;
 import jetbrains.mps.lang.dataFlow.framework.instructions.ReadInstruction;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
-import org.jetbrains.mps.openapi.module.SRepository;
 import jetbrains.mps.lang.dataFlow.framework.AnalysisResult;
 import jetbrains.mps.lang.dataFlow.framework.analyzers.ReachingReadsAnalyzer;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
@@ -30,7 +29,7 @@ public class InlineVariableAssignmentRefactoring extends InlineVariableRefactori
   public InlineVariableAssignmentRefactoring(SNode node) {
     this.myVariable = node;
     SNode body = findStatementList(node);
-    this.myProgram = new MPSProgramBuilder(((SRepository) null)).buildProgram(body);
+    this.myProgram = new MPSProgramBuilder().buildProgram(body);
     AnalysisResult<Set<ReadInstruction>> reachingReads = this.myProgram.analyze(new ReachingReadsAnalyzer());
     this.myReadInstructions = SetSequence.fromSet(new HashSet<ReadInstruction>());
     for (Instruction instruction : ListSequence.fromList(this.myProgram.getInstructionsFor(node))) {

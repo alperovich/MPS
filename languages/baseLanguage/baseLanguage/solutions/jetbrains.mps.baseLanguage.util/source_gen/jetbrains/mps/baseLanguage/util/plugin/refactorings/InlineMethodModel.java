@@ -13,7 +13,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.dataFlow.framework.Program;
 import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
-import org.jetbrains.mps.openapi.module.SRepository;
 import jetbrains.mps.lang.dataFlow.framework.instructions.Instruction;
 import jetbrains.mps.lang.dataFlow.framework.instructions.RetInstruction;
 import jetbrains.mps.lang.dataFlow.framework.instructions.NopInstruction;
@@ -74,7 +73,7 @@ public class InlineMethodModel {
     return false;
   }
   private boolean isReturnBreaksExecitionFlow() {
-    Program program = new MPSProgramBuilder(((SRepository) null)).buildProgram(SLinkOperations.getTarget(getMethod(), MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1ffL, "body")));
+    Program program = new MPSProgramBuilder().buildProgram(SLinkOperations.getTarget(getMethod(), MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1ffL, "body")));
     for (Instruction instruction : ListSequence.fromList(program.getInstructions())) {
       if (instruction instanceof RetInstruction) {
         Instruction next = program.get(instruction.getIndex() + 1);

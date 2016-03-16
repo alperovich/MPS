@@ -23,113 +23,125 @@
       <node id="4282822416100096472" at="22,0,23,0" concept="4" trace="myDataFlowManager" />
       <node id="4282822416100096475" at="23,0,24,0" concept="4" trace="myMayBeUnreachable" />
       <node id="476144281511105512" at="24,0,25,0" concept="4" trace="myRepository" />
-      <node id="4347602411096448691" at="27,52,28,12" concept="14" />
-      <node id="476144281511105519" at="28,12,29,35" concept="3" />
-      <node id="476144281511091476" at="29,35,30,29" concept="10" />
-      <node id="476144281511089930" at="30,29,31,59" concept="3" />
-      <node id="4347602411096445867" at="34,80,35,19" concept="14" />
-      <node id="4347602411096448777" at="35,19,36,35" concept="3" />
-      <node id="4347602411096448826" at="36,35,37,29" concept="10" />
-      <node id="4347602411096448828" at="37,29,38,59" concept="3" />
-      <node id="4282822416100096484" at="46,61,47,45" concept="3" />
-      <node id="4347602411096395938" at="49,62,50,50" concept="9" />
-      <node id="4282822416100096501" at="55,23,56,13" concept="9" />
-      <node id="4282822416100096502" at="57,5,58,23" concept="8" />
-      <node id="476144281511075337" at="59,118,60,69" concept="8" />
-      <node id="476144281511078708" at="60,69,61,0" concept="11" />
-      <node id="476144281511078546" at="61,0,62,34" concept="10" />
-      <node id="476144281511076827" at="63,70,64,91" concept="3" />
-      <node id="4282822416100096536" at="66,36,67,52" concept="3" />
-      <node id="4282822416100096545" at="67,52,68,14" concept="1" />
-      <node id="4282822416100096552" at="72,48,73,58" concept="8" />
-      <node id="4282822416100096558" at="73,58,74,35" concept="3" />
-      <node id="4282822416100096573" at="75,9,76,14" concept="3" />
-      <node id="4282822416100096566" at="77,15,78,52" concept="3" />
-      <node id="4282822416100096583" at="82,64,83,44" concept="3" />
-      <node id="4282822416100096595" at="84,78,85,67" concept="3" />
-      <node id="476144281511106285" at="89,73,90,133" concept="8" />
-      <node id="476144281510925589" at="90,133,91,75" concept="8" />
-      <node id="476144281510928372" at="92,27,93,91" concept="8" />
-      <node id="476144281510934820" at="94,59,95,125" concept="8" />
-      <node id="476144281510937936" at="96,44,97,52" concept="9" />
-      <node id="476144281510967859" at="100,5,101,16" concept="9" />
-      <node id="4347602411096395934" at="49,0,52,0" concept="7" trace="createContext#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;" />
-      <node id="4282822416100096496" at="54,38,57,5" concept="6" />
-      <node id="476144281511075911" at="62,34,65,7" concept="6" />
-      <node id="4282822416100096586" at="83,44,86,5" concept="6" />
-      <node id="476144281510935800" at="95,125,98,9" concept="6" />
-      <node id="4282822416100096479" at="45,0,49,0" concept="2" trace="MPSProgramBuilder#(Ljetbrains/mps/lang/dataFlow/DataFlowManager;)V" />
-      <node id="4282822416100096531" at="65,7,69,7" concept="6" />
-      <node id="4282822416100096564" at="74,35,79,5" concept="17" />
-      <node id="476144281511037141" at="27,0,33,0" concept="2" trace="MPSProgramBuilder#(Lorg/jetbrains/mps/openapi/module/SRepository;)V" />
-      <node id="4347602411096445859" at="34,0,40,0" concept="2" trace="MPSProgramBuilder#(Lorg/jetbrains/mps/openapi/module/SRepository;Ljetbrains/mps/lang/dataFlow/framework/instructions/InstructionBuilder;)V" />
-      <node id="476144281510930255" at="93,91,99,7" concept="6" />
-      <node id="4282822416100096577" at="81,0,88,0" concept="7" trace="onInstructionEmitted#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;)V" />
-      <node id="4282822416100096546" at="72,0,81,0" concept="7" trace="emitMayBeUnreachable#(Ljava/lang/Runnable;)V" />
-      <node id="476144281511020174" at="91,75,100,5" concept="6" />
-      <node id="4282822416100096516" at="58,23,70,5" concept="5" />
-      <node id="476144281511068915" at="89,0,103,0" concept="7" trace="getDataFlowBuilder#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Ljetbrains/mps/lang/dataFlow/framework/IDataFlowBuilder;" />
-      <node id="4282822416100096490" at="53,0,72,0" concept="7" trace="doBuild#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="4282822416100096483" at="46,61,47,45" />
-      <scope id="4347602411096395937" at="49,62,50,50" />
-      <scope id="4282822416100096500" at="55,23,56,13" />
-      <scope id="476144281511075913" at="63,70,64,91" />
-      <scope id="4282822416100096572" at="75,9,76,14" />
-      <scope id="4282822416100096565" at="77,15,78,52" />
-      <scope id="4282822416100096594" at="84,78,85,67" />
-      <scope id="476144281510935802" at="96,44,97,52" />
-      <scope id="4282822416100096535" at="66,36,68,14" />
-      <scope id="4347602411096395934" at="49,0,52,0">
+      <node id="5015186503344854786" at="26,30,27,29" concept="10" />
+      <node id="5015186503344854788" at="27,29,28,59" concept="3" />
+      <node id="5015186503344855982" at="30,56,31,19" concept="14" />
+      <node id="5015186503344854974" at="31,19,32,29" concept="10" />
+      <node id="5015186503344854976" at="32,29,33,59" concept="3" />
+      <node id="476144281511105519" at="35,52,36,35" concept="3" />
+      <node id="476144281511091476" at="36,35,37,29" concept="10" />
+      <node id="476144281511089930" at="37,29,38,59" concept="3" />
+      <node id="4347602411096445867" at="40,80,41,19" concept="14" />
+      <node id="4347602411096448777" at="41,19,42,35" concept="3" />
+      <node id="4347602411096448826" at="42,35,43,29" concept="10" />
+      <node id="4347602411096448828" at="43,29,44,59" concept="3" />
+      <node id="4282822416100096484" at="52,61,53,45" concept="3" />
+      <node id="4347602411096395938" at="55,62,56,50" concept="9" />
+      <node id="4282822416100096501" at="61,23,62,13" concept="9" />
+      <node id="4282822416100096502" at="63,5,64,23" concept="8" />
+      <node id="476144281511075337" at="65,118,66,69" concept="8" />
+      <node id="476144281511078708" at="66,69,67,0" concept="11" />
+      <node id="476144281511078546" at="67,0,68,34" concept="10" />
+      <node id="476144281511076827" at="69,70,70,91" concept="3" />
+      <node id="4282822416100096536" at="72,36,73,52" concept="3" />
+      <node id="4282822416100096545" at="73,52,74,14" concept="1" />
+      <node id="4282822416100096552" at="78,48,79,58" concept="8" />
+      <node id="4282822416100096558" at="79,58,80,35" concept="3" />
+      <node id="4282822416100096573" at="81,9,82,14" concept="3" />
+      <node id="4282822416100096566" at="83,15,84,52" concept="3" />
+      <node id="4282822416100096583" at="88,64,89,44" concept="3" />
+      <node id="4282822416100096595" at="90,78,91,67" concept="3" />
+      <node id="476144281511106285" at="95,73,96,133" concept="8" />
+      <node id="476144281510925589" at="96,133,97,75" concept="8" />
+      <node id="476144281510928372" at="98,27,99,91" concept="8" />
+      <node id="476144281510934820" at="100,59,101,125" concept="8" />
+      <node id="476144281510937936" at="102,44,103,52" concept="9" />
+      <node id="476144281510967859" at="106,5,107,16" concept="9" />
+      <node id="4347602411096395934" at="55,0,58,0" concept="7" trace="createContext#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;" />
+      <node id="4282822416100096496" at="60,38,63,5" concept="6" />
+      <node id="476144281511075911" at="68,34,71,7" concept="6" />
+      <node id="4282822416100096586" at="89,44,92,5" concept="6" />
+      <node id="476144281510935800" at="101,125,104,9" concept="6" />
+      <node id="5015186503344853958" at="26,0,30,0" concept="2" trace="MPSProgramBuilder#()V" />
+      <node id="4282822416100096479" at="51,0,55,0" concept="2" trace="MPSProgramBuilder#(Ljetbrains/mps/lang/dataFlow/DataFlowManager;)V" />
+      <node id="4282822416100096531" at="71,7,75,7" concept="6" />
+      <node id="5015186503344854971" at="30,0,35,0" concept="2" trace="MPSProgramBuilder#(Ljetbrains/mps/lang/dataFlow/framework/instructions/InstructionBuilder;)V" />
+      <node id="476144281511037141" at="35,0,40,0" concept="2" trace="MPSProgramBuilder#(Lorg/jetbrains/mps/openapi/module/SRepository;)V" />
+      <node id="4282822416100096564" at="80,35,85,5" concept="17" />
+      <node id="4347602411096445859" at="40,0,46,0" concept="2" trace="MPSProgramBuilder#(Lorg/jetbrains/mps/openapi/module/SRepository;Ljetbrains/mps/lang/dataFlow/framework/instructions/InstructionBuilder;)V" />
+      <node id="476144281510930255" at="99,91,105,7" concept="6" />
+      <node id="4282822416100096577" at="87,0,94,0" concept="7" trace="onInstructionEmitted#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;)V" />
+      <node id="4282822416100096546" at="78,0,87,0" concept="7" trace="emitMayBeUnreachable#(Ljava/lang/Runnable;)V" />
+      <node id="476144281511020174" at="97,75,106,5" concept="6" />
+      <node id="4282822416100096516" at="64,23,76,5" concept="5" />
+      <node id="476144281511068915" at="95,0,109,0" concept="7" trace="getDataFlowBuilder#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Ljetbrains/mps/lang/dataFlow/framework/IDataFlowBuilder;" />
+      <node id="4282822416100096490" at="59,0,78,0" concept="7" trace="doBuild#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4282822416100096483" at="52,61,53,45" />
+      <scope id="4347602411096395937" at="55,62,56,50" />
+      <scope id="4282822416100096500" at="61,23,62,13" />
+      <scope id="476144281511075913" at="69,70,70,91" />
+      <scope id="4282822416100096572" at="81,9,82,14" />
+      <scope id="4282822416100096565" at="83,15,84,52" />
+      <scope id="4282822416100096594" at="90,78,91,67" />
+      <scope id="476144281510935802" at="102,44,103,52" />
+      <scope id="5015186503344853961" at="26,30,28,59" />
+      <scope id="4282822416100096535" at="72,36,74,14" />
+      <scope id="5015186503344854973" at="30,56,33,59" />
+      <scope id="476144281511037144" at="35,52,38,59" />
+      <scope id="4347602411096395934" at="55,0,58,0">
         <var name="node" id="4347602411096395935" />
       </scope>
-      <scope id="476144281511037144" at="27,52,31,59" />
-      <scope id="4347602411096445865" at="34,80,38,59" />
-      <scope id="4282822416100096479" at="45,0,49,0">
+      <scope id="5015186503344853958" at="26,0,30,0" />
+      <scope id="4347602411096445865" at="40,80,44,59" />
+      <scope id="4282822416100096479" at="51,0,55,0">
         <var name="dataFlowManager" id="4282822416100096481" />
       </scope>
-      <scope id="4282822416100096582" at="82,64,86,5" />
-      <scope id="476144281510930257" at="94,59,98,9">
+      <scope id="4282822416100096582" at="88,64,92,5" />
+      <scope id="476144281510930257" at="100,59,104,9">
         <var name="dataFlowBuilders" id="476144281510934821" />
       </scope>
-      <scope id="476144281511037141" at="27,0,33,0">
+      <scope id="5015186503344854971" at="30,0,35,0">
+        <var name="builder" id="5015186503344855916" />
+      </scope>
+      <scope id="476144281511037141" at="35,0,40,0">
         <var name="repository" id="476144281511105115" />
       </scope>
-      <scope id="4347602411096445859" at="34,0,40,0">
+      <scope id="4347602411096445859" at="40,0,46,0">
         <var name="builder" id="4347602411096445863" />
         <var name="repository" id="4347602411096446621" />
       </scope>
-      <scope id="4282822416100096551" at="72,48,79,5">
+      <scope id="4282822416100096551" at="78,48,85,5">
         <var name="oldMayBeUnreachable" id="4282822416100096553" />
       </scope>
-      <scope id="4282822416100096577" at="81,0,88,0">
+      <scope id="4282822416100096577" at="87,0,94,0">
         <var name="instruction" id="4282822416100096580" />
       </scope>
-      <scope id="476144281511020176" at="92,27,99,7">
+      <scope id="476144281511020176" at="98,27,105,7">
         <var name="aspect" id="476144281510928373" />
       </scope>
-      <scope id="4282822416100096546" at="72,0,81,0">
+      <scope id="4282822416100096546" at="78,0,87,0">
         <var name="r" id="4282822416100096549" />
       </scope>
-      <scope id="4282822416100096520" at="59,118,69,7">
+      <scope id="4282822416100096520" at="65,118,75,7">
         <var name="dataFlowBuilder" id="476144281511075338" />
       </scope>
-      <scope id="4282822416100096516" at="58,23,70,5">
+      <scope id="4282822416100096516" at="64,23,76,5">
         <var name="concept" id="4282822416100096518" />
       </scope>
-      <scope id="476144281511068918" at="89,73,101,16">
+      <scope id="476144281511068918" at="95,73,107,16">
         <var name="instance" id="476144281511106286" />
         <var name="language" id="476144281510925590" />
       </scope>
-      <scope id="476144281511068915" at="89,0,103,0">
+      <scope id="476144281511068915" at="95,0,109,0">
         <var name="concept" id="476144281511069954" />
       </scope>
-      <scope id="4282822416100096495" at="54,38,70,5">
+      <scope id="4282822416100096495" at="60,38,76,5">
         <var name="snode" id="4282822416100096503" />
       </scope>
-      <scope id="4282822416100096490" at="53,0,72,0">
+      <scope id="4282822416100096490" at="59,0,78,0">
         <var name="node" id="4282822416100096493" />
       </scope>
-      <unit id="4282822416100096468" at="21,0,104,0" name="jetbrains.mps.lang.dataFlow.MPSProgramBuilder" />
+      <unit id="4282822416100096468" at="21,0,110,0" name="jetbrains.mps.lang.dataFlow.MPSProgramBuilder" />
     </file>
   </root>
   <root nodeRef="2af156ab-65c1-4a62-bd0d-ea734f71eab6/r:a1d8bbbf-d4f0-431f-8dcd-a6badc777315(jetbrains.mps.dataFlow.runtime/jetbrains.mps.lang.dataFlow)/4282822416100097056">
@@ -168,150 +180,150 @@
   </root>
   <root nodeRef="2af156ab-65c1-4a62-bd0d-ea734f71eab6/r:a1d8bbbf-d4f0-431f-8dcd-a6badc777315(jetbrains.mps.dataFlow.runtime/jetbrains.mps.lang.dataFlow)/4282822416100098655">
     <file name="DataFlow.java">
-      <node id="4282822416100098657" at="17,0,18,0" concept="12" trace="MAY_BE_UNREACHABLE" />
-      <node id="4282822416100098669" at="20,68,21,78" concept="9" />
-      <node id="4282822416100098683" at="23,50,24,74" concept="9" />
-      <node id="4282822416100098695" at="26,65,27,72" concept="8" />
-      <node id="4282822416100098702" at="27,72,28,55" concept="8" />
-      <node id="4282822416100098725" at="30,69,31,54" concept="8" />
-      <node id="4282822416100098782" at="32,198,33,54" concept="3" />
-      <node id="4282822416100098772" at="36,232,37,58" concept="3" />
-      <node id="4282822416100098752" at="39,18,40,234" concept="3" />
-      <node id="4282822416100098791" at="44,5,45,28" concept="9" />
-      <node id="4282822416100098800" at="47,64,48,68" concept="8" />
-      <node id="4282822416100098807" at="48,68,49,45" concept="8" />
-      <node id="4282822416100098819" at="50,47,51,44" concept="3" />
-      <node id="4282822416100098828" at="52,5,53,18" concept="9" />
-      <node id="4282822416100098837" at="55,67,56,44" concept="8" />
-      <node id="4282822416100098851" at="57,66,58,42" concept="3" />
-      <node id="4282822416100098860" at="59,5,60,17" concept="9" />
-      <node id="4914488904500985525" at="62,78,63,45" concept="8" />
-      <node id="4914488904500985584" at="65,88,66,58" concept="3" />
-      <node id="4914488904500985594" at="66,58,67,14" concept="1" />
-      <node id="4914488904500985606" at="70,35,71,62" concept="9" />
-      <node id="4914488904500985617" at="72,5,73,17" concept="9" />
-      <node id="4282822416100098871" at="75,74,76,47" concept="8" />
-      <node id="4282822416100098890" at="78,41,79,66" concept="3" />
-      <node id="4282822416100098902" at="81,5,82,20" concept="9" />
-      <node id="4282822416100098911" at="84,61,85,70" concept="9" />
-      <node id="4282822416100098922" at="87,66,88,56" concept="8" />
-      <node id="4282822416100098936" at="89,67,90,55" concept="3" />
-      <node id="4282822416100098945" at="91,5,92,29" concept="9" />
-      <node id="4282822416100098660" at="18,0,20,0" concept="2" trace="DataFlow#()V" />
-      <node id="4282822416100098745" at="39,16,41,11" concept="0" />
-      <node id="4282822416100098663" at="20,0,23,0" concept="13" trace="mayBeUnreachable#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;)Z" />
-      <node id="4282822416100098677" at="23,0,26,0" concept="13" trace="buildProgram#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/dataFlow/framework/Program;" />
-      <node id="4282822416100098763" at="35,204,38,13" concept="6" />
-      <node id="4282822416100098814" at="49,45,52,5" concept="5" />
-      <node id="4282822416100098844" at="56,44,59,5" concept="5" />
-      <node id="4914488904500985597" at="69,5,72,5" concept="6" />
-      <node id="4282822416100098885" at="77,53,80,7" concept="6" />
-      <node id="4282822416100098904" at="84,0,87,0" concept="13" trace="getUnusedAssignments#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/Set;" />
-      <node id="4282822416100098929" at="88,56,91,5" concept="5" />
-      <node id="4914488904500985562" at="64,71,68,7" concept="6" />
-      <node id="4282822416100098878" at="76,47,81,5" concept="5" />
-      <node id="4914488904500985531" at="63,45,69,5" concept="5" />
-      <node id="4282822416100098740" at="34,16,41,11" concept="6" />
-      <node id="4282822416100098830" at="55,0,62,0" concept="13" trace="getUninitializedReads#(Ljetbrains/mps/lang/dataFlow/framework/Program;)Ljava/util/Set;" />
-      <node id="4282822416100098915" at="87,0,94,0" concept="13" trace="getUnusedAssignments#(Ljetbrains/mps/lang/dataFlow/framework/Program;)Ljava/util/Set;" />
-      <node id="4282822416100098738" at="34,14,42,9" concept="0" />
-      <node id="4282822416100098793" at="47,0,55,0" concept="13" trace="getExpectedReturns#(Ljetbrains/mps/lang/dataFlow/framework/Program;)Ljava/util/Set;" />
-      <node id="4282822416100098862" at="75,0,84,0" concept="13" trace="getUsedVariables#(Ljetbrains/mps/lang/dataFlow/framework/Program;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/Set;" />
-      <node id="4282822416100098733" at="31,54,42,9" concept="6" />
-      <node id="4914488904500951871" at="62,0,75,0" concept="13" trace="isInitializedRewritten#(Ljetbrains/mps/lang/dataFlow/framework/Program;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="4282822416100098714" at="29,39,43,7" concept="6" />
-      <node id="4282822416100098709" at="28,55,44,5" concept="5" />
-      <node id="4282822416100098688" at="26,0,47,0" concept="13" trace="getUnreachableNodes#(Ljetbrains/mps/lang/dataFlow/framework/Program;)Ljava/util/Set;" />
-      <scope id="4282822416100098662" at="18,21,18,21" />
-      <scope id="4282822416100098668" at="20,68,21,78" />
-      <scope id="4282822416100098682" at="23,50,24,74" />
-      <scope id="4282822416100098781" at="32,198,33,54" />
-      <scope id="4282822416100098771" at="36,232,37,58" />
-      <scope id="4282822416100098746" at="39,18,40,234" />
-      <scope id="4282822416100098818" at="50,47,51,44" />
-      <scope id="4282822416100098850" at="57,66,58,42" />
-      <scope id="4914488904500985598" at="70,35,71,62" />
-      <scope id="4282822416100098889" at="78,41,79,66" />
-      <scope id="4282822416100098910" at="84,61,85,70" />
-      <scope id="4282822416100098935" at="89,67,90,55" />
-      <scope id="4282822416100098660" at="18,0,20,0" />
-      <scope id="4914488904500985563" at="65,88,67,14" />
-      <scope id="4282822416100098663" at="20,0,23,0">
+      <node id="4282822416100098657" at="16,0,17,0" concept="12" trace="MAY_BE_UNREACHABLE" />
+      <node id="4282822416100098669" at="19,68,20,78" concept="9" />
+      <node id="4282822416100098683" at="22,50,23,54" concept="9" />
+      <node id="4282822416100098695" at="25,65,26,72" concept="8" />
+      <node id="4282822416100098702" at="26,72,27,55" concept="8" />
+      <node id="4282822416100098725" at="29,69,30,54" concept="8" />
+      <node id="4282822416100098782" at="31,198,32,54" concept="3" />
+      <node id="4282822416100098772" at="35,232,36,58" concept="3" />
+      <node id="4282822416100098752" at="38,18,39,234" concept="3" />
+      <node id="4282822416100098791" at="43,5,44,28" concept="9" />
+      <node id="4282822416100098800" at="46,64,47,68" concept="8" />
+      <node id="4282822416100098807" at="47,68,48,45" concept="8" />
+      <node id="4282822416100098819" at="49,47,50,44" concept="3" />
+      <node id="4282822416100098828" at="51,5,52,18" concept="9" />
+      <node id="4282822416100098837" at="54,67,55,44" concept="8" />
+      <node id="4282822416100098851" at="56,66,57,42" concept="3" />
+      <node id="4282822416100098860" at="58,5,59,17" concept="9" />
+      <node id="4914488904500985525" at="61,78,62,45" concept="8" />
+      <node id="4914488904500985584" at="64,88,65,58" concept="3" />
+      <node id="4914488904500985594" at="65,58,66,14" concept="1" />
+      <node id="4914488904500985606" at="69,35,70,62" concept="9" />
+      <node id="4914488904500985617" at="71,5,72,17" concept="9" />
+      <node id="4282822416100098871" at="74,74,75,47" concept="8" />
+      <node id="4282822416100098890" at="77,41,78,66" concept="3" />
+      <node id="4282822416100098902" at="80,5,81,20" concept="9" />
+      <node id="4282822416100098911" at="83,61,84,70" concept="9" />
+      <node id="4282822416100098922" at="86,66,87,56" concept="8" />
+      <node id="4282822416100098936" at="88,67,89,55" concept="3" />
+      <node id="4282822416100098945" at="90,5,91,29" concept="9" />
+      <node id="4282822416100098660" at="17,0,19,0" concept="2" trace="DataFlow#()V" />
+      <node id="4282822416100098745" at="38,16,40,11" concept="0" />
+      <node id="4282822416100098663" at="19,0,22,0" concept="13" trace="mayBeUnreachable#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;)Z" />
+      <node id="4282822416100098677" at="22,0,25,0" concept="13" trace="buildProgram#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/dataFlow/framework/Program;" />
+      <node id="4282822416100098763" at="34,204,37,13" concept="6" />
+      <node id="4282822416100098814" at="48,45,51,5" concept="5" />
+      <node id="4282822416100098844" at="55,44,58,5" concept="5" />
+      <node id="4914488904500985597" at="68,5,71,5" concept="6" />
+      <node id="4282822416100098885" at="76,53,79,7" concept="6" />
+      <node id="4282822416100098904" at="83,0,86,0" concept="13" trace="getUnusedAssignments#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/Set;" />
+      <node id="4282822416100098929" at="87,56,90,5" concept="5" />
+      <node id="4914488904500985562" at="63,71,67,7" concept="6" />
+      <node id="4282822416100098878" at="75,47,80,5" concept="5" />
+      <node id="4914488904500985531" at="62,45,68,5" concept="5" />
+      <node id="4282822416100098740" at="33,16,40,11" concept="6" />
+      <node id="4282822416100098830" at="54,0,61,0" concept="13" trace="getUninitializedReads#(Ljetbrains/mps/lang/dataFlow/framework/Program;)Ljava/util/Set;" />
+      <node id="4282822416100098915" at="86,0,93,0" concept="13" trace="getUnusedAssignments#(Ljetbrains/mps/lang/dataFlow/framework/Program;)Ljava/util/Set;" />
+      <node id="4282822416100098738" at="33,14,41,9" concept="0" />
+      <node id="4282822416100098793" at="46,0,54,0" concept="13" trace="getExpectedReturns#(Ljetbrains/mps/lang/dataFlow/framework/Program;)Ljava/util/Set;" />
+      <node id="4282822416100098862" at="74,0,83,0" concept="13" trace="getUsedVariables#(Ljetbrains/mps/lang/dataFlow/framework/Program;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/Set;" />
+      <node id="4282822416100098733" at="30,54,41,9" concept="6" />
+      <node id="4914488904500951871" at="61,0,74,0" concept="13" trace="isInitializedRewritten#(Ljetbrains/mps/lang/dataFlow/framework/Program;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4282822416100098714" at="28,39,42,7" concept="6" />
+      <node id="4282822416100098709" at="27,55,43,5" concept="5" />
+      <node id="4282822416100098688" at="25,0,46,0" concept="13" trace="getUnreachableNodes#(Ljetbrains/mps/lang/dataFlow/framework/Program;)Ljava/util/Set;" />
+      <scope id="4282822416100098662" at="17,21,17,21" />
+      <scope id="4282822416100098668" at="19,68,20,78" />
+      <scope id="4282822416100098682" at="22,50,23,54" />
+      <scope id="4282822416100098781" at="31,198,32,54" />
+      <scope id="4282822416100098771" at="35,232,36,58" />
+      <scope id="4282822416100098746" at="38,18,39,234" />
+      <scope id="4282822416100098818" at="49,47,50,44" />
+      <scope id="4282822416100098850" at="56,66,57,42" />
+      <scope id="4914488904500985598" at="69,35,70,62" />
+      <scope id="4282822416100098889" at="77,41,78,66" />
+      <scope id="4282822416100098910" at="83,61,84,70" />
+      <scope id="4282822416100098935" at="88,67,89,55" />
+      <scope id="4282822416100098660" at="17,0,19,0" />
+      <scope id="4914488904500985563" at="64,88,66,14" />
+      <scope id="4282822416100098663" at="19,0,22,0">
         <var name="instruction" id="4282822416100098666" />
       </scope>
-      <scope id="4282822416100098677" at="23,0,26,0">
+      <scope id="4282822416100098677" at="22,0,25,0">
         <var name="node" id="4282822416100098680" />
       </scope>
-      <scope id="4282822416100098762" at="35,204,38,13" />
-      <scope id="4282822416100098814" at="49,45,52,5">
+      <scope id="4282822416100098762" at="34,204,37,13" />
+      <scope id="4282822416100098814" at="48,45,51,5">
         <var name="instr" id="4282822416100098816" />
       </scope>
-      <scope id="4282822416100098844" at="56,44,59,5">
+      <scope id="4282822416100098844" at="55,44,58,5">
         <var name="read" id="4282822416100098848" />
       </scope>
-      <scope id="4282822416100098884" at="77,53,80,7" />
-      <scope id="4282822416100098904" at="84,0,87,0">
+      <scope id="4282822416100098884" at="76,53,79,7" />
+      <scope id="4282822416100098904" at="83,0,86,0">
         <var name="node" id="4282822416100098908" />
       </scope>
-      <scope id="4282822416100098929" at="88,56,91,5">
+      <scope id="4282822416100098929" at="87,56,90,5">
         <var name="write" id="4282822416100098933" />
       </scope>
-      <scope id="4914488904500985532" at="64,71,68,7" />
-      <scope id="4282822416100098836" at="55,67,60,17">
+      <scope id="4914488904500985532" at="63,71,67,7" />
+      <scope id="4282822416100098836" at="54,67,59,17">
         <var name="reads" id="4282822416100098838" />
       </scope>
-      <scope id="4282822416100098878" at="76,47,81,5">
+      <scope id="4282822416100098878" at="75,47,80,5">
         <var name="i" id="4282822416100098882" />
       </scope>
-      <scope id="4282822416100098921" at="87,66,92,29">
+      <scope id="4282822416100098921" at="86,66,91,29">
         <var name="unusedAssignments" id="4282822416100098923" />
       </scope>
-      <scope id="4282822416100098799" at="47,64,53,18">
+      <scope id="4282822416100098799" at="46,64,52,18">
         <var name="expectedReturns" id="4282822416100098801" />
         <var name="result" id="4282822416100098808" />
       </scope>
-      <scope id="4914488904500985531" at="63,45,69,5">
+      <scope id="4914488904500985531" at="62,45,68,5">
         <var name="instruction" id="4914488904500985535" />
       </scope>
-      <scope id="4282822416100098739" at="34,16,41,11" />
-      <scope id="4282822416100098830" at="55,0,62,0">
+      <scope id="4282822416100098739" at="33,16,40,11" />
+      <scope id="4282822416100098830" at="54,0,61,0">
         <var name="program" id="4282822416100098834" />
       </scope>
-      <scope id="4282822416100098870" at="75,74,82,20">
+      <scope id="4282822416100098870" at="74,74,81,20">
         <var name="readVars" id="4282822416100098872" />
       </scope>
-      <scope id="4282822416100098915" at="87,0,94,0">
+      <scope id="4282822416100098915" at="86,0,93,0">
         <var name="program" id="4282822416100098919" />
       </scope>
-      <scope id="4282822416100098793" at="47,0,55,0">
+      <scope id="4282822416100098793" at="46,0,54,0">
         <var name="program" id="4282822416100098797" />
       </scope>
-      <scope id="4282822416100098862" at="75,0,84,0">
+      <scope id="4282822416100098862" at="74,0,83,0">
         <var name="node" id="4282822416100098868" />
         <var name="program" id="4282822416100098866" />
       </scope>
-      <scope id="4914488904500951874" at="62,78,73,17">
+      <scope id="4914488904500951874" at="61,78,72,17">
         <var name="writeInstruction" id="4914488904500985526" />
       </scope>
-      <scope id="4282822416100098724" at="30,69,42,9">
+      <scope id="4282822416100098724" at="29,69,41,9">
         <var name="unreachableNode" id="4282822416100098726" />
       </scope>
-      <scope id="4914488904500951871" at="62,0,75,0">
+      <scope id="4914488904500951871" at="61,0,74,0">
         <var name="program" id="4914488904500985520" />
         <var name="write" id="4914488904500985522" />
       </scope>
-      <scope id="4282822416100098713" at="29,39,43,7" />
-      <scope id="4282822416100098709" at="28,55,44,5">
+      <scope id="4282822416100098713" at="28,39,42,7" />
+      <scope id="4282822416100098709" at="27,55,43,5">
         <var name="i" id="4282822416100098711" />
       </scope>
-      <scope id="4282822416100098694" at="26,65,45,28">
+      <scope id="4282822416100098694" at="25,65,44,28">
         <var name="unreachable" id="4282822416100098696" />
         <var name="unreachableNodes" id="4282822416100098703" />
       </scope>
-      <scope id="4282822416100098688" at="26,0,47,0">
+      <scope id="4282822416100098688" at="25,0,46,0">
         <var name="program" id="4282822416100098692" />
       </scope>
-      <unit id="4282822416100098655" at="16,0,95,0" name="jetbrains.mps.lang.dataFlow.DataFlow" />
+      <unit id="4282822416100098655" at="15,0,94,0" name="jetbrains.mps.lang.dataFlow.DataFlow" />
     </file>
   </root>
   <root nodeRef="2af156ab-65c1-4a62-bd0d-ea734f71eab6/r:a1d8bbbf-d4f0-431f-8dcd-a6badc777315(jetbrains.mps.dataFlow.runtime/jetbrains.mps.lang.dataFlow)/4282822416100098947">
@@ -345,129 +357,129 @@
   </root>
   <root nodeRef="2af156ab-65c1-4a62-bd0d-ea734f71eab6/r:a1d8bbbf-d4f0-431f-8dcd-a6badc777315(jetbrains.mps.dataFlow.runtime/jetbrains.mps.lang.dataFlow)/4282822416100099058">
     <file name="DataFlowManager.java">
-      <node id="1519428872448357899" at="31,0,32,0" concept="12" trace="INSTANCE" />
-      <node id="3689217605462758758" at="32,0,33,0" concept="4" trace="myManager" />
-      <node id="3689217605462440649" at="35,84,36,35" concept="3" />
-      <node id="4282822416100099072" at="39,0,40,0" concept="4" trace="myBuilders" />
-      <node id="8204202203348314086" at="40,0,41,0" concept="4" trace="myLoaded" />
-      <node id="4282822416100099097" at="43,92,44,24" concept="3" />
-      <node id="1519428872448357928" at="49,27,50,63" concept="15" />
-      <node id="1519428872448357911" at="51,5,52,20" concept="3" />
-      <node id="4282822416100099113" at="52,20,53,44" concept="3" />
-      <node id="4958544726713861144" at="56,25,57,47" concept="3" />
-      <node id="1519428872448357904" at="57,47,58,20" concept="3" />
-      <node id="4282822416100099143" at="60,71,61,48" concept="3" />
-      <node id="8204202203348315724" at="63,46,64,18" concept="3" />
-      <node id="4282822416100099169" at="64,18,65,58" concept="9" />
-      <node id="476144281510903437" at="68,61,69,18" concept="3" />
-      <node id="476144281510903439" at="69,18,70,40" concept="9" />
-      <node id="4282822416100099192" at="72,24,73,23" concept="3" />
-      <node id="8204202203348315529" at="73,23,74,21" concept="3" />
-      <node id="8204202203348315520" at="77,19,78,13" concept="9" />
-      <node id="8204202203348315522" at="79,5,80,20" concept="3" />
-      <node id="8204202203348315715" at="80,20,81,16" concept="3" />
-      <node id="8204202203348315647" at="84,91,85,56" concept="8" />
-      <node id="8204202203348315663" at="86,77,87,98" concept="8" />
-      <node id="8204202203348315670" at="87,98,88,63" concept="8" />
-      <node id="1875514556278960823" at="89,13,90,100" concept="3" />
-      <node id="8204202203348315683" at="94,15,95,68" concept="8" />
-      <node id="8204202203348315710" at="95,68,96,35" concept="3" />
-      <node id="3689217605463174035" at="98,48,99,31" concept="3" />
-      <node id="3689217605463179319" at="102,48,103,31" concept="3" />
-      <node id="4282822416100099085" at="110,47,111,20" concept="9" />
-      <node id="4282822416100099058" at="113,0,114,0" concept="12" trace="LOG" />
-      <node id="1519428872448357919" at="48,22,51,5" concept="6" />
-      <node id="4282822416100099135" at="60,0,63,0" concept="7" trace="register#(Ljava/lang/String;Ljetbrains/mps/lang/dataFlow/DataFlowBuilder;)V" />
-      <node id="8204202203348315516" at="76,43,79,5" concept="6" />
-      <node id="3689217605463174035" at="97,46,100,13" concept="0" />
-      <node id="3689217605463174035" at="97,46,100,13" concept="6" />
-      <node id="3689217605463179319" at="101,46,104,13" concept="0" />
-      <node id="3689217605463179319" at="101,46,104,13" concept="6" />
-      <node id="4282822416100099081" at="110,0,113,0" concept="13" trace="getInstance#()Ljetbrains/mps/lang/dataFlow/DataFlowManager;" />
-      <node id="3689217605462439544" at="34,0,38,0" concept="7" trace="beforeClassesUnloaded#(Ljava/util/Set;)V" />
-      <node id="4282822416100099090" at="42,0,46,0" concept="2" trace="DataFlowManager#(Ljetbrains/mps/smodel/MPSModuleRepository;Ljetbrains/mps/classloading/ClassLoaderManager;)V" />
-      <node id="4282822416100099163" at="63,0,67,0" concept="7" trace="buildProgramFor#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/dataFlow/framework/Program;" />
-      <node id="476144281510903432" at="68,0,72,0" concept="7" trace="getBuilderFor#(Ljava/lang/String;)Ljetbrains/mps/lang/dataFlow/DataFlowBuilder;" />
-      <node id="4282822416100099188" at="72,0,76,0" concept="7" trace="clear#()V" />
-      <node id="1875514556278959244" at="88,63,92,9" concept="16" />
-      <node id="4282822416100099131" at="55,0,60,0" concept="7" trace="dispose#()V" />
-      <node id="1058093769518981030" at="33,0,39,0" concept="4" trace="myListener" />
-      <node id="8204202203348315512" at="76,0,83,0" concept="7" trace="checkLoaded#()V" />
-      <node id="4282822416100099109" at="47,0,55,0" concept="7" trace="init#()V" />
-      <node id="3689217605463168639" at="93,36,105,11" concept="16" />
-      <node id="8204202203348315678" at="92,9,106,9" concept="6" />
-      <node id="8204202203348315653" at="85,56,107,7" concept="6" />
-      <node id="8204202203348315639" at="83,23,108,5" concept="5" />
-      <node id="8204202203348315635" at="83,0,110,0" concept="7" trace="load#()V" />
-      <scope id="1875514556278959240" at="91,0,91,50">
+      <node id="1519428872448357899" at="33,0,34,0" concept="12" trace="INSTANCE" />
+      <node id="3689217605462758758" at="34,0,35,0" concept="4" trace="myManager" />
+      <node id="3689217605462440649" at="37,84,38,35" concept="3" />
+      <node id="4282822416100099072" at="41,0,42,0" concept="4" trace="myBuilders" />
+      <node id="8204202203348314086" at="42,0,43,0" concept="4" trace="myLoaded" />
+      <node id="4282822416100099097" at="45,92,46,24" concept="3" />
+      <node id="1519428872448357928" at="51,27,52,63" concept="15" />
+      <node id="1519428872448357911" at="53,5,54,20" concept="3" />
+      <node id="4282822416100099113" at="54,20,55,44" concept="3" />
+      <node id="4958544726713861144" at="58,25,59,47" concept="3" />
+      <node id="1519428872448357904" at="59,47,60,20" concept="3" />
+      <node id="4282822416100099143" at="62,71,63,48" concept="3" />
+      <node id="8204202203348315724" at="65,46,66,18" concept="3" />
+      <node id="4282822416100099169" at="66,18,67,58" concept="9" />
+      <node id="476144281510903437" at="70,61,71,18" concept="3" />
+      <node id="476144281510903439" at="71,18,72,40" concept="9" />
+      <node id="4282822416100099192" at="74,24,75,23" concept="3" />
+      <node id="8204202203348315529" at="75,23,76,21" concept="3" />
+      <node id="8204202203348315520" at="79,19,80,13" concept="9" />
+      <node id="8204202203348315522" at="81,5,82,20" concept="3" />
+      <node id="8204202203348315715" at="82,20,83,16" concept="3" />
+      <node id="8204202203348315647" at="86,91,87,56" concept="8" />
+      <node id="8204202203348315663" at="88,77,89,98" concept="8" />
+      <node id="8204202203348315670" at="89,98,90,63" concept="8" />
+      <node id="1875514556278960823" at="91,13,92,100" concept="3" />
+      <node id="8204202203348315683" at="96,15,97,68" concept="8" />
+      <node id="8204202203348315710" at="97,68,98,35" concept="3" />
+      <node id="3689217605463174035" at="100,48,101,31" concept="3" />
+      <node id="3689217605463179319" at="104,48,105,31" concept="3" />
+      <node id="4282822416100099085" at="112,47,113,20" concept="9" />
+      <node id="4282822416100099058" at="115,0,116,0" concept="12" trace="LOG" />
+      <node id="1519428872448357919" at="50,22,53,5" concept="6" />
+      <node id="4282822416100099135" at="62,0,65,0" concept="7" trace="register#(Ljava/lang/String;Ljetbrains/mps/lang/dataFlow/DataFlowBuilder;)V" />
+      <node id="8204202203348315516" at="78,43,81,5" concept="6" />
+      <node id="3689217605463174035" at="99,46,102,13" concept="0" />
+      <node id="3689217605463174035" at="99,46,102,13" concept="6" />
+      <node id="3689217605463179319" at="103,46,106,13" concept="0" />
+      <node id="3689217605463179319" at="103,46,106,13" concept="6" />
+      <node id="4282822416100099081" at="112,0,115,0" concept="13" trace="getInstance#()Ljetbrains/mps/lang/dataFlow/DataFlowManager;" />
+      <node id="3689217605462439544" at="36,0,40,0" concept="7" trace="beforeClassesUnloaded#(Ljava/util/Set;)V" />
+      <node id="4282822416100099090" at="44,0,48,0" concept="2" trace="DataFlowManager#(Ljetbrains/mps/smodel/MPSModuleRepository;Ljetbrains/mps/classloading/ClassLoaderManager;)V" />
+      <node id="4282822416100099163" at="65,0,69,0" concept="7" trace="buildProgramFor#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/dataFlow/framework/Program;" />
+      <node id="476144281510903432" at="70,0,74,0" concept="7" trace="getBuilderFor#(Ljava/lang/String;)Ljetbrains/mps/lang/dataFlow/DataFlowBuilder;" />
+      <node id="4282822416100099188" at="74,0,78,0" concept="7" trace="clear#()V" />
+      <node id="1875514556278959244" at="90,63,94,9" concept="16" />
+      <node id="4282822416100099131" at="57,0,62,0" concept="7" trace="dispose#()V" />
+      <node id="1058093769518981030" at="35,0,41,0" concept="4" trace="myListener" />
+      <node id="8204202203348315512" at="78,0,85,0" concept="7" trace="checkLoaded#()V" />
+      <node id="4282822416100099109" at="49,0,57,0" concept="7" trace="init#()V" />
+      <node id="3689217605463168639" at="95,36,107,11" concept="16" />
+      <node id="8204202203348315678" at="94,9,108,9" concept="6" />
+      <node id="8204202203348315653" at="87,56,109,7" concept="6" />
+      <node id="8204202203348315639" at="85,23,110,5" concept="5" />
+      <node id="8204202203348315635" at="85,0,112,0" concept="7" trace="load#()V" />
+      <scope id="1875514556278959240" at="93,0,93,50">
         <var name="ignored" id="1875514556278959242" />
       </scope>
-      <scope id="1875514556278959241" at="91,50,91,50" />
-      <scope id="3689217605462439547" at="35,84,36,35" />
-      <scope id="4282822416100099096" at="43,92,44,24" />
-      <scope id="1519428872448357920" at="49,27,50,63" />
-      <scope id="4282822416100099142" at="60,71,61,48" />
-      <scope id="8204202203348315518" at="77,19,78,13" />
-      <scope id="1875514556278959245" at="89,13,90,100" />
-      <scope id="3689217605463174035" at="98,48,99,31" />
-      <scope id="3689217605463179319" at="102,48,103,31" />
-      <scope id="4282822416100099084" at="110,47,111,20" />
-      <scope id="4282822416100099134" at="56,25,58,20" />
-      <scope id="4282822416100099168" at="63,46,65,58" />
-      <scope id="476144281510903436" at="68,61,70,40" />
-      <scope id="4282822416100099191" at="72,24,74,21" />
-      <scope id="3689217605463168640" at="94,15,96,35">
+      <scope id="1875514556278959241" at="93,50,93,50" />
+      <scope id="3689217605462439547" at="37,84,38,35" />
+      <scope id="4282822416100099096" at="45,92,46,24" />
+      <scope id="1519428872448357920" at="51,27,52,63" />
+      <scope id="4282822416100099142" at="62,71,63,48" />
+      <scope id="8204202203348315518" at="79,19,80,13" />
+      <scope id="1875514556278959245" at="91,13,92,100" />
+      <scope id="3689217605463174035" at="100,48,101,31" />
+      <scope id="3689217605463179319" at="104,48,105,31" />
+      <scope id="4282822416100099084" at="112,47,113,20" />
+      <scope id="4282822416100099134" at="58,25,60,20" />
+      <scope id="4282822416100099168" at="65,46,67,58" />
+      <scope id="476144281510903436" at="70,61,72,40" />
+      <scope id="4282822416100099191" at="74,24,76,21" />
+      <scope id="3689217605463168640" at="96,15,98,35">
         <var name="builders" id="8204202203348315634" />
       </scope>
-      <scope id="4282822416100099135" at="60,0,63,0">
+      <scope id="4282822416100099135" at="62,0,65,0">
         <var name="builder" id="4282822416100099140" />
         <var name="conceptFqName" id="4282822416100099138" />
       </scope>
-      <scope id="3689217605463168631" at="97,0,100,13">
+      <scope id="3689217605463168631" at="99,0,102,13">
         <var name="e" id="3689217605463168633" />
       </scope>
-      <scope id="3689217605463168632" at="97,46,100,13" />
-      <scope id="3689217605463174035" at="97,46,100,13" />
-      <scope id="3689217605463168635" at="101,0,104,13">
+      <scope id="3689217605463168632" at="99,46,102,13" />
+      <scope id="3689217605463174035" at="99,46,102,13" />
+      <scope id="3689217605463168635" at="103,0,106,13">
         <var name="e" id="3689217605463168637" />
       </scope>
-      <scope id="3689217605463168636" at="101,46,104,13" />
-      <scope id="3689217605463179319" at="101,46,104,13" />
-      <scope id="4282822416100099081" at="110,0,113,0" />
-      <scope id="3689217605462439544" at="34,0,38,0">
+      <scope id="3689217605463168636" at="103,46,106,13" />
+      <scope id="3689217605463179319" at="103,46,106,13" />
+      <scope id="4282822416100099081" at="112,0,115,0" />
+      <scope id="3689217605462439544" at="36,0,40,0">
         <var name="modules" id="1707564638117583598" />
       </scope>
-      <scope id="4282822416100099090" at="42,0,46,0">
+      <scope id="4282822416100099090" at="44,0,48,0">
         <var name="manager" id="1707564638117576965" />
         <var name="moduleRepository" id="1519428872448357940" />
       </scope>
-      <scope id="4282822416100099163" at="63,0,67,0">
+      <scope id="4282822416100099163" at="65,0,69,0">
         <var name="node" id="4282822416100099166" />
       </scope>
-      <scope id="476144281510903432" at="68,0,72,0">
+      <scope id="476144281510903432" at="70,0,74,0">
         <var name="concept" id="476144281510903434" />
       </scope>
-      <scope id="4282822416100099188" at="72,0,76,0" />
-      <scope id="4282822416100099112" at="48,22,53,44" />
-      <scope id="4282822416100099131" at="55,0,60,0" />
-      <scope id="8204202203348315515" at="76,43,81,16" />
-      <scope id="8204202203348315512" at="76,0,83,0" />
-      <scope id="4282822416100099109" at="47,0,55,0" />
-      <scope id="8204202203348315682" at="93,36,105,11" />
-      <scope id="8204202203348315662" at="86,77,106,9">
+      <scope id="4282822416100099188" at="74,0,78,0" />
+      <scope id="4282822416100099112" at="50,22,55,44" />
+      <scope id="4282822416100099131" at="57,0,62,0" />
+      <scope id="8204202203348315515" at="78,43,83,16" />
+      <scope id="8204202203348315512" at="78,0,85,0" />
+      <scope id="4282822416100099109" at="49,0,57,0" />
+      <scope id="8204202203348315682" at="95,36,107,11" />
+      <scope id="8204202203348315662" at="88,77,108,9">
         <var name="buildersClass" id="8204202203348315631" />
         <var name="dfaBuildersClassName" id="8204202203348315630" />
       </scope>
-      <scope id="8204202203348315646" at="84,91,107,7">
+      <scope id="8204202203348315646" at="86,91,109,7">
         <var name="dfaModel" id="8204202203348315629" />
       </scope>
-      <scope id="8204202203348315638" at="83,23,108,5" />
-      <scope id="8204202203348315639" at="83,23,108,5">
+      <scope id="8204202203348315638" at="85,23,110,5" />
+      <scope id="8204202203348315639" at="85,23,110,5">
         <var name="l" id="8204202203348315628" />
       </scope>
-      <scope id="8204202203348315635" at="83,0,110,0" />
-      <unit id="7084145171935594013" at="33,52,38,3" name="jetbrains.mps.lang.dataFlow.DataFlowManager$1" />
-      <unit id="4282822416100099058" at="29,0,115,0" name="jetbrains.mps.lang.dataFlow.DataFlowManager" />
+      <scope id="8204202203348315635" at="85,0,112,0" />
+      <unit id="7084145171935594013" at="35,52,40,3" name="jetbrains.mps.lang.dataFlow.DataFlowManager$1" />
+      <unit id="4282822416100099058" at="30,0,117,0" name="jetbrains.mps.lang.dataFlow.DataFlowManager" />
     </file>
   </root>
 </debug-info>

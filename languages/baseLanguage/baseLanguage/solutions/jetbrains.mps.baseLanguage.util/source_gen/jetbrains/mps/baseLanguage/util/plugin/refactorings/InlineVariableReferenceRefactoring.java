@@ -11,7 +11,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.dataFlow.framework.Program;
 import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
-import org.jetbrains.mps.openapi.module.SRepository;
 import jetbrains.mps.lang.dataFlow.framework.AnalysisResult;
 import java.util.Set;
 import jetbrains.mps.lang.dataFlow.framework.instructions.WriteInstruction;
@@ -67,7 +66,7 @@ public class InlineVariableReferenceRefactoring extends InlineVariableRefactorin
     SNode currentStatement;
     while ((myAssignment == null) && (currentList != null)) {
       currentStatement = getParentStatement(node, currentList);
-      Program program = new MPSProgramBuilder(((SRepository) null)).buildProgram(currentList);
+      Program program = new MPSProgramBuilder().buildProgram(currentList);
       AnalysisResult<Set<WriteInstruction>> definitions = program.analyze(new ReachingDefinitionsAnalyzer());
       for (Instruction nodeInstruction : ListSequence.fromList(program.getInstructionsFor(currentStatement))) {
         for (WriteInstruction instruction : SetSequence.fromSet(definitions.get(nodeInstruction))) {

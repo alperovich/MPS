@@ -5,7 +5,6 @@ package jetbrains.mps.lang.test.runtime;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.dataFlow.framework.Program;
 import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
-import org.jetbrains.mps.openapi.module.SRepository;
 import jetbrains.mps.lang.dataFlow.framework.instructions.Instruction;
 import java.util.List;
 import java.util.Set;
@@ -30,7 +29,7 @@ public class NodeDataFlowCheckerUtil {
   }
 
   public static void checkDataFlow(final SNode node) {
-    Program program = new MPSProgramBuilder(((SRepository) null)).buildProgram(node);
+    Program program = new MPSProgramBuilder().buildProgram(node);
     Instruction instruction;
     List<Instruction> instructions = program.getInstructionsFor(node);
     Set<Instruction> unreachable = program.getUnreachableInstructions();

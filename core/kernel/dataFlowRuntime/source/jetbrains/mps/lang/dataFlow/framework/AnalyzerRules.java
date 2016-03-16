@@ -27,6 +27,7 @@ import org.jetbrains.mps.openapi.language.SLanguage;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.model.SNode;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -50,7 +51,7 @@ public class AnalyzerRules {
     myAnalyzerId = analyzerId;
   }
 
-  public AnalyzerRules(String analyzerId, Set<SNode> nodesToApply, Program program) {
+  public AnalyzerRules(String analyzerId, Collection<SNode> nodesToApply, Program program) {
     myNodesToApply = new HashSet<SNode>();
     myNodesToApply.addAll(nodesToApply);
     myProgram = program;
