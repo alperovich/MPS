@@ -4,10 +4,10 @@ package testCustomAnalyzer.dataFlow;
 
 import jetbrains.mps.analyzers.runtime.framework.CustomAnalyzerRunner;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
 import jetbrains.mps.lang.dataFlow.framework.AnalyzerRules;
-import jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzer;
 import jetbrains.mps.lang.dataFlow.framework.Program;
+import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
+import jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzer;
 import java.util.List;
 import jetbrains.mps.lang.dataFlow.framework.ProgramState;
 import jetbrains.mps.lang.dataFlow.framework.AnalysisDirection;
@@ -18,11 +18,14 @@ public class CounterAnalyzerWithConstructorAnalyzerRunner extends CustomAnalyzer
     super(null, null);
     myNode = node;
     myAnalyzer = new CounterAnalyzerWithConstructorAnalyzerRunner.CounterAnalyzerWithConstructorAnalyzer(initialCounter);
-    myProgram = new MPSProgramBuilder().buildProgram(myNode);
+    myProgram = createProgram();
     prepareProgram();
   }
   private void prepareProgram() {
     new AnalyzerRules("testCustomAnalyzer.dataFlow.CounterAnalyzerWithConstructor", myNode, myProgram).apply();
+  }
+  private Program createProgram() {
+    return new MPSProgramBuilder().buildProgram(myNode);
   }
   public static class CounterAnalyzerWithConstructorAnalyzer implements DataFlowAnalyzer<Integer> {
     private int initialCounter;
