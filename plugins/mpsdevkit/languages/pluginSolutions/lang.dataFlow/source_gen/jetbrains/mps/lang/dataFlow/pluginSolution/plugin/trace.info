@@ -11,6 +11,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
   <root nodeRef="r:97aec248-a91c-439e-a7f1-5184e2da6816(jetbrains.mps.lang.dataFlow.pluginSolution.plugin)/5487985028841896545">
     <file name="PrintDFAResult_Action.java">
       <node id="5487985028841896545" at="17,0,18,0" concept="9" trace="ICON" />
@@ -65,15 +66,23 @@
   </root>
   <root nodeRef="r:97aec248-a91c-439e-a7f1-5184e2da6816(jetbrains.mps.lang.dataFlow.pluginSolution.plugin)/5487985028841896569">
     <file name="DFAActions_ActionGroup.java">
-      <node id="5487985028841896569" at="8,0,9,0" concept="9" trace="ID" />
-      <node id="5487985028841896569" at="9,35,10,28" concept="10" />
-      <node id="5487985028841896569" at="10,28,11,30" concept="2" />
-      <node id="5487985028841896569" at="11,30,12,25" concept="2" />
-      <node id="5487985028841896572" at="12,25,13,110" concept="2" />
-      <node id="5487985028841896569" at="9,0,15,0" concept="1" trace="DFAActions_ActionGroup#()V" />
-      <scope id="5487985028841896569" at="9,35,13,110" />
-      <scope id="5487985028841896569" at="9,0,15,0" />
-      <unit id="5487985028841896569" at="7,0,16,0" name="jetbrains.mps.lang.dataFlow.pluginSolution.plugin.DFAActions_ActionGroup" />
+      <node id="5487985028841896569" at="10,0,11,0" concept="9" trace="LOG" />
+      <node id="5487985028841896569" at="11,0,12,0" concept="9" trace="ID" />
+      <node id="5487985028841896569" at="12,35,13,28" concept="10" />
+      <node id="5487985028841896569" at="13,28,14,30" concept="2" />
+      <node id="5487985028841896569" at="14,30,15,25" concept="2" />
+      <node id="5487985028841896572" at="16,9,17,112" concept="2" />
+      <node id="5487985028841896569" at="18,27,19,39" concept="2" />
+      <node id="5487985028841896569" at="15,25,20,5" concept="11" />
+      <node id="5487985028841896569" at="12,0,22,0" concept="1" trace="DFAActions_ActionGroup#()V" />
+      <scope id="5487985028841896569" at="16,9,17,112" />
+      <scope id="5487985028841896569" at="18,0,19,39">
+        <var name="t" id="5487985028841896569" />
+      </scope>
+      <scope id="5487985028841896569" at="18,27,19,39" />
+      <scope id="5487985028841896569" at="12,35,20,5" />
+      <scope id="5487985028841896569" at="12,0,22,0" />
+      <unit id="5487985028841896569" at="9,0,23,0" name="jetbrains.mps.lang.dataFlow.pluginSolution.plugin.DFAActions_ActionGroup" />
     </file>
   </root>
   <root nodeRef="r:97aec248-a91c-439e-a7f1-5184e2da6816(jetbrains.mps.lang.dataFlow.pluginSolution.plugin)/5487985028841896573">
@@ -247,17 +256,25 @@
   </root>
   <root nodeRef="r:97aec248-a91c-439e-a7f1-5184e2da6816(jetbrains.mps.lang.dataFlow.pluginSolution.plugin)/5487985028841896728">
     <file name="DataFlowInternal_ActionGroup.java">
-      <node id="5487985028841896728" at="8,0,9,0" concept="9" trace="ID" />
-      <node id="5487985028841896728" at="9,41,10,34" concept="10" />
-      <node id="5487985028841896728" at="10,34,11,30" concept="2" />
-      <node id="5487985028841896728" at="11,30,12,25" concept="2" />
-      <node id="5487985028841896730" at="12,25,13,123" concept="2" />
-      <node id="5487985028841896731" at="13,123,14,139" concept="2" />
-      <node id="5487985028841896732" at="14,139,15,145" concept="2" />
-      <node id="5487985028841896728" at="9,0,17,0" concept="1" trace="DataFlowInternal_ActionGroup#()V" />
-      <scope id="5487985028841896728" at="9,41,15,145" />
-      <scope id="5487985028841896728" at="9,0,17,0" />
-      <unit id="5487985028841896728" at="7,0,18,0" name="jetbrains.mps.lang.dataFlow.pluginSolution.plugin.DataFlowInternal_ActionGroup" />
+      <node id="5487985028841896728" at="10,0,11,0" concept="9" trace="LOG" />
+      <node id="5487985028841896728" at="11,0,12,0" concept="9" trace="ID" />
+      <node id="5487985028841896728" at="12,41,13,34" concept="10" />
+      <node id="5487985028841896728" at="13,34,14,30" concept="2" />
+      <node id="5487985028841896728" at="14,30,15,25" concept="2" />
+      <node id="5487985028841896730" at="16,9,17,125" concept="2" />
+      <node id="5487985028841896731" at="17,125,18,141" concept="2" />
+      <node id="5487985028841896732" at="18,141,19,147" concept="2" />
+      <node id="5487985028841896728" at="20,27,21,39" concept="2" />
+      <node id="5487985028841896728" at="15,25,22,5" concept="11" />
+      <node id="5487985028841896728" at="12,0,24,0" concept="1" trace="DataFlowInternal_ActionGroup#()V" />
+      <scope id="5487985028841896728" at="20,0,21,39">
+        <var name="t" id="5487985028841896728" />
+      </scope>
+      <scope id="5487985028841896728" at="20,27,21,39" />
+      <scope id="5487985028841896728" at="16,9,19,147" />
+      <scope id="5487985028841896728" at="12,41,22,5" />
+      <scope id="5487985028841896728" at="12,0,24,0" />
+      <unit id="5487985028841896728" at="9,0,25,0" name="jetbrains.mps.lang.dataFlow.pluginSolution.plugin.DataFlowInternal_ActionGroup" />
     </file>
   </root>
   <root nodeRef="r:97aec248-a91c-439e-a7f1-5184e2da6816(jetbrains.mps.lang.dataFlow.pluginSolution.plugin)/7162597690967657576">

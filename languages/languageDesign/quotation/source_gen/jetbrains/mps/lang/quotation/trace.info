@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <root>
+    <file name="Generator.java">
+      <unit at="18,0,72,0" name="jetbrains.mps.lang.quotation.Generator" />
+    </file>
     <file name="Language.java">
-      <unit at="21,0,68,0" name="jetbrains.mps.lang.quotation.Language" />
+      <unit at="24,0,75,0" name="jetbrains.mps.lang.quotation.Language" />
     </file>
   </root>
 </debug-info>

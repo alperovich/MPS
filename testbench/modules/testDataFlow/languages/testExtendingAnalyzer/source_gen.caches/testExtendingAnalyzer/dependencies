@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="testExtendingAnalyzer.DFABuilders" file="DFABuilders.java">
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowManager" />
-    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilders" />
-  </dependency>
   <dependency className="testExtendingAnalyzer.Language" file="Language.java">
-    <classNode dependClassName="testExtendingAnalyzer.behavior.BehaviorAspectDescriptor" />
-    <classNode dependClassName="testExtendingAnalyzer.intentions.IntentionsDescriptor" />
-    <classNode dependClassName="testExtendingAnalyzer.editor.EditorAspectDescriptorImpl" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+    <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="testExtendingAnalyzer.structure.StructureAspectDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptor" />
-    <classNode dependClassName="testExtendingAnalyzer.dataFlow.DataFlowAspectDescriptorImpl" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
-    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
-    <classNode dependClassName="java.lang.Class" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
-    <classNode dependClassName="jetbrains.mps.intentions.IntentionAspectDescriptor" />
-    <classNode dependClassName="java.util.UUID" />
     <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.UUID" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="testExtendingAnalyzer.behavior.BehaviorAspectDescriptor" />
+    <classNode dependClassName="testExtendingAnalyzer.dataFlow.DataFlowAspectDescriptorImpl" />
+    <classNode dependClassName="testExtendingAnalyzer.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="testExtendingAnalyzer.intentions.IntentionsDescriptor" />
+    <classNode dependClassName="testExtendingAnalyzer.structure.StructureAspectDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>
 </dependenciesRoot>

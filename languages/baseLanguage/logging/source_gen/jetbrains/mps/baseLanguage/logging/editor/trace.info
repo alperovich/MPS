@@ -11,7 +11,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="15,0,34,0" name="jetbrains.mps.baseLanguage.logging.editor.EditorAspectDescriptorImpl" />
+      <unit at="14,0,31,0" name="jetbrains.mps.baseLanguage.logging.editor.EditorAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:00000000-0000-4000-0000-011c8959057d(jetbrains.mps.baseLanguage.logging.editor)/1167245582276">
