@@ -50,6 +50,12 @@ public class QueriesGenerated {
   public static boolean baseMappingRule_Condition_6084939353556314905(final BaseMappingRuleContext _context) {
     return ListSequence.fromList(AttributeOperations.getAttributeList(_context.getNode(), new IAttributeDescriptor.NodeAttribute(MetaAdapterFactory.getConcept(0x97a52717898f4598L, 0x8150573d9fd03868L, 0x54720c1a488325eaL, "jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerTypeAnnotation")))).isEmpty();
   }
+  public static boolean baseMappingRule_Condition_855965222210829929(final BaseMappingRuleContext _context) {
+    return ListSequence.fromList(AttributeOperations.getAttributeList(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0x97a52717898f4598L, 0x8150573d9fd03868L, 0x5faaa6bbd57b6c8L, "jetbrains.mps.lang.dataFlow.analyzers.structure.Rule"), false, false), MetaAdapterFactory.getReferenceLink(0x97a52717898f4598L, 0x8150573d9fd03868L, 0x5faaa6bbd57b6c8L, 0x3952cf7bd76e6440L, "analyzer")), new IAttributeDescriptor.NodeAttribute(MetaAdapterFactory.getConcept(0x97a52717898f4598L, 0x8150573d9fd03868L, 0x54720c1a488325eaL, "jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerTypeAnnotation")))).isEmpty();
+  }
+  public static boolean baseMappingRule_Condition_855965222210850665(final BaseMappingRuleContext _context) {
+    return ListSequence.fromList(AttributeOperations.getAttributeList(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0x97a52717898f4598L, 0x8150573d9fd03868L, 0x5faaa6bbd57b6c8L, "jetbrains.mps.lang.dataFlow.analyzers.structure.Rule"), false, false), MetaAdapterFactory.getReferenceLink(0x97a52717898f4598L, 0x8150573d9fd03868L, 0x5faaa6bbd57b6c8L, 0x3952cf7bd76e6440L, "analyzer")), new IAttributeDescriptor.NodeAttribute(MetaAdapterFactory.getConcept(0x97a52717898f4598L, 0x8150573d9fd03868L, 0x54720c1a488325eaL, "jetbrains.mps.lang.dataFlow.analyzers.structure.AnalyzerTypeAnnotation")))).isEmpty();
+  }
   public static Object propertyMacro_GetPropertyValue_9177062368042364010(final PropertyMacroContext _context) {
     return (String) Analyzer__BehaviorDescriptor.getAnalyzerRunnerName_id9V7Nft_oXD.invoke(_context.getNode());
   }

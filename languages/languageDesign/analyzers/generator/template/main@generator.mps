@@ -753,9 +753,6 @@
     </node>
     <node concept="3aamgX" id="7wwiZxTDRdv" role="3acgRq">
       <ref role="30HIoZ" to="bj1v:3E8vDQwGYyk" resolve="EmitInstruction" />
-      <node concept="j$656" id="3ri$iz_v7bC" role="1lVwrX">
-        <ref role="v9R2y" node="7wwiZxTDRdt" resolve="reduce_EmitInstruction_Pattern" />
-      </node>
       <node concept="30G5F_" id="4ipeeu8X1Pz" role="30HLyM">
         <node concept="3clFbS" id="4ipeeu8X1P$" role="2VODD2">
           <node concept="3clFbF" id="4ipeeu8X1PE" role="3cqZAp">
@@ -784,12 +781,16 @@
           </node>
         </node>
       </node>
+      <node concept="gft3U" id="JwZXmxXLuk" role="1lVwrX">
+        <node concept="3clFbH" id="JwZXmxXLxB" role="gfFT$">
+          <node concept="1sPUBX" id="JwZXmxXLxG" role="lGtFl">
+            <ref role="v9R2y" node="JwZXmxXJUg" resolve="switch_EmitInstruction_Pattern" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3aamgX" id="4ipeeu8X1P_" role="3acgRq">
       <ref role="30HIoZ" to="bj1v:3E8vDQwGYyk" resolve="EmitInstruction" />
-      <node concept="j$656" id="3ri$iz_v7f1" role="1lVwrX">
-        <ref role="v9R2y" node="4ipeeu8X0PQ" resolve="reduce_EmitInstruction_Concept" />
-      </node>
       <node concept="30G5F_" id="4ipeeu8X1PC" role="30HLyM">
         <node concept="3clFbS" id="4ipeeu8X1PD" role="2VODD2">
           <node concept="3clFbF" id="4ipeeu8X1Q1" role="3cqZAp">
@@ -815,6 +816,13 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="gft3U" id="JwZXmxXLxJ" role="1lVwrX">
+        <node concept="3clFbH" id="JwZXmxXLxK" role="gfFT$">
+          <node concept="1sPUBX" id="JwZXmxXLxL" role="lGtFl">
+            <ref role="v9R2y" node="JwZXmxXJTB" resolve="switch_EmitInstruction_Concept" />
           </node>
         </node>
       </node>
@@ -4091,6 +4099,88 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="jVnub" id="JwZXmxXJTB">
+    <property role="TrG5h" value="switch_EmitInstruction_Concept" />
+    <node concept="3aamgX" id="JwZXmxXJTC" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="bj1v:3E8vDQwGYyk" resolve="EmitInstruction" />
+      <node concept="30G5F_" id="JwZXmxXJTD" role="30HLyM">
+        <node concept="3clFbS" id="JwZXmxXJTE" role="2VODD2">
+          <node concept="3clFbF" id="JwZXmxXLDz" role="3cqZAp">
+            <node concept="2OqwBi" id="JwZXmxXMJi" role="3clFbG">
+              <node concept="2OqwBi" id="JwZXmxXLD$" role="2Oq$k0">
+                <node concept="2OqwBi" id="JwZXmxXLD_" role="2Oq$k0">
+                  <node concept="2OqwBi" id="JwZXmxXLDA" role="2Oq$k0">
+                    <node concept="30H73N" id="JwZXmxXLDB" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="JwZXmxXLDC" role="2OqNvi">
+                      <node concept="1xMEDy" id="JwZXmxXLDD" role="1xVPHs">
+                        <node concept="chp4Y" id="JwZXmxXLDE" role="ri$Ld">
+                          <ref role="cht4Q" to="bj1v:nUEAIXlVr8" resolve="Rule" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="JwZXmxXLYO" role="2OqNvi">
+                    <ref role="3Tt5mk" to="bj1v:3_iNRJnrAh0" />
+                  </node>
+                </node>
+                <node concept="3CFZ6_" id="JwZXmxXM8m" role="2OqNvi">
+                  <node concept="3CFYIy" id="JwZXmxXMbi" role="3CFYIz">
+                    <ref role="3CFYIx" to="bj1v:5hM31D8wMnE" resolve="AnalyzerTypeAnnotation" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1v1jN8" id="JwZXmxXORz" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="j$656" id="JwZXmxXLOf" role="1lVwrX">
+        <ref role="v9R2y" node="4ipeeu8X0PQ" resolve="reduce_EmitInstruction_Concept" />
+      </node>
+    </node>
+  </node>
+  <node concept="jVnub" id="JwZXmxXJUg">
+    <property role="TrG5h" value="switch_EmitInstruction_Pattern" />
+    <node concept="3aamgX" id="JwZXmxXOXC" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="bj1v:3E8vDQwGYyk" resolve="EmitInstruction" />
+      <node concept="30G5F_" id="JwZXmxXOXD" role="30HLyM">
+        <node concept="3clFbS" id="JwZXmxXOXE" role="2VODD2">
+          <node concept="3clFbF" id="JwZXmxXOXF" role="3cqZAp">
+            <node concept="2OqwBi" id="JwZXmxXOXG" role="3clFbG">
+              <node concept="2OqwBi" id="JwZXmxXOXH" role="2Oq$k0">
+                <node concept="2OqwBi" id="JwZXmxXOXI" role="2Oq$k0">
+                  <node concept="2OqwBi" id="JwZXmxXOXJ" role="2Oq$k0">
+                    <node concept="30H73N" id="JwZXmxXOXK" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="JwZXmxXOXL" role="2OqNvi">
+                      <node concept="1xMEDy" id="JwZXmxXOXM" role="1xVPHs">
+                        <node concept="chp4Y" id="JwZXmxXOXN" role="ri$Ld">
+                          <ref role="cht4Q" to="bj1v:nUEAIXlVr8" resolve="Rule" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="JwZXmxXOXO" role="2OqNvi">
+                    <ref role="3Tt5mk" to="bj1v:3_iNRJnrAh0" />
+                  </node>
+                </node>
+                <node concept="3CFZ6_" id="JwZXmxXOXP" role="2OqNvi">
+                  <node concept="3CFYIy" id="JwZXmxXOXQ" role="3CFYIz">
+                    <ref role="3CFYIx" to="bj1v:5hM31D8wMnE" resolve="AnalyzerTypeAnnotation" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1v1jN8" id="JwZXmxXOXR" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="j$656" id="JwZXmxXP23" role="1lVwrX">
+        <ref role="v9R2y" node="7wwiZxTDRdt" resolve="reduce_EmitInstruction_Pattern" />
       </node>
     </node>
   </node>
