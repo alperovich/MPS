@@ -7,9 +7,12 @@ import java.awt.Color;
 
 public enum LineDirection {
   HORIZONTAL() {
-    public void paint(Graphics g, int first, int second, int level, Color backGround) {
-      g.setColor(Color.BLACK);
+    @Deprecated
+    public void paint(Graphics g, int first, int second, int level, Color backgroundColor) {
       g.drawLine(first, level, second, level);
+    }
+    public void paint(Line line, Graphics g, int first, int second, int level) {
+      line.drawLine(g, first, level, second, level);
     }
     public void shiftLeft(Line line, int indent) {
       line.myFirst = line.myFirst + indent;
@@ -18,20 +21,13 @@ public enum LineDirection {
 
   },
   VERTICAL() {
-    public void paint(Graphics g, int first, int second, int level, Color backGround) {
-      g.setColor(backGround);
-      int height;
-      int y;
-      if (first < second) {
-        y = first + GAP;
-        height = (second - first) - GAP;
-      } else {
-        y = first - GAP;
-        height = (first - second) - GAP;
-      }
-      g.fillRect(level - GAP, y, 2 * GAP + 1, height);
-      g.setColor(Color.BLACK);
+    @Deprecated
+    public void paint(Graphics g, int first, int second, int level, Color backgroundColor) {
       g.drawLine(level, first, level, second);
+    }
+    @Override
+    public void paint(Line line, Graphics g, int first, int second, int level) {
+      line.drawLine(g, level, first, level, second);
     }
     public void shiftLeft(Line line, int indent) {
       line.myLevel = line.myLevel + indent;
@@ -39,9 +35,15 @@ public enum LineDirection {
 
   };
 
-  private static final int GAP = 2;
   private LineDirection() {
   }
-  public abstract void paint(Graphics g, int first, int second, int level, Color backGround);
+  /**
+   * 
+   * @deprecated 
+   */
+  @Deprecated
+  public abstract void paint(Graphics g, int first, int second, int level, Color backgroundColor);
+  public abstract void paint(Line line, Graphics g, int first, int second, int level);
   public abstract void shiftLeft(Line line, int indent);
+
 }

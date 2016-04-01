@@ -17,12 +17,12 @@ public class ControlFlowGraph<T extends IInstruction<T>> {
   private static final int MARGIN_X = 20;
   private static final int MARGIN_Y = 20;
   private static final int LINE_SEGMENT_SIZE = 40;
-  private IGraphCreator<T> myGraphCreator;
-  private IProgram<T> myProgram;
-  private Component myComponent;
-  private List<IBlock> myBlocks = new ArrayList<IBlock>();
-  private List<Line> myLines = new ArrayList<Line>();
-  private Set<ArrowHead> myArrowHeads = new HashSet<ArrowHead>();
+  protected final IGraphCreator<T> myGraphCreator;
+  protected final IProgram<T> myProgram;
+  protected Component myComponent;
+  protected List<IBlock> myBlocks = new ArrayList<IBlock>();
+  protected List<Line> myLines = new ArrayList<Line>();
+  protected Set<ArrowHead> myArrowHeads = new HashSet<ArrowHead>();
   private Map<Integer, FreeZone> myFreeZoneMap = new HashMap<Integer, FreeZone>();
   /*package*/ int myMaxLineIndentRight;
   /*package*/ int myMaxLineIndentLeft;
@@ -56,7 +56,7 @@ public class ControlFlowGraph<T extends IInstruction<T>> {
     List<Line> lines = new ArrayList<Line>(this.myLines);
     Collections.sort(lines);
     for (Line line : lines) {
-      line.paint(g, this.myComponent.getBackground());
+      line.paint(g);
     }
     for (ArrowHead arrowHead : this.myArrowHeads) {
       arrowHead.paint(g);
@@ -92,9 +92,9 @@ public class ControlFlowGraph<T extends IInstruction<T>> {
       IBlock block = this.myBlocks.get(i);
       for (IBlock succBlock : block.succ()) {
         if (this.myBlocks.indexOf(succBlock) == i + 1) {
-          ControlFlowGraph.this.createSimpleLine(block, succBlock);
+          ControlFlowGraph.this.addSimpleLine(block, succBlock);
         } else {
-          ControlFlowGraph.this.createAdditionalLine(block, succBlock);
+          ControlFlowGraph.this.addAdditionalLine(block, succBlock);
         }
       }
     }
@@ -113,7 +113,10 @@ public class ControlFlowGraph<T extends IInstruction<T>> {
       line.shiftLeft(indent);
     }
   }
-  private void createAdditionalLine(IBlock startBlock, IBlock endBlock) {
+  protected void addAdditionalLine(IBlock startBlock, IBlock endBlock) {
+    addAdditionalLine(startBlock, endBlock, new ControlFlowGraph.SimpleLineCreator());
+  }
+  protected void addAdditionalLine(IBlock startBlock, IBlock endBlock, ControlFlowGraph.LineCreator lineCreator) {
     int startIndex = this.myBlocks.indexOf(startBlock);
     int endIndex = this.myBlocks.indexOf(endBlock);
     int rightIndent = 0;
@@ -139,18 +142,18 @@ public class ControlFlowGraph<T extends IInstruction<T>> {
     if (rightIndent != 0) {
       int startBlockExit = startBlock.getX() + startBlock.getWidth();
       int endBlockExit = endBlock.getX() + endBlock.getWidth();
-      this.myLines.add(new Line(startBlockExit, startBlockExit + LINE_SEGMENT_SIZE * rightIndent, startBlockLevel, LineDirection.HORIZONTAL));
-      this.myLines.add(new Line(endBlockExit, endBlockExit + LINE_SEGMENT_SIZE * rightIndent, endBlockLevel, LineDirection.HORIZONTAL));
-      this.myLines.add(new Line(startBlockLevel, endBlockLevel, startBlockExit + LINE_SEGMENT_SIZE * rightIndent, LineDirection.VERTICAL));
-      this.myArrowHeads.add(new ArrowHead(endBlockExit, endBlockLevel, ArrowHeadDirection.LEFT));
+      this.myLines.add(lineCreator.createLine(startBlockExit, startBlockExit + LINE_SEGMENT_SIZE * rightIndent, startBlockLevel, LineDirection.HORIZONTAL));
+      this.myLines.add(lineCreator.createLine(endBlockExit, endBlockExit + LINE_SEGMENT_SIZE * rightIndent, endBlockLevel, LineDirection.HORIZONTAL));
+      this.myLines.add(lineCreator.createLine(startBlockLevel, endBlockLevel, startBlockExit + LINE_SEGMENT_SIZE * rightIndent, LineDirection.VERTICAL));
+      this.myArrowHeads.add(createArrowHead(endBlockExit, endBlockLevel, ArrowHeadDirection.LEFT));
     } else
     if (leftIndent != 0) {
       int startBlockExit = startBlock.getX();
       int endBlockExit = endBlock.getX();
-      this.myLines.add(new Line(startBlockExit, startBlockExit - LINE_SEGMENT_SIZE * leftIndent, startBlockLevel, LineDirection.HORIZONTAL));
-      this.myLines.add(new Line(endBlockExit, endBlockExit - LINE_SEGMENT_SIZE * leftIndent, endBlockLevel, LineDirection.HORIZONTAL));
-      this.myLines.add(new Line(startBlockLevel, endBlockLevel, startBlockExit - LINE_SEGMENT_SIZE * leftIndent, LineDirection.VERTICAL));
-      this.myArrowHeads.add(new ArrowHead(endBlockExit, endBlockLevel, ArrowHeadDirection.RIGHT));
+      this.myLines.add(lineCreator.createLine(startBlockExit, startBlockExit - LINE_SEGMENT_SIZE * leftIndent, startBlockLevel, LineDirection.HORIZONTAL));
+      this.myLines.add(lineCreator.createLine(endBlockExit, endBlockExit - LINE_SEGMENT_SIZE * leftIndent, endBlockLevel, LineDirection.HORIZONTAL));
+      this.myLines.add(lineCreator.createLine(startBlockLevel, endBlockLevel, startBlockExit - LINE_SEGMENT_SIZE * leftIndent, LineDirection.VERTICAL));
+      this.myArrowHeads.add(createArrowHead(endBlockExit, endBlockLevel, ArrowHeadDirection.RIGHT));
     }
   }
   private boolean canBeAdded(int first, int last, int i) {
@@ -162,10 +165,19 @@ public class ControlFlowGraph<T extends IInstruction<T>> {
     boolean canBeAdded = freeZone.canBeAdded(first, last);
     return canBeAdded;
   }
-  private void createSimpleLine(IBlock block, IBlock nextBlock) {
-    int x = block.getX() + block.getWidth() / 2;
-    this.myLines.add(new Line(block.getY() + block.getHeight(), nextBlock.getY(), x, LineDirection.VERTICAL));
-    this.myArrowHeads.add(new ArrowHead(x, nextBlock.getY(), ArrowHeadDirection.DOWN));
+
+  protected void addSimpleLine(IBlock block, IBlock nextBlock) {
+    addSimpleLine(block, nextBlock, new ControlFlowGraph.SimpleLineCreator());
+  }
+  protected void addSimpleLine(IBlock block, IBlock nextBlock, ControlFlowGraph.LineCreator lineCreator) {
+    int levelX = block.getX() + block.getWidth() / 2;
+    int y1 = block.getY() + block.getHeight();
+    int y2 = nextBlock.getY();
+    this.myLines.add(lineCreator.createLine(y1, y2, levelX, LineDirection.VERTICAL));
+    this.myArrowHeads.add(createArrowHead(levelX, y2, ArrowHeadDirection.DOWN));
+  }
+  protected ArrowHead createArrowHead(int x, int y, ArrowHeadDirection direction) {
+    return new ArrowHead(x, y, direction);
   }
   public int getWidth() {
     return this.myWidth;
@@ -188,6 +200,15 @@ public class ControlFlowGraph<T extends IInstruction<T>> {
       if (block.processMousePressed(event)) {
         return;
       }
+    }
+  }
+
+  protected static interface LineCreator {
+    public Line createLine(int first, int second, int level, LineDirection direction);
+  }
+  private class SimpleLineCreator implements ControlFlowGraph.LineCreator {
+    public Line createLine(int first, int second, int level, LineDirection direction) {
+      return new Line(first, second, level, direction);
     }
   }
 }

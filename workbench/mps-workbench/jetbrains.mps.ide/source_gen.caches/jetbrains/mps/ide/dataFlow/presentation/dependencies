@@ -57,6 +57,7 @@
     <classNode dependClassName="jetbrains.mps.ide.dataFlow.presentation.IInstruction" />
     <classNode dependClassName="jetbrains.mps.ide.dataFlow.presentation.IProgram" />
     <classNode dependClassName="jetbrains.mps.ide.dataFlow.presentation.Line" />
+    <classNode dependClassName="jetbrains.mps.ide.dataFlow.presentation.LineCreator" />
     <classNode dependClassName="jetbrains.mps.ide.dataFlow.presentation.LineDirection" />
   </dependency>
   <dependency className="jetbrains.mps.ide.dataFlow.presentation.FreeZone" file="FreeZone.java" />
@@ -125,6 +126,7 @@
   <dependency className="jetbrains.mps.ide.dataFlow.presentation.Line" file="Line.java">
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.ide.dataFlow.presentation.LineDirection" />
     <classNode extendsClassName="java.lang.Comparable" />
@@ -132,6 +134,8 @@
   <dependency className="jetbrains.mps.ide.dataFlow.presentation.LineDirection" file="LineDirection.java">
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.ide.dataFlow.presentation.Line" />
   </dependency>
   <dependency className="jetbrains.mps.ide.dataFlow.presentation.ProgramWrapper" file="ProgramWrapper.java">
