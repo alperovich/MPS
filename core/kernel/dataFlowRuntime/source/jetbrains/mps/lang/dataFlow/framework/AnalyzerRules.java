@@ -30,6 +30,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
@@ -83,7 +84,7 @@ public class AnalyzerRules {
         myRules.add(rule);
       }
     }
-    List<SNode> descendants = new ArrayList<SNode>();
+    Set<SNode> descendants = new LinkedHashSet<SNode>();
     for (SNode myNodeToApply : myNodesToApply) {
       descendants.addAll(SNodeOperations.getNodeDescendants(myNodeToApply, null, false, new SAbstractConcept[]{}));
     }
