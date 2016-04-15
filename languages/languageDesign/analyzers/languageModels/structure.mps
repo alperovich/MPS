@@ -538,5 +538,15 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="7UkgJtnqqHe">
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="AnalyzerFunParameterStateValues" />
+    <property role="2_RsDV" value="none" />
+    <property role="3GE5qa" value="Analyzer.AnalyzerFunctions" />
+    <property role="34LRSv" value="stateValues" />
+    <property role="1pbfSe" value="704778683" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
 </model>
 

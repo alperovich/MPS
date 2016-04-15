@@ -16,12 +16,14 @@
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.MPSProgramBuilder" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AnalysisDirection" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AnalyzerRules" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzer" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzerBase" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.ProgramState" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.analyzers.runtime.framework.CustomAnalyzerRunner" />
   </dependency>

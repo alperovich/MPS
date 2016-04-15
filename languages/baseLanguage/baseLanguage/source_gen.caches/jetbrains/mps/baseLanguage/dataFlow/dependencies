@@ -428,7 +428,7 @@
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.MPSProgramBuilder" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AnalysisDirection" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.AnalyzerRules" />
-    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzer" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzerBase" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.Program" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.ProgramState" />
     <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.instructions.Instruction" />
@@ -436,6 +436,7 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.analyzers.runtime.framework.CustomAnalyzerRunner" />
   </dependency>

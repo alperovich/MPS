@@ -72,7 +72,12 @@ public class AnalyzerRunner<E> {
 
       E oldValue = stateValues.get(current);
       E mergedValue = myAnalyzer.merge(myProgram, input);
-      E newValue = myAnalyzer.fun(mergedValue, current);
+      E newValue;
+      if (myAnalyzer instanceof DataFlowAnalyzerBase) {
+        newValue = ((DataFlowAnalyzerBase<E>) myAnalyzer).fun(mergedValue, current, Collections.unmodifiableMap(stateValues));
+      } else {
+        newValue = myAnalyzer.fun(mergedValue, current);
+      }
 
       if (!newValue.equals(oldValue)) {
         stateValues.put(current, newValue);

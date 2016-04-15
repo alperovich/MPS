@@ -7,9 +7,11 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.dataFlow.framework.AnalyzerRules;
 import jetbrains.mps.lang.dataFlow.framework.Program;
 import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
-import jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzer;
+import jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzerBase;
 import java.util.List;
 import jetbrains.mps.lang.dataFlow.framework.ProgramState;
+import org.jetbrains.annotations.Nullable;
+import java.util.Map;
 import jetbrains.mps.lang.dataFlow.framework.AnalysisDirection;
 
 public class CounterAnalyzerWithConstructorAnalyzerRunner extends CustomAnalyzerRunner<Integer> {
@@ -27,7 +29,7 @@ public class CounterAnalyzerWithConstructorAnalyzerRunner extends CustomAnalyzer
   private Program createProgram() {
     return new MPSProgramBuilder().buildProgram(myNode);
   }
-  public static class CounterAnalyzerWithConstructorAnalyzer implements DataFlowAnalyzer<Integer> {
+  public static class CounterAnalyzerWithConstructorAnalyzer extends DataFlowAnalyzerBase<Integer> {
     private int initialCounter;
     public CounterAnalyzerWithConstructorAnalyzer(int initialCounter) {
       this.initialCounter = initialCounter;
@@ -44,12 +46,13 @@ public class CounterAnalyzerWithConstructorAnalyzerRunner extends CustomAnalyzer
       }
       return maxCounter;
     }
-    public Integer fun(Integer input, ProgramState state) {
+    public Integer fun(Integer input, ProgramState state, @Nullable Map<ProgramState, Integer> stateValues) {
       return input + 1;
     }
     public AnalysisDirection getDirection() {
       return AnalysisDirection.FORWARD;
     }
+
     /**
      * 
      * @deprecated 
