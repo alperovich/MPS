@@ -416,7 +416,7 @@
     <ref role="1XX52x" to="bj1v:nUEAIXlVr8" resolve="Rule" />
     <node concept="3EZMnI" id="nUEAIXm0o7" role="2wV5jI">
       <node concept="3F0ifn" id="nUEAIXm0ou" role="3EZMnx">
-        <property role="3F0ifm" value="data flow constructor" />
+        <property role="3F0ifm" value="analyzer rule" />
       </node>
       <node concept="3F0A7n" id="2S_HFuhBowW" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

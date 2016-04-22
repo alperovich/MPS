@@ -44,7 +44,7 @@ public class Rule_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_z0m96w_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "data flow constructor");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "analyzer rule");
     editorCell.setCellId("Constant_z0m96w_a0");
     editorCell.setDefaultText("");
     return editorCell;
