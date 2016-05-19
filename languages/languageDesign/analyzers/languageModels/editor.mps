@@ -252,7 +252,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7fxZEB1sZxv" role="3EZMnx">
-        <property role="3F0ifm" value="uses instructions from" />
+        <property role="3F0ifm" value="use instructions from" />
       </node>
       <node concept="3F2HdR" id="7fxZEB1sZ$7" role="3EZMnx">
         <ref role="1NtTu8" to="bj1v:7fxZEB1sZw4" />

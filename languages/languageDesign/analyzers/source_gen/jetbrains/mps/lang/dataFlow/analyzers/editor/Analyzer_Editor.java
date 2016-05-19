@@ -175,7 +175,7 @@ public class Analyzer_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_590xoz_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uses instructions from");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "use instructions from");
     editorCell.setCellId("Constant_590xoz_g0");
     editorCell.setDefaultText("");
     return editorCell;
