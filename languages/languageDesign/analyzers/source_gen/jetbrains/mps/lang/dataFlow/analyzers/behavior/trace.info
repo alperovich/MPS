@@ -82,6 +82,12 @@
     <file name="ConceptCondition_BehaviorDescriptor.java">
       <unit at="13,0,25,0" name="jetbrains.mps.lang.dataFlow.analyzers.behavior.ConceptCondition_BehaviorDescriptor" />
     </file>
+    <file name="CustomInstructionsContainerReference_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="jetbrains.mps.lang.dataFlow.analyzers.behavior.CustomInstructionsContainerReference_BehaviorDescriptor" />
+    </file>
+    <file name="CustomInstructionsContainer_BehaviorDescriptor.java">
+      <unit at="14,0,26,0" name="jetbrains.mps.lang.dataFlow.analyzers.behavior.CustomInstructionsContainer_BehaviorDescriptor" />
+    </file>
     <file name="EmitInstruction_BehaviorDescriptor.java">
       <unit at="12,0,21,0" name="jetbrains.mps.lang.dataFlow.analyzers.behavior.EmitInstruction_BehaviorDescriptor" />
     </file>

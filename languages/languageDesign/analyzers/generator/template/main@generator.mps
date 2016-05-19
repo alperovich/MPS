@@ -189,12 +189,16 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
+      <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
+        <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
+      </concept>
       <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <property id="1184950341882" name="topPriorityGroup" index="3$yP7D" />
         <child id="3071639529306477415" name="exports" index="24Zfi7" />
+        <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
@@ -403,6 +407,14 @@
   <node concept="bUwia" id="7XrupC0L9ZR">
     <property role="TrG5h" value="main" />
     <property role="3$yP7D" value="true" />
+    <node concept="2rT7sh" id="7wwiZxTDQBc" role="2rTMjI">
+      <property role="TrG5h" value="param" />
+      <ref role="2rTdP9" to="bj1v:nUEAIXm3Ew" resolve="InstructionParameter" />
+      <ref role="2rZz_L" to="tpee:fz7vLUk" resolve="ParameterDeclaration" />
+    </node>
+    <node concept="aNPBN" id="7fxZEB1w48A" role="aQYdv">
+      <ref role="aOQi4" to="bj1v:7fxZEB1sFyL" resolve="CustomInstructionsContainer" />
+    </node>
     <node concept="1J8HWv" id="5vxy$fN7dY7" role="24Zfi7">
       <property role="TrG5h" value="exportedInstructionClass" />
       <ref role="vkxhZ" to="bj1v:5JpT3MjX6ua" resolve="Instruction" />
@@ -646,11 +658,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="2rT7sh" id="7wwiZxTDQBc" role="2rTMjI">
-      <property role="TrG5h" value="param" />
-      <ref role="2rTdP9" to="bj1v:nUEAIXm3Ew" resolve="InstructionParameter" />
-      <ref role="2rZz_L" to="tpee:fz7vLUk" resolve="ParameterDeclaration" />
     </node>
     <node concept="2rT7sh" id="1RGHnl3uWGY" role="2rTMjI">
       <property role="TrG5h" value="ruleConstructor" />
@@ -1999,6 +2006,9 @@
         </node>
         <node concept="3clFbF" id="7wwiZxTDQUa" role="3cqZAp">
           <node concept="37vLTI" id="7wwiZxTDQUc" role="3clFbG">
+            <node concept="37vLTw" id="2BHiRxeuNU9" role="37vLTJ">
+              <ref role="3cqZAo" node="7wwiZxTDQ0W" resolve="myParam" />
+            </node>
             <node concept="37vLTw" id="2BHiRxglqNr" role="37vLTx">
               <ref role="3cqZAo" node="7wwiZxTDQ1M" resolve="param" />
               <node concept="1ZhdrF" id="7wwiZxTDQUr" role="lGtFl">
@@ -2018,9 +2028,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="37vLTw" id="2BHiRxeuNU9" role="37vLTJ">
-              <ref role="3cqZAo" node="7wwiZxTDQ0W" resolve="myParam" />
             </node>
           </node>
           <node concept="1WS0z7" id="7wwiZxTDQUh" role="lGtFl">

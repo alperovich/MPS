@@ -112,6 +112,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3tEjlbSL22K" resolve="AnalyzerConstructorParameter" />
     </node>
+    <node concept="1TJgyj" id="7fxZEB1sZw4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="usedContainers" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7fxZEB1sSuo" resolve="CustomInstructionsContainerReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5JpT3MjX6ua">
     <property role="TrG5h" value="Instruction" />
@@ -547,6 +553,34 @@
     <property role="34LRSv" value="stateValues" />
     <property role="1pbfSe" value="704778683" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="7fxZEB1sFyL">
+    <property role="1pbfSe" value="894744410" />
+    <property role="3GE5qa" value="Instructions" />
+    <property role="TrG5h" value="CustomInstructionsContainer" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7fxZEB1sH3D" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="instruction" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5JpT3MjX6ua" resolve="Instruction" />
+    </node>
+    <node concept="PrWs8" id="7fxZEB1sH3F" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7fxZEB1sSuo">
+    <property role="1pbfSe" value="894797377" />
+    <property role="3GE5qa" value="Instructions" />
+    <property role="TrG5h" value="CustomInstructionsContainerReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7fxZEB1sSup" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="containter" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7fxZEB1sFyL" resolve="CustomInstructionsContainer" />
+    </node>
   </node>
 </model>
 
