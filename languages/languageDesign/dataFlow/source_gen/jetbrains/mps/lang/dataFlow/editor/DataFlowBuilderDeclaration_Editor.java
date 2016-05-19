@@ -33,8 +33,10 @@ public class DataFlowBuilderDeclaration_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_9xj3dm_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_9xj3dm_b0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_9xj3dm_c0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_9xj3dm_d0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_9xj3dm_d0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_9xj3dm_e0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_9xj3dm_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_9xj3dm_g0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_9xj3dm_a0(EditorContext editorContext, SNode node) {
@@ -92,8 +94,30 @@ public class DataFlowBuilderDeclaration_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_9xj3dm_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "mode:");
     editorCell.setCellId("Constant_9xj3dm_c0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_9xj3dm_d0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("mode");
+    provider.setNoTargetText("<no mode>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_mode");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createConstant_9xj3dm_e0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
+    editorCell.setCellId("Constant_9xj3dm_e0");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_LeftBrace(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
@@ -101,12 +125,12 @@ public class DataFlowBuilderDeclaration_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_9xj3dm_d0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new DataFlowBuilderDeclaration_Editor.builderBlockSingleRoleHandler_9xj3dm_d0(node, MetaAdapterFactory.getContainmentLink(0x7fa12e9cb9494976L, 0xb4fa19accbc320b4L, 0x118e58cd635L, 0x118e59865a7L, "builderBlock"), editorContext);
+  private EditorCell createRefNode_9xj3dm_f0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new DataFlowBuilderDeclaration_Editor.builderBlockSingleRoleHandler_9xj3dm_f0(node, MetaAdapterFactory.getContainmentLink(0x7fa12e9cb9494976L, 0xb4fa19accbc320b4L, 0x118e58cd635L, 0x118e59865a7L, "builderBlock"), editorContext);
     return provider.createCell();
   }
-  private class builderBlockSingleRoleHandler_9xj3dm_d0 extends SingleRoleCellProvider {
-    public builderBlockSingleRoleHandler_9xj3dm_d0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class builderBlockSingleRoleHandler_9xj3dm_f0 extends SingleRoleCellProvider {
+    public builderBlockSingleRoleHandler_9xj3dm_f0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -137,9 +161,9 @@ public class DataFlowBuilderDeclaration_Editor extends DefaultNodeEditor {
       return "<no builderBlock>";
     }
   }
-  private EditorCell createConstant_9xj3dm_e0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_9xj3dm_g0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_9xj3dm_e0");
+    editorCell.setCellId("Constant_9xj3dm_g0");
     Style style = new StyleImpl();
     BaseLanguageStyle_StyleSheet.apply_RightBrace(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);

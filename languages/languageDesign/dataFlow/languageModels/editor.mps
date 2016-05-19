@@ -197,6 +197,12 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="7fxZEB1yFfG" role="3EZMnx">
+        <property role="3F0ifm" value="mode:" />
+      </node>
+      <node concept="3F0A7n" id="7fxZEB1yFpx" role="3EZMnx">
+        <ref role="1NtTu8" to="tp41:7fxZEB1yFg8" resolve="mode" />
+      </node>
       <node concept="3F0ifn" id="hz_AiRo" role="3EZMnx">
         <property role="3F0ifm" value="{" />
         <ref role="1k5W1q" to="tpen:hFD5onb" resolve="LeftBrace" />
