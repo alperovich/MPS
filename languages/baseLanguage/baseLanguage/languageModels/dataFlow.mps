@@ -7,6 +7,7 @@
     <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -4258,6 +4259,49 @@
                 <ref role="Rm8GQ" node="5XiNbvoyw8J" resolve="NOT_INIT" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3ffAzoAYTrW" role="3cqZAp">
+          <node concept="3SKdUq" id="3ffAzoAYTrY" role="3SKWNk">
+            <property role="3SKdUp" value="UNKNOWN is used for baseLanguage extensions, when no custom analyzer rule is specified for Expression extension" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3ffAzoAYUF4" role="3cqZAp">
+          <node concept="3SKdUq" id="3ffAzoAYUF5" role="3SKWNk">
+            <property role="3SKdUp" value="and this Expression extension is acts as right part of the assignment" />
+          </node>
+          <node concept="3SKdUq" id="3ffAzoAYULr" role="3SKWNk">
+            <property role="3SKdUp" value="i.e " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3ffAzoAYURM" role="3cqZAp">
+          <node concept="3SKdUq" id="3ffAzoAYURN" role="3SKWNk">
+            <property role="3SKdUp" value="Object var = SMTH" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3ffAzoAYVgV" role="3cqZAp">
+          <node concept="3SKdUq" id="3ffAzoAYVgW" role="3SKWNk">
+            <property role="3SKdUp" value="where &quot;SMTH&quot; is extension of baseLanguage Expression" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3ffAzoAYVtK" role="3cqZAp">
+          <node concept="3SKdUq" id="3ffAzoAYVtL" role="3SKWNk">
+            <property role="3SKdUp" value="then we can say that var is initialized, so its nullable state is not NOT_INIT" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3ffAzoAYV$e" role="3cqZAp">
+          <node concept="3SKdUq" id="3ffAzoAYV$f" role="3SKWNk">
+            <property role="3SKdUp" value="but we cannot certanly say whether it is NULL, NOT_NULL or NULLABLE" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3ffAzoAZcjp" role="3cqZAp">
+          <node concept="3SKdUq" id="3ffAzoAZcjq" role="3SKWNk">
+            <property role="3SKdUp" value="Merging UNKNOWN and NULL/NULLABLE leads to NULLABLE " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3ffAzoAZcAB" role="3cqZAp">
+          <node concept="3SKdUq" id="3ffAzoAZcAC" role="3SKWNk">
+            <property role="3SKdUp" value="Merging UNKNOWN and NOTNULL leads to UNKNOWN" />
           </node>
         </node>
         <node concept="3clFbJ" id="5XiNbvoyw8e" role="3cqZAp">

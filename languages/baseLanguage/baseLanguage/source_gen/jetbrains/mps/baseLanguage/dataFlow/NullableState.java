@@ -22,6 +22,14 @@ public enum NullableState {
     if (state.equals(NullableState.NOT_INIT)) {
       return state;
     }
+    // UNKNOWN is used for baseLanguage extensions, when no custom analyzer rule is specified for Expression extension 
+    // and this Expression extension is acts as right part of the assignment i.e  
+    // Object var = SMTH 
+    // where "SMTH" is extension of baseLanguage Expression 
+    // then we can say that var is initialized, so its nullable state is not NOT_INIT 
+    // but we cannot certanly say whether it is NULL, NOT_NULL or NULLABLE 
+    // Merging UNKNOWN and NULL/NULLABLE leads to NULLABLE  
+    // Merging UNKNOWN and NOTNULL leads to UNKNOWN 
     if (state.equals(NullableState.UNKNOWN) && this.equals(NullableState.NOTNULL)) {
       return NullableState.UNKNOWN;
     }
