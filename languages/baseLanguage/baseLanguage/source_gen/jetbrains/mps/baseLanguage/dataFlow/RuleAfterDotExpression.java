@@ -36,5 +36,18 @@ public class RuleAfterDotExpression implements DataFlowConstructor {
         }
       }
     }
+    if ((boolean) DotExpression__BehaviorDescriptor.allowsNullOperand_id3Yy2P0QQESt.invoke(node)) {
+      {
+        Object object = node;
+        if (((Program) o).contains(object)) {
+          boolean before = false;
+          int position = ((Program) (o)).getEnd(object);
+          Instruction instruction = new nullableInstruction(node);
+          instruction.setRuleReference("r:00000000-0000-4000-0000-011c895902c2(jetbrains.mps.baseLanguage.dataFlow)/9161080218840690644");
+          instruction.setSource(node);
+          ((Program) (o)).insert(instruction, position, true, before);
+        }
+      }
+    }
   }
 }

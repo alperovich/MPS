@@ -31,5 +31,19 @@ public class RuleCreator implements DataFlowConstructor {
         ((Program) (o)).insert(instruction, position, true, before);
       }
     }
+    SNode parent = SNodeOperations.getParent(node);
+    if (SNodeOperations.isInstanceOf(parent, MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10ab8473cc5L, "jetbrains.mps.baseLanguage.structure.GenericNewExpression"))) {
+      {
+        Object object = parent;
+        if (((Program) o).contains(object)) {
+          boolean before = false;
+          int position = ((Program) (o)).getEnd(object);
+          Instruction instruction = new notNullInstruction(parent);
+          instruction.setRuleReference("r:00000000-0000-4000-0000-011c895902c2(jetbrains.mps.baseLanguage.dataFlow)/8335185394569727716");
+          instruction.setSource(node);
+          ((Program) (o)).insert(instruction, position, true, before);
+        }
+      }
+    }
   }
 }

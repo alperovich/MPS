@@ -17,10 +17,10 @@ public enum NullableState {
       return this;
     }
     if (this.equals(NullableState.NOT_INIT)) {
-      return state;
+      return this;
     }
     if (state.equals(NullableState.NOT_INIT)) {
-      return this;
+      return state;
     }
     if (state.equals(NullableState.UNKNOWN) && this.equals(NullableState.NOTNULL)) {
       return NullableState.UNKNOWN;

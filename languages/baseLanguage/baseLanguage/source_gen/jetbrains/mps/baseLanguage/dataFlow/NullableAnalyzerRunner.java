@@ -11,6 +11,10 @@ import jetbrains.mps.lang.dataFlow.MPSProgramBuilder;
 import jetbrains.mps.lang.dataFlow.framework.DataFlowAnalyzerBase;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
+import java.util.HashSet;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.function.Consumer;
 import jetbrains.mps.lang.dataFlow.framework.ProgramState;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.lang.dataFlow.framework.instructions.Instruction;
@@ -44,16 +48,36 @@ public class NullableAnalyzerRunner extends CustomAnalyzerRunner<Map<SNode, Null
       return result;
     }
     public Map<SNode, NullableState> merge(Program program, List<Map<SNode, NullableState>> input) {
+      final Set<SNode> keysToMerge = new HashSet<SNode>();
+      Map<SNode, NullableState> first = ListSequence.fromList(input).first();
+      if (first != null) {
+        Set<SNode> keySet = first.keySet();
+        if (keySet != null) {
+          keySet.forEach(new Consumer<SNode>() {
+            public void accept(SNode key) {
+              keysToMerge.add(key);
+            }
+          });
+        }
+      }
+      for (Map<SNode, NullableState> inputElement : input) {
+        keysToMerge.retainAll(inputElement.keySet());
+      }
       Map<SNode, NullableState> result = new HashMap<SNode, NullableState>();
       for (Map<SNode, NullableState> inputElement : input) {
         for (Map.Entry<SNode, NullableState> entry : inputElement.entrySet()) {
           SNode expr = entry.getKey();
-          NullableState value = entry.getValue();
-          NullableState resValue = result.get(expr);
-          if (resValue == null) {
-            resValue = NullableState.NOT_INIT;
+          if (!(keysToMerge.contains(expr))) {
+            result.put(expr, NullableState.NOT_INIT);
+          } else {
+            NullableState value = entry.getValue();
+            NullableState resValue = result.get(expr);
+            if (resValue == null) {
+              result.put(expr, value);
+            } else {
+              result.put(expr, resValue.merge(value));
+            }
           }
-          result.put(expr, resValue.merge(value));
         }
       }
       return result;
